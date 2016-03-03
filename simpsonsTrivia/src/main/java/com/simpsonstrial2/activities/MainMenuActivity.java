@@ -109,7 +109,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	{
 		super.onResume();
 		if (root.getChildCount() >= 3) // remove the circular reveal image view
+		{
 			root.removeViewAt(2);
+		}
 	}
 
 	@Override
