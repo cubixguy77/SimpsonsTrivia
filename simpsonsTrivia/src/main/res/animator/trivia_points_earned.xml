@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:propertyName="y"
+        android:valueType="floatType"
+        android:valueFrom=".8f"
+        android:valueTo="1.0f"
+        android:duration="2000"
+        android:delay="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>

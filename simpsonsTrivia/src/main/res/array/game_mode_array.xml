@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_mode_array">
+        <item>Easy - Challenge</item>
+        <item>Hard - Challenge</item>
+        <item>Easy - Speed</item>
+        <item>Hard - Speed</item>
+    </string-array>
+</resources>

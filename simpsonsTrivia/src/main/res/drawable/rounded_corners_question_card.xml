@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/trivia.question_card.standard.background" />
+    <corners android:radius="@dimen/question.question_card.radius" />
+</shape>

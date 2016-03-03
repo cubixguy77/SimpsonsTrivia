@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/trivia.answer_button.background.pressed" />
+            <solid android:color="@color/trivia.answer_button.background.pressed" />
+            <corners android:radius="@dimen/question.answer_button.radius"/>
+        </shape>
+    </item>
+
+    <item android:bottom="@dimen/question.answer_button.radius">
+        <shape
+            android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/trivia.answer_button.background.pressed" />
+            <solid android:color="@color/trivia.answer_button.background.pressed" />
+        </shape>
+    </item>
+</layer-list>

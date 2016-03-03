@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="high_score_production_urls">
+        <item>http://triviabilities.com/Simpsons/EasyShortGame.php</item>
+        <item>http://triviabilities.com/Simpsons/HardShortGame.php</item>
+        <item>http://triviabilities.com/Simpsons/EasyShortSpeed.php</item>
+        <item>http://triviabilities.com/Simpsons/HardShortSpeed.php</item>
+    </string-array>
+</resources>

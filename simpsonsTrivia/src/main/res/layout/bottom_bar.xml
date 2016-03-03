@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:id="@+id/bottomBarLayout"
+    android:background="@drawable/divider_top"
+    tools:showIn="@layout/activity_results">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/results.bottom_bar_buttons.home"
+        android:textAllCaps="true"
+        android:id="@+id/homeButton"
+        android:layout_weight=".25"
+        android:background="@drawable/rounded_corners_button_transparent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/results.bottom_bar_buttons.play_again"
+        android:textAllCaps="true"
+        android:id="@+id/playAgainButton"
+        android:layout_weight=".75"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded_corners_button"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

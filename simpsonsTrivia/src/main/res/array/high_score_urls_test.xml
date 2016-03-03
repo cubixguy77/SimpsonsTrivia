@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="high_score_test_urls">
+        <item>http://triviabilities.com/Test/ShortChallenge.php</item>
+        <item>http://triviabilities.com/Test/LongChallenge.php</item>
+        <item>http://triviabilities.com/Test/ShortSpeed.php</item>
+        <item>http://triviabilities.com/Test/LongSpeed.php</item>
+    </string-array>
+</resources>

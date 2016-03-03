@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1114" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1115" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1116" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1117" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1118" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1119" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1120" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1121" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1122" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1123" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1124" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1125" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1126" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1127" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1128" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1129" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1130" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1131" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1132" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1133" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1134" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1135" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1136" />
+    <item android:duration="50" android:drawable="@drawable/ic_mult_5_collapse_1137" />
+
+</animation-list>

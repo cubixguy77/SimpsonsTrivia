@@ -1,0 +1,4 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/grey_ripple">
+    <item android:drawable="@drawable/shape_button_answer_bottom_normal" />
+</ripple>

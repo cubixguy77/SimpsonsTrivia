@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="nav_drawer_header_height">100dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">6dp</dimen>
+    <dimen name="minTextSize">25.0px</dimen>
+
+    <!-- Main Menu -->
+    <dimen name="main.title_text.margin.margin_top">128dp</dimen>
+    <dimen name="main.title_text.margin.margin_left_right">24dp</dimen>
+    <dimen name="main.title_sub_text.margin.margin_left_right">16dp</dimen>
+    <dimen name="main.buttons.margin.left_right">16dp</dimen>
+    <dimen name="main.buttons.margin.space_between_classic_speed">4dp</dimen>
+    <dimen name="main.buttons.margin.space_between_easy_hard">8dp</dimen>
+    <dimen name="main.buttons.height">80dp</dimen>
+    <dimen name="main.buttons.text_size">25sp</dimen>
+    <dimen name="main.buttons.corner_radius">10dp</dimen>
+
+    <!-- Question -->
+    <dimen name="question.toolbar.text_size">20sp</dimen>
+    <dimen name="question.toolbar.timer_text_size">28sp</dimen>
+    <dimen name="question.toolbar.multiplier_text_size">22sp</dimen>
+
+    <dimen name="question.question_card.elevation">4dp</dimen>
+    <dimen name="question.question_card.radius">25dp</dimen>
+    <dimen name="question.question_card.margin">16dp</dimen>
+
+    <dimen name="question.question_text.font_size">22sp</dimen>
+    <dimen name="question.question_text.padding">16dp</dimen>
+    <dimen name="question.question_text.height">100dp</dimen>
+
+    <dimen name="question.woohoo_text.margin">15dp</dimen>
+    <dimen name="question.doh_text.margin">15dp</dimen>
+
+    <dimen name="question.answer_button.margin">8dp</dimen>
+    <dimen name="question.answer_button.text_size">18sp</dimen>
+    <dimen name="question.answer_button.text.padding">8dp</dimen>
+    <dimen name="question.answer_button.height">60dp</dimen>
+    <dimen name="question.answer_button.radius">20dp</dimen>
+
+    <dimen name="question.bonus_card.radius">25dp</dimen>
+
+    <dimen name="question.bonus_round_text.text_size">30sp</dimen>
+    <dimen name="question.bonus_round_text.margin.top">40dp</dimen>
+    <dimen name="question.bonus_round_text.margin.bottom">40dp</dimen>
+
+    <dimen name="question.bonus_round_instruction_text.margin.left">35dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.margin.right">25dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.text_size">22sp</dimen>
+    <dimen name="question.bonus_round_instruction_text.height">120dp</dimen>
+
+    <dimen name="question.bonus_round.button.size">72dp</dimen>
+    <dimen name="question.bonus_round.button.margin.top">15dp</dimen>
+    <dimen name="question.bonus_round.button.elevation">6dp</dimen>
+
+    <dimen name="question.bonus_round.go_text.text_size">24sp</dimen>
+    <dimen name="question.bonus_round.go_text.margin.top">10dp</dimen>
+
+
+
+
+    <!-- Results -->
+
+
+
+    <!-- Leaderboard -->
+
+
+
+</resources>
