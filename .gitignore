@@ -4,3 +4,17 @@
 /.idea/libraries
 .DS_Store
 /build
+.idea/
+simpsonsTrivia/build/
+SimpsonsTrivia.iml
+build.gradle
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+import-summary.txt
+keystore.jks
+settings.gradle
+simpsonsTrivia/build.gradle
+simpsonsTrivia/simpsonsTrivia-debug.apk
+simpsonsTrivia/simpsonsTrivia.iml
