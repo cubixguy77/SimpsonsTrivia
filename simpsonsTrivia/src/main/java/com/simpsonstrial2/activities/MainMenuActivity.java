@@ -30,6 +30,7 @@ import com.simpsonstrial2.views.SingleTapGesture;
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
 
+/* Home Screen */
 public class MainMenuActivity extends AppCompatActivity implements View.OnTouchListener
 {
 	private ImageView titleText;
