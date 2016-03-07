@@ -37,12 +37,12 @@
 
     <ImageView
         android:layout_width="@dimen/leaderboard.no_wifi.image.width"
-        android:layout_height="@dimen/leaderboard.no_wifi.image.height"
+        android:layout_height="wrap_content"
         android:id="@+id/noWiFi"
         android:layout_gravity="center"
         android:src="@drawable/graphic_cloud"
         android:visibility="gone"
-        android:adjustViewBounds="false"
+        android:adjustViewBounds="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp" />
 
