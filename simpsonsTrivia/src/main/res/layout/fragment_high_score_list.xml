@@ -32,15 +32,41 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="false"
         android:layout_below="@+id/gameModePicker"
-        tools:listitem="@layout/high_score_list_item"/>
+        tools:listitem="@layout/high_score_list_item"
+        android:visibility="visible"/>
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/leaderboard.no_wifi.image.width"
+        android:layout_height="@dimen/leaderboard.no_wifi.image.height"
         android:id="@+id/noWiFi"
         android:layout_gravity="center"
-        android:src="@drawable/no_wifi"
-        android:layout_centerInParent="true"
-        android:visibility="gone" />
+        android:src="@drawable/graphic_cloud"
+        android:visibility="gone"
+        android:adjustViewBounds="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/results.no_wifi.no_connection"
+        android:id="@+id/no_connection_text"
+        android:layout_below="@+id/noWiFi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/results.no_wifi.tap_to_refresh"
+        android:id="@+id/tap_to_refresh_text"
+        android:layout_below="@+id/no_connection_text"
+        android:layout_alignLeft="@+id/no_connection_text"
+        android:layout_alignStart="@+id/no_connection_text"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>

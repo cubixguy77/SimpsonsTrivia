@@ -20,4 +20,6 @@
     <string name="results.chart.bonus">Bonus Score</string>
     <string name="results.bottom_bar_buttons.home">Home</string>
     <string name="results.bottom_bar_buttons.play_again">Play Again</string>
+    <string name="results.no_wifi.no_connection">No Connection</string>
+    <string name="results.no_wifi.tap_to_refresh">Tap to Refresh</string>
 </resources>

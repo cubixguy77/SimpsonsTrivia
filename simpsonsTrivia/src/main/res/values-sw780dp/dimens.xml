@@ -65,7 +65,8 @@
 
 
     <!-- Leaderboard -->
-
+    <dimen name="leaderboard.no_wifi.image.width">175dp</dimen>
+    <dimen name="leaderboard.no_wifi.image.height">130dp</dimen>
 
 
 

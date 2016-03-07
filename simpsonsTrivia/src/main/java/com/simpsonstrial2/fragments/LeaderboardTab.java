@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.simpsonstrial2.MyApplication;
@@ -46,6 +47,8 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
     private View root;
     private ListView highScoreList;
     private ImageView noWiFiImage;
+    private TextView noConnectionText;
+    private TextView tapToRefreshText;
     private RelativeLayout listContainer;
     private Spinner gameModePicker;
 
@@ -72,6 +75,8 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
         highScoreList = (ListView) root.findViewById(android.R.id.list);
         noWiFiImage = (ImageView) root.findViewById(R.id.noWiFi);
+        noConnectionText = (TextView) root.findViewById(R.id.no_connection_text);
+        tapToRefreshText = (TextView) root.findViewById(R.id.tap_to_refresh_text);
         listContainer = (RelativeLayout) root.findViewById(R.id.ListContainer);
         progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
 
@@ -133,6 +138,9 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
             gameModePicker.setVisibility(View.GONE);
         highScoreList.setVisibility(View.INVISIBLE);
         noWiFiImage.setVisibility(View.VISIBLE);
+        noConnectionText.setVisibility(View.VISIBLE);
+        tapToRefreshText.setVisibility(View.VISIBLE);
+
         listContainer.setOnClickListener(this);
     }
 
@@ -140,6 +148,8 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
     {
         listContainer.setOnClickListener(null);
         noWiFiImage.setVisibility(View.GONE);
+        noConnectionText.setVisibility(View.GONE);
+        tapToRefreshText.setVisibility(View.GONE);
         highScoreList.setVisibility(View.VISIBLE);
         if (showSpinner)
             gameModePicker.setVisibility(View.VISIBLE);
@@ -180,8 +190,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
     @Override
     public void onClick(View v) {
         if (HighScoreUtils.isNetworkAvailable()) {
-            Toast.makeText(getActivity(), "internets found!", Toast.LENGTH_LONG).show();
-
             hideNoWifi();
 
             if (showSpinner && !spinnerSetup)
@@ -193,7 +201,8 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
                 submitScore();
             else
                 refreshList();
-        } else {
+        }
+        else {
             Toast.makeText(getActivity(), "Still no connection", Toast.LENGTH_LONG).show();
         }
     }
