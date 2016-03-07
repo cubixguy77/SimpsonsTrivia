@@ -43,7 +43,7 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
     private TimerPresenter timerPresenter;
 
     private boolean gameStarted = false;
-
+    private boolean bonusTimerExpired = false;
 
 	/** Called when the activity is first created. */
     @Override
@@ -61,6 +61,21 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         //onGameStart(); -- to be called on window focus
     }
 
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        if (questionPresenter.isAnimationsRunning())
+        {
+            questionPresenter.stopAnimations();
+        }
+
+        if (bonusTimerExpired)
+        {
+            onBonusRoundTimeExpired();
+        }
+    }
 
     @Override
     public void onBackPressed() {
@@ -142,6 +157,7 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
     public void onBonusRoundTimeExpired()
     {
         Log.d("bonus round", "time expired");
+        bonusTimerExpired = true;
         onBonusRoundResultsShow();
     }
     /* End TimerListener */
@@ -213,6 +229,7 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
 
     public void onBonusRoundResultsVisible()
     {
+        bonusTimerExpired = false;
         scorePresenter.onShowBonusRoundResults(scoreModel.getCurrentBonusScore(), scoreModel.getCurrentGameScore());
         onBonusRoundResultsHide();
     }

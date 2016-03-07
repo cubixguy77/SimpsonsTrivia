@@ -498,8 +498,38 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     {
         return answerResponseAnimationsInProgress;
     }
+    public void stopAnimations()
+    {
+        presentQuestionTeardown(0, null);
 
-    private void presentQuestionTeardown(int delay, final SupportAnimator.SimpleAnimatorListener listener)
+        answerResponseAnimationsInProgress = false;
+        hideAnswerResultText();
+        for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
+            Button button = answerButtons.get(answerPosition);
+            answerButtons.get(answerPosition).setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_answer_button_text_standard));
+            if (answerPosition == 0)
+                button.setBackgroundResource(R.drawable.selector_answer_top_button);
+            else if (answerPosition == 1 || answerPosition == 2)
+                button.setBackgroundResource(R.drawable.selector_answer_middle_button);
+            else
+                button.setBackgroundResource(R.drawable.selector_answer_bottom_button);
+        }
+
+        next();
+    }
+
+    private void next()
+    {
+        if (timeExpired) {
+            presentBonusRoundResultsCard();
+        } else if (nextQuestionReady && nextQuestion != null) {
+            presentQuestion(nextQuestion, bonusRound);
+        } else if (bonusRoundTriggered) {
+            onBonusRoundInstructionsLaunch();
+        }
+    }
+
+    public void presentQuestionTeardown(int delay, final SupportAnimator.SimpleAnimatorListener listener)
     {
         disableAnswerButtons();
         presentAnswerButtonCollapseAnimation(delay, new SupportAnimator.SimpleAnimatorListener() {
@@ -523,14 +553,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                         hideAnswerResultText();
                         answerResponseAnimationsInProgress = false;
 
-                        // TODO: handle this logic elsewhere so the method can stand alone
-                        if (timeExpired) {
-                            presentBonusRoundResultsCard();
-                        } else if (nextQuestionReady && nextQuestion != null) {
-                            presentQuestion(nextQuestion, bonusRound);
-                        } else if (bonusRoundTriggered) {
-                            onBonusRoundInstructionsLaunch();
-                        }
+                        next();
                     }
                 });
             }
