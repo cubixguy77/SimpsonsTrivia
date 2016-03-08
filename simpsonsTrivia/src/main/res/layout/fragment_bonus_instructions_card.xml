@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<io.codetail.widget.RevealFrameLayout android:id="@+id/QuestionContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/question.question_card.margin"
+        android:background="@drawable/rounded_corners_question_card"
+        android:id="@+id/QuestionCard"
+        android:visibility="visible"
+        android:elevation="@dimen/question.question_card.elevation">
+
+        <io.codetail.widget.RevealFrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/question.question_text.height"
+            android:id="@+id/QuestionTextContainer">
+
+
+            <com.simpsonstrial2.views.AutoResizeTextView
+                android:id="@+id/QuestionText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/question.question_text.font_size"
+                android:gravity="center_vertical|center_horizontal"
+                tools:text="Who freezes themself in the Kwik-E-Mart freezer?"
+                android:textColor="@color/trivia.question_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                android:paddingLeft="@dimen/question.question_text.padding"
+                android:paddingRight="@dimen/question.question_text.padding" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/woohoo"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/graphic_correct"
+                android:contentDescription="woohoo"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/question.woohoo_text.margin" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DOH!"
+                android:id="@+id/doh"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/graphic_wrong"
+                android:adjustViewBounds="true"
+                android:contentDescription="doh"
+                android:padding="@dimen/question.doh_text.margin" />
+
+        </io.codetail.widget.RevealFrameLayout>
+
+        <io.codetail.widget.RevealFrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/AnswerContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:padding="@dimen/question.answer_button.margin"
+                android:animateLayoutChanges="true"
+                android:layout_margin="10dp">
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/AnswerA"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        tools:text="Hanz Moleman"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_answer_top_button"
+                        android:textColor="@color/trivia.answer_button.text.standard"
+
+                        android:textSize="@dimen/question.answer_button.text_size"
+                        android:paddingLeft="@dimen/question.answer_button.text.padding"
+                        android:paddingRight="@dimen/question.answer_button.text.padding" />
+
+                </io.codetail.widget.RevealFrameLayout>
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button tools:text="Jasper"
+                        android:id="@+id/AnswerB"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:height="@dimen/question.answer_button.height"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_answer_middle_button"
+                        android:textColor="@color/trivia.answer_button.text.standard"
+                        android:textSize="@dimen/question.answer_button.text_size"
+                        android:paddingLeft="@dimen/question.answer_button.text.padding"
+                        android:paddingRight="@dimen/question.answer_button.text.padding"></Button>
+
+                </io.codetail.widget.RevealFrameLayout>
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button tools:text="Apu"
+                        android:id="@+id/AnswerC"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:height="@dimen/question.answer_button.height"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_answer_middle_button"
+                        android:textColor="@color/trivia.answer_button.text.standard"
+                        android:textSize="@dimen/question.answer_button.text_size"
+                        android:paddingLeft="@dimen/question.answer_button.text.padding"
+                        android:paddingRight="@dimen/question.answer_button.text.padding" />
+
+                </io.codetail.widget.RevealFrameLayout>
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button android:id="@+id/AnswerD"
+                        tools:text="Grampa Simpson"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:height="@dimen/question.answer_button.height"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_answer_bottom_button"
+                        android:textColor="@color/trivia.answer_button.text.standard"
+                        android:textSize="@dimen/question.answer_button.text_size"
+                        android:paddingLeft="@dimen/question.answer_button.text.padding"
+                        android:paddingRight="@dimen/question.answer_button.text.padding"></Button>
+
+                </io.codetail.widget.RevealFrameLayout>
+
+            </LinearLayout>
+
+        </io.codetail.widget.RevealFrameLayout>
+
+    </LinearLayout>
+
+</io.codetail.widget.RevealFrameLayout>

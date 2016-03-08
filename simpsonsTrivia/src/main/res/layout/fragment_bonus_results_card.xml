@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<io.codetail.widget.RevealFrameLayout
+    android:id="@+id/InstructionsContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    android:background="@color/trivia.background.bonus"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/bonus_round_instructions_card"
+        android:id="@+id/BonusRoundInstructionsLayout"
+        android:visibility="visible"
+        android:focusable="true"
+        android:elevation="@dimen/question.question_card.elevation">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/question.bonus_round_text.margin.top"
+            android:layout_marginBottom="@dimen/question.bonus_round_text.margin.bottom">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trivia.bonus.title"
+                android:id="@+id/BonusRoundTitleText"
+                android:gravity="center"
+                android:textColor="@color/trivia.bonus_instructions.text"
+                android:textAllCaps="true"
+                android:textSize="@dimen/question.bonus_round_text.text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/question.bonus_round_instruction_text.height"
+                android:text="@string/trivia.bonus.instructions"
+                android:id="@+id/bonus_round_instructions"
+                android:textColor="@color/trivia.bonus_instructions.text"
+                android:textSize="@dimen/question.bonus_round_instruction_text.text_size"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/question.bonus_round_instruction_text.margin.left"
+                android:layout_marginRight="@dimen/question.bonus_round_instruction_text.margin.right" />
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/go"
+            android:layout_width="@dimen/question.bonus_round.button.size"
+            android:layout_height="@dimen/question.bonus_round.button.size"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/trivia.bonus_instructions.go"
+            android:src="@drawable/ic_arrow_fab_right"
+            android:layout_marginTop="@dimen/question.bonus_round.button.margin.top"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            android:stateListAnimator="@anim/button_elevation"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/question.bonus_round.go_text.margin.top">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trivia.bonus.go"
+                android:id="@+id/Go_Text"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/trivia.bonus_instructions.text"
+                android:textSize="@dimen/question.bonus_round.go_text.text_size" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</io.codetail.widget.RevealFrameLayout>
