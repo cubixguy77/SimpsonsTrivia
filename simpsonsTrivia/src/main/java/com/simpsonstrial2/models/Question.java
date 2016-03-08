@@ -1,20 +1,25 @@
 package com.simpsonstrial2.models;
 
+import android.os.Bundle;
+
 import com.simpsonstrial2.interfaces.AnswerVisibilityChangeListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-public class Question
+public class Question implements Serializable
 {
     private String questionText;
     private ArrayList<Answer> answers;
+    private String correct;
+    private static final long serialVersionUID = 4654897646L;
 
     public Question(String questionText, String a1, String a2, String a3, String a4, String correct)
     {
         this.questionText = questionText;
-
+        this.correct = correct;
         answers = new ArrayList<>();
         answers.add(0, new Answer(a1, correct.equals("A")));
         answers.add(1, new Answer(a2, correct.equals("B")));
@@ -22,7 +27,31 @@ public class Question
         answers.add(3, new Answer(a4, correct.equals("D")));
         this.shuffleAnswers();
     }
-    
+
+    public Question(Bundle bundle)
+    {
+        this.questionText = bundle.getString("questionText");
+        String correct = bundle.getString("correct");
+        this.answers = new ArrayList<>();
+        answers.add(0, new Answer(bundle.getString("a1"), correct.equals("A")));
+        answers.add(1, new Answer(bundle.getString("a2"), correct.equals("B")));
+        answers.add(2, new Answer(bundle.getString("a3"), correct.equals("C")));
+        answers.add(3, new Answer(bundle.getString("a4"), correct.equals("D")));
+        this.shuffleAnswers();
+    }
+
+    public Bundle getBundle()
+    {
+        Bundle bundle = new Bundle();
+        bundle.putString("questionText", this.questionText);
+        bundle.putString("a1", getAnswerText(0));
+        bundle.putString("a2", getAnswerText(1));
+        bundle.putString("a3", getAnswerText(2));
+        bundle.putString("a4", getAnswerText(3));
+        bundle.putString("correct", this.correct);
+        return bundle;
+    }
+
     public String getQuestionText()
     {
         return this.questionText;

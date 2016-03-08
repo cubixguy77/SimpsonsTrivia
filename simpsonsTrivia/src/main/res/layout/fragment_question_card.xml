@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<io.codetail.widget.RevealFrameLayout android:id="@+id/QuestionContainer"
+
+<LinearLayout android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/question.question_card.margin"
+    android:background="@drawable/rounded_corners_question_card"
+    android:id="@+id/QuestionCard"
     android:visibility="visible"
+    android:elevation="@dimen/question.question_card.elevation"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/question.question_card.margin"
-        android:background="@drawable/rounded_corners_question_card"
-        android:id="@+id/QuestionCard"
-        android:visibility="visible"
-        android:elevation="@dimen/question.question_card.elevation">
 
         <io.codetail.widget.RevealFrameLayout
             android:layout_width="fill_parent"
@@ -159,6 +154,4 @@
 
         </io.codetail.widget.RevealFrameLayout>
 
-    </LinearLayout>
-
-</io.codetail.widget.RevealFrameLayout>
+</LinearLayout>

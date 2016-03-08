@@ -40,6 +40,19 @@
 
     </FrameLayout>
 
+
+
+    <io.codetail.widget.RevealFrameLayout
+        android:id="@+id/CardContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+    </io.codetail.widget.RevealFrameLayout>
+
+
+
+
     <io.codetail.widget.RevealFrameLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -333,4 +346,4 @@
 
 </LinearLayout>
 
-    </io.codetail.widget.RevealFrameLayout>
+</io.codetail.widget.RevealFrameLayout>
