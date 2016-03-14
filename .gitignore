@@ -18,3 +18,7 @@ settings.gradle
 simpsonsTrivia/build.gradle
 simpsonsTrivia/simpsonsTrivia-debug.apk
 simpsonsTrivia/simpsonsTrivia.iml
+simpsonsTrivia/.gitignore
+simpsonsTrivia/gen/com/simpsonstrial2/BuildConfig.java
+simpsonsTrivia/gen/com/simpsonstrial2/Manifest.java
+simpsonsTrivia/gen/com/simpsonstrial2/R.java
