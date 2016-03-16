@@ -1,6 +1,7 @@
 package com.simpsonstrial2.models;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 
 public class HighScoreItem implements Serializable
 {
@@ -23,7 +24,8 @@ public class HighScoreItem implements Serializable
     public void setRank (String newRank) { this.rank = newRank; }
 
     public String getScore() {
-        return score;
+        DecimalFormat formatter = new DecimalFormat("#,###");
+        return formatter.format(Integer.parseInt(score));
     }
     public int getIntScore() { return Integer.parseInt(score); }
 

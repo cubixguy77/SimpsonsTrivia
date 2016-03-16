@@ -66,9 +66,21 @@
 
 
 
+
     <!-- Leaderboard -->
     <dimen name="leaderboard.no_wifi.image.width">81dp</dimen>
     <dimen name="leaderboard.no_wifi.image.height">60dp</dimen>
+
+    <dimen name="leaderboard.list.row.height">54dp</dimen>
+    <dimen name="leaderboard.list.row.height.large">64dp</dimen>
+    <dimen name="leaderboard.list.row.text.size">16sp</dimen>
+
+    <dimen name="leaderboard.list.rank.margin.left">20dp</dimen>
+    <dimen name="leaderboard.list.rank.width">56dp</dimen>
+
+    <dimen name="leaderboard.list.name.width">144dp</dimen>
+
+    <dimen name="leaderboard.list.score.margin.left">28dp</dimen>
 
 
 </resources>

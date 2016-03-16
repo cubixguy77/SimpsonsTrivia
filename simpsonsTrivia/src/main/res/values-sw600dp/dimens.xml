@@ -60,6 +60,7 @@
     <dimen name="question.bonus_round.go_text.margin.top">30dp</dimen>
 
 
+
     <!-- Results -->
 
 
@@ -67,6 +68,18 @@
     <!-- Leaderboard -->
     <dimen name="leaderboard.no_wifi.image.width">135dp</dimen>
     <dimen name="leaderboard.no_wifi.image.height">100dp</dimen>
+
+    <dimen name="leaderboard.list.row.height">104dp</dimen>
+    <dimen name="leaderboard.list.row.height.large">120dp</dimen>
+    <dimen name="leaderboard.list.row.text.size">30sp</dimen>
+
+    <dimen name="leaderboard.list.rank.margin.left">40dp</dimen>
+    <dimen name="leaderboard.list.rank.width">104dp</dimen>
+
+    <dimen name="leaderboard.list.name.width">264dp</dimen>
+
+    <dimen name="leaderboard.list.score.margin.left">56dp</dimen>
+
 
 
 </resources>

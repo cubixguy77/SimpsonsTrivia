@@ -3,31 +3,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/leaderboard.list.row.height"
     android:background="@color/leaderboard.row.background.standard"
     android:id="@+id/list_item_layout">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/leaderboard.list.rank.width"
+        android:layout_height="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/rank"
         android:text="1"
-        android:padding="25dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/leaderboard.list.rank.margin.left"
+        android:textSize="@dimen/leaderboard.list.row.text.size" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/leaderboard.list.name.width"
+        android:layout_height="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="17000"
-        android:id="@+id/score"
-        android:padding="25dp" />
+        android:text="Cool guy"
+        android:id="@+id/name"
+        android:gravity="center_vertical|left"
+        android:textSize="@dimen/leaderboard.list.row.text.size" />
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Cool Guy"
-        android:id="@+id/name" />
+        android:text="17000"
+        android:id="@+id/score"
+        android:paddingLeft="@dimen/leaderboard.list.score.margin.left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/leaderboard.list.row.text.size" />
 </LinearLayout>

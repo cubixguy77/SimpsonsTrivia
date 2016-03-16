@@ -70,5 +70,16 @@
     <dimen name="leaderboard.no_wifi.image.width">81dp</dimen>
     <dimen name="leaderboard.no_wifi.image.height">60dp</dimen>
 
+    <dimen name="leaderboard.list.row.height">64dp</dimen>
+    <dimen name="leaderboard.list.row.height.large">72dp</dimen>
+    <dimen name="leaderboard.list.row.text.size">20sp</dimen>
+
+    <dimen name="leaderboard.list.rank.margin.left">24dp</dimen>
+    <dimen name="leaderboard.list.rank.width">64dp</dimen>
+
+    <dimen name="leaderboard.list.name.width">160dp</dimen>
+
+    <dimen name="leaderboard.list.score.margin.left">32dp</dimen>
+
 
 </resources>

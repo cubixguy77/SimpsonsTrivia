@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView.LayoutParams;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -37,7 +38,7 @@ public class HighScoreListAdapter extends ArrayAdapter<HighScoreItem>
         {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(R.layout.high_score_list_item, null);
+            v = vi.inflate(R.layout.high_score_list_item, parent, false);
         }
 
         HighScoreItem p = getItem(position);
@@ -61,13 +62,17 @@ public class HighScoreListAdapter extends ArrayAdapter<HighScoreItem>
             }
 
             LinearLayout layout = (LinearLayout) v.findViewById(R.id.list_item_layout);
+            final ViewGroup.LayoutParams params = layout.getLayoutParams();
+
             if (p.getName().equals(User.getInstance().getUserName()))
             {
                 layout.setBackgroundColor(MyApplication.getAppContext().getResources().getColor(R.color.leaderboard_row_background_selected));
+                layout.setLayoutParams(new android.widget.AbsListView.LayoutParams(android.widget.AbsListView.LayoutParams.MATCH_PARENT, MyApplication.getAppContext().getResources().getDimensionPixelSize(R.dimen.leaderboard_list_row_height_large)));
             }
             else
             {
                 layout.setBackgroundColor(MyApplication.getAppContext().getResources().getColor(R.color.leaderboard_row_background_standard));
+                layout.setLayoutParams(new android.widget.AbsListView.LayoutParams(android.widget.AbsListView.LayoutParams.MATCH_PARENT, MyApplication.getAppContext().getResources().getDimensionPixelSize(R.dimen.leaderboard_list_row_height)));
             }
         }
 
