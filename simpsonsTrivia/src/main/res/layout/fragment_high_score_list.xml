@@ -33,6 +33,8 @@
         android:layout_alignParentTop="false"
         android:layout_below="@+id/gameModePicker"
         tools:listitem="@layout/high_score_list_item"
+        android:divider="@null"
+        android:dividerHeight="0dp"
         android:visibility="visible"/>
 
     <ImageView
