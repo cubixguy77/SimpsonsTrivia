@@ -5,14 +5,17 @@ import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -38,11 +41,8 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 {
     private int finalScore;
 
-    private ScoreDataModel scoreModel;
-    private GameMode gameMode;
-
     private ProgressDialog progress;
-    private ImageView highScoreImage;
+    private LinearLayout rootLayout;
 
     public static ResultsTab newInstance(Bundle scoreModelBundle) {
         ResultsTab myFragment = new ResultsTab();
@@ -62,7 +62,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         PieChart finalChart = (PieChart) view.findViewById(R.id.finalScoreChart);
         PieChart rawChart = (PieChart) view.findViewById(R.id.rawChart);
         PieChart bonusChart = (PieChart) view.findViewById(R.id.bonusChart);
-        highScoreImage = (ImageView) view.findViewById(R.id.HighScoreText);
+        rootLayout = (LinearLayout) view.findViewById(R.id.root_final_score_layout);
 
         progress = new ProgressDialog(getActivity());
         progress.setMessage("Downloading High Scores");
@@ -73,8 +73,8 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         setChartStyles(rawChart, false, "Raw Score");
         setChartStyles(bonusChart, false, "Bonus");
 
-        this.scoreModel = new ScoreDataModel(getArguments().getBundle("ScoreModelBundle"));
-        this.gameMode = GameMode.getGameMode();
+        ScoreDataModel scoreModel = new ScoreDataModel(getArguments().getBundle("ScoreModelBundle"));
+        GameMode gameMode = GameMode.getGameMode();
         this.finalScore = scoreModel.getFinalScore();
 
         submitScore();
@@ -84,7 +84,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         if (gameMode.getGamePlayType() == GamePlayType.SPEED)
             setData(bonusChart, scoreModel.getBonusScore(), scoreModel.getSpeedBonusDeficit(), scoreModel.getBonusScore());
         else
-            setData(bonusChart,scoreModel.getNumBonusCorrect(), scoreModel.getNumBonusIncorrect(), scoreModel.getBonusScore());
+            setData(bonusChart, scoreModel.getNumBonusCorrect(), scoreModel.getNumBonusIncorrect(), scoreModel.getBonusScore());
 
         animateChart(finalChart);
         animateChart(rawChart);
@@ -180,8 +180,14 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
     private void onShowHighScore()
     {
-        highScoreImage.setVisibility(View.VISIBLE);
+        Snackbar snackbar = Snackbar.make(rootLayout, "NEW HIGH SCORE!", Snackbar.LENGTH_LONG);
 
+        View sbView = snackbar.getView();
+        TextView text = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        text.setTextColor(getResources().getColor(R.color.results_tab_snack_text));
+        text.setGravity(Gravity.CENTER_HORIZONTAL);
+        sbView.setBackgroundColor(getResources().getColor(R.color.results_tab_snack_background));
+        snackbar.show();
     }
 
     private void showUserNameDialog()

@@ -3,10 +3,12 @@ package com.simpsonstrial2.fragments;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -223,7 +225,15 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
     private void onShowHighScore()
     {
-        Toast.makeText(MyApplication.getAppContext(), "High score!", Toast.LENGTH_LONG).show();
+        Snackbar snackbar = Snackbar.make(listContainer, "NEW HIGH SCORE!", Snackbar.LENGTH_LONG);
+
+        View sbView = snackbar.getView();
+        TextView text = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        text.setTextColor(getResources().getColor(R.color.results_tab_snack_text));
+        text.setGravity(Gravity.CENTER_HORIZONTAL);
+        sbView.setBackgroundColor(getResources().getColor(R.color.results_tab_snack_background));
+        snackbar.show();
+
         refreshList();
     }
 

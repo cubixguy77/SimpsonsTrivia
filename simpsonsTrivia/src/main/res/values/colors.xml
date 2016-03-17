@@ -35,6 +35,8 @@
     <color name="results.chart.other">@color/white</color>
     <color name="results.tab.standard">@color/white</color>
     <color name="results.tab.selected">@color/yellow_primary</color>
+    <color name="results.tab.snack.background">@color/orange_primary</color>
+    <color name="results.tab.snack.text">@color/white</color>
 
     <color name="leaderboard.row.background.standard">@color/blue_tertiary</color>
     <color name="leaderboard.row.background.selected">@color/blue_quaternary</color>
