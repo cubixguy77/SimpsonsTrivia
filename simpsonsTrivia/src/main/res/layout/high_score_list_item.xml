@@ -22,10 +22,12 @@
         android:layout_width="@dimen/leaderboard.list.name.width"
         android:layout_height="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Cool guy"
+        android:text="Stephen Testions Longest Name"
         android:id="@+id/name"
         android:gravity="center_vertical|left"
-        android:textSize="@dimen/leaderboard.list.row.text.size" />
+        android:textSize="@dimen/leaderboard.list.row.text.size"
+        android:singleLine="true"
+        android:ellipsize="end" />
 
     <TextView
         android:layout_width="fill_parent"
