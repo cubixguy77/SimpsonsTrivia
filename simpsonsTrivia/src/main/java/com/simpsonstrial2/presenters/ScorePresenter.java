@@ -23,7 +23,6 @@ public class ScorePresenter implements ScoreModelListener {
     private TextView scoreText;
     private ImageView multiplier;
     private TextView multiplierText;
-    private TextView bonusResultNumCorrectText;
 
     CustomAnimationDrawable multStartup;
     CustomAnimationDrawable multOneToTwo;
@@ -63,8 +62,6 @@ public class ScorePresenter implements ScoreModelListener {
             multiplier.setVisibility(View.GONE);
             multiplierText.setVisibility(View.GONE);
         }
-        bonusResultNumCorrectText = (TextView) mainActivity.findViewById(R.id.BonusResultNumCorrectText);
-
 
         if (speedBonusEnabled)
             return;
@@ -329,6 +326,7 @@ public class ScorePresenter implements ScoreModelListener {
 
         ObjectAnimator pointsEarnedAnim = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_points_earned);
         pointsEarnedAnim.setTarget(scoreText);
+        pointsEarnedAnim.setStartDelay(1000L);
         pointsEarnedAnim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -372,12 +370,6 @@ public class ScorePresenter implements ScoreModelListener {
         scoreText.setVisibility(View.VISIBLE);
         scoreText.setText("+" + numPointsEarned);
         scoreText.setTextColor(Color.GREEN);
-    }
-
-    public void onBonusNumCorrectShow(int numCorrect)
-    {
-        String message = MyApplication.getAppContext().getResources().getString(R.string.trivia_bonus_result).replace("{NUM_CORRECT}", Integer.toString(numCorrect));
-        bonusResultNumCorrectText.setText(message);
     }
 
     public void presentCurrentScore() {
@@ -460,9 +452,6 @@ public class ScorePresenter implements ScoreModelListener {
     }
     private void startMultiplierAnimation(CustomAnimationDrawable anim)
     {
-        Log.d("start mult", oldMultiplier + " " + newMultiplier);
-        Log.d("mult in prog", isMultAnimInProgress() + " in prog");
-
         if(isMultAnimInProgress())
         {
             anim.stop();

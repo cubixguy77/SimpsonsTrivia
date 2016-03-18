@@ -92,10 +92,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private FloatingActionButton goButton;
     private TextView goText;
 
-    /* Bonus Round Results Card */
-    private RevealFrameLayout bonusRoundResultsContainer;
-    private FrameLayout bonusRoundResultsCard;
-
     public QuestionPresenter(Activity mainActivity, AnswerResultListener answerResultListener, GameStateListener gameStateListener, TimerListener timerListener, ScorePresenter scorePresenter) {
         this.answerResultListener = answerResultListener;
         this.gameStateListener = gameStateListener;
@@ -175,10 +171,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             @Override
             public void onClick(View v) { gameStateListener.onBonusRoundInstructionsHide(); }
         });
-
-        /* Bonus Round Results Card */
-        bonusRoundResultsContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.BonusResultsContainer);
-        bonusRoundResultsCard = (FrameLayout) mainActivity.findViewById(R.id.BonusRoundResultsCard);
     }
 
     public Animator getReplaceQuestionWithQuestionAnim() {
@@ -520,9 +512,16 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     private void next()
     {
-        if (timeExpired) {
-            presentBonusRoundResultsCard();
-        } else if (nextQuestionReady && nextQuestion != null) {
+        if (timeExpired)
+        {
+            onBonusRoundResultsHide(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    gameStateListener.onBonusRoundHidden();
+                }
+            });
+        }
+        if (nextQuestionReady && nextQuestion != null) {
             presentQuestion(nextQuestion, bonusRound);
         } else if (bonusRoundTriggered) {
             onBonusRoundInstructionsLaunch();
@@ -531,6 +530,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     public void presentQuestionTeardown(int delay, final SupportAnimator.SimpleAnimatorListener listener)
     {
+        answerResponseAnimationsInProgress = true;
         disableAnswerButtons();
         presentAnswerButtonCollapseAnimation(delay, new SupportAnimator.SimpleAnimatorListener() {
             @Override
@@ -795,11 +795,12 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         AnswerContainer.setVisibility(View.INVISIBLE);
         int centerX = (int) AnswerContainer.getX() + (AnswerContainer.getWidth() / 2);
         int centerY = (int) AnswerContainer.getY() + AnswerContainer.getHeight() / 2;
-        if (isViewAttached(view))
+        if (view != null && isViewAttached(view))
         {
             SupportAnimator collapseResponseAnimator = ViewAnimationUtils.createCircularReveal(view, centerX, centerY, 0, questionText.getWidth()).reverse();
             collapseResponseAnimator.setDuration(300);
-            collapseResponseAnimator.addListener(listener);
+            if (listener != null)
+                collapseResponseAnimator.addListener(listener);
             collapseResponseAnimator.start();
         }
     }
@@ -868,57 +869,40 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         if (answerResponseAnimationsInProgress)
             timeExpired = true;
         else
-            presentQuestionTeardown(3000, new SupportAnimator.SimpleAnimatorListener() {
-                @Override
-                public void onAnimationEnd() {
-                    questionText.setVisibility(View.INVISIBLE);
-                    presentBonusRoundResultsCard();
-                }
-            });
+            hideBonusRoundResults();
     }
 
-
-
-    private void presentBonusRoundResultsCard()
+    public void hideBonusRoundResults()
     {
-        timeExpired = false;
-
-        Animator anim = getCardSlideOutLeft(QuestionCard, new AnimatorListenerAdapter() {
+        presentQuestionTeardown(2000, new SupportAnimator.SimpleAnimatorListener() {
             @Override
-            public void onAnimationEnd(Animator animation) {
-                bonusRoundResultsCard.setX(MyApplication.screenWidth);
-                QuestionContainerContainer.setVisibility(View.GONE);
-                bonusRoundResultsContainer.setVisibility(View.VISIBLE);
-                bonusRoundResultsCard.setVisibility(View.VISIBLE);
-                bonusRoundResultsSlideInRight();
+            public void onAnimationEnd() {
+                answerResponseAnimationsInProgress = false;
+                questionText.setVisibility(View.INVISIBLE);
+                timeExpired = false;
+                onBonusRoundResultsHide(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        gameStateListener.onBonusRoundHidden();
+                    }
+                });
             }
         });
-        anim.setStartDelay(1000);
-        anim.start();
     }
 
-    private void bonusRoundResultsSlideInRight() {
-        Animator anim = getCardSlideInRight(bonusRoundResultsCard, new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                gameStateListener.onBonusRoundResultsVisible();
-            }});
-
-        anim.start();
-    }
 
     public void onBonusRoundResultsHide(final AnimatorListenerAdapter listener)
     {
-        Animator anim = getCardSlideOutLeft(bonusRoundResultsCard, null);
-        anim.setStartDelay(6000);
+        timeExpired = false;
+        answerResponseAnimationsInProgress = false;
+        Animator anim = getCardSlideOutLeft(QuestionCard, null);
+        anim.setStartDelay(1000);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                bonusRoundResultsContainer.setVisibility(View.GONE);
                 QuestionCard.setX(MyApplication.screenWidth);
                 QuestionCard.setVisibility(View.INVISIBLE);
-                QuestionContainerContainer.setVisibility(View.VISIBLE);
 
                 Animator hideBonusLabelAnim = getToolbarHideAnimator(questionNumberText, 500, new AnimatorListenerAdapter() {
                     @Override

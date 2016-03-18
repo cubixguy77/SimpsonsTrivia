@@ -70,11 +70,6 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         {
             questionPresenter.stopAnimations();
         }
-
-        if (bonusTimerExpired)
-        {
-            onBonusRoundTimeExpired();
-        }
     }
 
     @Override
@@ -221,27 +216,9 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         questionHandler.GetNextBonusQuestion();
     }
 
-    public void onBonusRoundResultsShow()
-    {
-        scoreModel.onBonusRoundResultsShow();
+    public void onBonusRoundResultsShow() {
         questionPresenter.onShowBonusRoundResults();
-    }
-
-    public void onBonusRoundResultsVisible()
-    {
-        bonusTimerExpired = false;
         scorePresenter.onShowBonusRoundResults(scoreModel.getCurrentBonusScore(), scoreModel.getCurrentGameScore());
-        onBonusRoundResultsHide();
-    }
-
-    public void onBonusRoundResultsHide()
-    {
-        questionPresenter.onBonusRoundResultsHide(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                onBonusRoundHidden();
-            }
-        });
     }
 
     public void onBonusRoundHidden()
@@ -251,6 +228,7 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         scorePresenter.presentCurrentScore();
         scorePresenter.startupMultiplier();
         bonusRoundTimer.reset();
+        bonusTimerExpired = false;
         onBonusRoundFinished();
     }
 
@@ -400,14 +378,8 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         scorePresenter.presentCorrectScoreBonusAnimations(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                if (bonusRoundTimer.isTimeExpired())
-                {
-                    bonusRoundTimer.reset();
-                }
-                else
-                {
+                if (bonusRoundTimer.isTimeExpired() == false)
                     onBonusRoundNewQuestion();
-                }
             }
         });
     }
@@ -419,7 +391,13 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         scoreModel.onWrongBonusAnswer();
         bonusRoundTimer.onWrongBonusAnswer();
 
-        onBonusRoundNewQuestion();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                if (bonusRoundTimer.isTimeExpired() == false)
+                    onBonusRoundNewQuestion();
+            }
+        }, 2000);
     }
     /* End AnswerResultListener */
 

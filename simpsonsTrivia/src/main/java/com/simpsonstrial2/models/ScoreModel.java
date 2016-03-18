@@ -137,10 +137,6 @@ public class ScoreModel
         currentBonusNumCorrect = 0;
     }
 
-    public void onBonusRoundResultsShow() {
-        scoreModelListener.onBonusNumCorrectShow(currentBonusNumCorrect);
-    }
-
     public void onBonusRoundHidden() {
         setMultiplier(1);
     }

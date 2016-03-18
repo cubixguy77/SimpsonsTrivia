@@ -294,43 +294,6 @@
 
     </io.codetail.widget.RevealFrameLayout>
 
-    <io.codetail.widget.RevealFrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:visibility="gone"
-        android:background="@color/trivia.background.bonus"
-        android:id="@+id/BonusResultsContainer">
-
-        <FrameLayout
-            android:id="@+id/BonusRoundResultsCard"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/question.question_card.margin"
-            android:background="@drawable/rounded_corners_question_card"
-            android:visibility="visible"
-            android:elevation="@dimen/question.question_card.elevation">
-
-            <io.codetail.widget.RevealFrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginBottom="40dp">
-
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/trivia.bonus.result"
-                    android:id="@+id/BonusResultNumCorrectText"
-                    android:gravity="center"
-                    android:textColor="@color/trivia.bonus_results.text"
-                    android:textSize="22sp" />
-
-            </io.codetail.widget.RevealFrameLayout>
-
-        </FrameLayout>
-
-    </io.codetail.widget.RevealFrameLayout>
-
 </LinearLayout>
 
     </io.codetail.widget.RevealFrameLayout>
