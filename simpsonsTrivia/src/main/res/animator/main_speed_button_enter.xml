@@ -2,6 +2,6 @@
     <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
         android:propertyName="y"
         android:valueType="floatType"
-        android:duration="400"
-        android:startOffset="400"
-        android:interpolator="@android:anim/decelerate_interpolator"/>
+        android:duration="300"
+        android:startOffset="200"
+        android:interpolator="@android:anim/overshoot_interpolator"/>

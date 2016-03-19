@@ -7,6 +7,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -235,55 +236,60 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 				@Override
 				public void onAnimationStart(Animator animation) {
 					titleText.setVisibility(View.VISIBLE);
+
+					Handler handler = new Handler();
+					handler.postDelayed(new Runnable() {
+						public void run() {
+							titleSubText.setVisibility(View.VISIBLE);
+							int centerX = (int) titleSubText.getX() + titleSubText.getWidth() / 2;
+							int centerY = (int) titleSubText.getY() + titleSubText.getHeight() / 2;
+							SupportAnimator revealSubText = ViewAnimationUtils.createCircularReveal(titleSubText, centerX, centerY, 0, titleSubText.getWidth());
+							revealSubText.setInterpolator(new AccelerateDecelerateInterpolator());
+							revealSubText.setDuration(1100);
+							revealSubText.addListener(new SupportAnimator.AnimatorListener() {
+								@Override
+								public void onAnimationStart() {}
+								@Override
+								public void onAnimationEnd() {
+
+									int screenHeight = MyApplication.screenHeight;
+
+									ObjectAnimator classic = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_classic_button_enter);
+									classic.setTarget(ClassicLayout);
+									classic.setFloatValues(screenHeight - ClassicLayout.getY(), ClassicLayout.getY());
+									classic.addListener(new AnimatorListenerAdapter() {
+										@Override
+										public void onAnimationStart(Animator animation) {
+											ClassicLayout.setVisibility(View.VISIBLE);
+										}
+									});
+
+									ObjectAnimator speed = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_speed_button_enter);
+									speed.setTarget(SpeedLayout);
+									speed.setFloatValues(screenHeight - SpeedLayout.getY(), SpeedLayout.getY());
+									speed.addListener(new AnimatorListenerAdapter() {
+										@Override
+										public void onAnimationStart(Animator animation) {
+											SpeedLayout.setVisibility(View.VISIBLE);
+										}
+									});
+
+									AnimatorSet set = new AnimatorSet();
+									set.playTogether(classic, speed);
+									set.start();
+								}
+								@Override
+								public void onAnimationCancel() {}
+								@Override
+								public void onAnimationRepeat() {}
+							});
+							revealSubText.start();
+						}
+					}, 200);
 				}
 
 				@Override
-				public void onAnimationEnd(Animator animation) {
-					titleSubText.setVisibility(View.VISIBLE);
-					int centerX = (int) titleSubText.getX() + titleSubText.getWidth() / 2;
-					int centerY = (int) titleSubText.getY() + titleSubText.getHeight() / 2;
-					SupportAnimator revealSubText = ViewAnimationUtils.createCircularReveal(titleSubText, centerX, centerY, 0, titleSubText.getWidth());
-					revealSubText.setInterpolator(new AccelerateDecelerateInterpolator());
-					revealSubText.setDuration(500);
-					revealSubText.addListener(new SupportAnimator.AnimatorListener() {
-						@Override
-						public void onAnimationStart() {}
-						@Override
-						public void onAnimationEnd() {
-
-							int screenHeight = MyApplication.screenHeight;
-
-							ObjectAnimator classic = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_classic_button_enter);
-							classic.setTarget(ClassicLayout);
-							classic.setFloatValues(screenHeight - ClassicLayout.getY(), ClassicLayout.getY());
-							classic.addListener(new AnimatorListenerAdapter() {
-								@Override
-								public void onAnimationStart(Animator animation) {
-									ClassicLayout.setVisibility(View.VISIBLE);
-								}
-							});
-
-							ObjectAnimator speed = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_speed_button_enter);
-							speed.setTarget(SpeedLayout);
-							speed.setFloatValues(screenHeight - SpeedLayout.getY(), SpeedLayout.getY());
-							speed.addListener(new AnimatorListenerAdapter() {
-								@Override
-								public void onAnimationStart(Animator animation) {
-									SpeedLayout.setVisibility(View.VISIBLE);
-								}
-							});
-
-							AnimatorSet set = new AnimatorSet();
-							set.playTogether(classic, speed);
-							set.start();
-						}
-						@Override
-						public void onAnimationCancel() {}
-						@Override
-						public void onAnimationRepeat() {}
-					});
-					revealSubText.start();
-				}
+				public void onAnimationEnd(Animator animation) {}
 			});
 			anim.start();
 			introAnimationsPlayed = true;
