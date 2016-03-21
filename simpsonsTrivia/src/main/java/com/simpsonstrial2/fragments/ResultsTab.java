@@ -1,9 +1,12 @@
 package com.simpsonstrial2.fragments;
 
-import android.app.ProgressDialog;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.DialogInterface;
-import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -13,8 +16,12 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,12 +44,19 @@ import com.simpsonstrial2.utils.HighScoreUtils;
 
 import java.util.ArrayList;
 
+
 public class ResultsTab extends Fragment implements HighScoreSubmitListener
 {
-    private int finalScore;
-
-    private ProgressDialog progress;
+    private int finalScoreValue;
     private LinearLayout rootLayout;
+
+    private final int animGraphDuration = 800;
+    private final int animStartDelay = 600;
+    private final int animRawCircleOffset = 400;
+    private final int animBonusCircleOffset = animRawCircleOffset + 100;
+
+    private final int animTextRevealDuration = 400;
+    private final int animTextRevealStartDelay = animStartDelay + animBonusCircleOffset + animGraphDuration + 300;
 
     public static ResultsTab newInstance(Bundle scoreModelBundle) {
         ResultsTab myFragment = new ResultsTab();
@@ -57,35 +71,27 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
     @Override
     public View onCreateView(LayoutInflater inflater,@Nullable ViewGroup container,@Nullable Bundle savedInstanceState)
     {
-        View view = inflater.inflate(R.layout.fragment_tab_results_alt, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab_results, container, false);
 
-        PieChart finalChart = (PieChart) view.findViewById(R.id.finalScoreChart);
-        PieChart rawChart = (PieChart) view.findViewById(R.id.rawChart);
-        PieChart bonusChart = (PieChart) view.findViewById(R.id.bonusChart);
+        final PieChart finalChart = (PieChart) view.findViewById(R.id.finalScoreChart);
+        final PieChart rawChart = (PieChart) view.findViewById(R.id.rawChart);
+        final PieChart bonusChart = (PieChart) view.findViewById(R.id.bonusChart);
         rootLayout = (LinearLayout) view.findViewById(R.id.root_final_score_layout);
 
-        TextView finalScore = (TextView) view.findViewById(R.id.finalScore);
-        TextView rawScore = (TextView) view.findViewById(R.id.rawScore);
-        TextView bonusScore = (TextView) view.findViewById(R.id.bonusScore);
+        final RelativeLayout finalCircle = (RelativeLayout) view.findViewById(R.id.FinalChartContainer);
+        final FrameLayout rawCircle = (FrameLayout) view.findViewById(R.id.RawScoreChartContainer);
+        final FrameLayout bonusCircle = (FrameLayout) view.findViewById(R.id.BonusScoreChartContainer);
 
+        final TextView finalScore = (TextView) view.findViewById(R.id.finalScore);
+        final TextView rawScore = (TextView) view.findViewById(R.id.rawScore);
+        final TextView bonusScore = (TextView) view.findViewById(R.id.bonusScore);
 
+        final TextView finalScoreText = (TextView) view.findViewById(R.id.finalScoreText);
+        final TextView rawScoreText = (TextView) view.findViewById(R.id.rawScoreText);
+        final TextView bonusScoreText = (TextView) view.findViewById(R.id.bonusScoreText);
 
-        TextView finalScoreText = (TextView) view.findViewById(R.id.finalScoreText);
-        TextView rawScoreText = (TextView) view.findViewById(R.id.rawScoreText);
-        TextView bonusScoreText = (TextView) view.findViewById(R.id.bonusScoreText);
-
-
-
-        TextView rawScoreNumCorrect = (TextView) view.findViewById(R.id.rawScoreNumCorrect);
-        TextView bonusScoreNumCorrect = (TextView) view.findViewById(R.id.bonusScoreNumCorrect);
-
-
-
-
-        progress = new ProgressDialog(getActivity());
-        progress.setMessage("Downloading High Scores");
-        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progress.setIndeterminate(true);
+        final TextView rawScoreNumCorrect = (TextView) view.findViewById(R.id.rawScoreNumCorrect);
+        final TextView bonusScoreNumCorrect = (TextView) view.findViewById(R.id.bonusScoreNumCorrect);
 
         setChartStyles(finalChart, true, "Final Results");
         setChartStyles(rawChart, false, "Raw Score");
@@ -93,7 +99,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
         ScoreDataModel scoreModel = new ScoreDataModel(getArguments().getBundle("ScoreModelBundle"));
         GameMode gameMode = GameMode.getGameMode();
-        this.finalScore = scoreModel.getFinalScore();
+        this.finalScoreValue = scoreModel.getFinalScore();
 
         submitScore();
 
@@ -108,44 +114,103 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         rawScore.setText(Integer.toString(scoreModel.getStandardScore()));
         bonusScore.setText(Integer.toString(scoreModel.getBonusScore()));
 
-        rawScoreNumCorrect.setText(scoreModel.getStandardScore() + " / " + scoreModel.getTotalAnswers());
+        rawScoreNumCorrect.setText(scoreModel.getNumStandardCorrect() + " / " + scoreModel.getTotalAnswers());
 
         if (gameMode.getGamePlayType() == GamePlayType.SPEED)
-            rawScoreNumCorrect.setText(scoreModel.getBonusScore() + " / " + Integer.toString(scoreModel.getTotalAnswers() * 30));
+            bonusScoreNumCorrect.setText(scoreModel.getBonusScore() + " / " + Integer.toString(scoreModel.getTotalAnswers() * 30));
         else
-            rawScoreNumCorrect.setText(scoreModel.getNumBonusCorrect() + " / " + Integer.toString(scoreModel.getNumBonusCorrect() + scoreModel.getNumBonusIncorrect()));
+            bonusScoreNumCorrect.setText(scoreModel.getNumBonusCorrect() + " / " + Integer.toString(scoreModel.getNumBonusCorrect() + scoreModel.getNumBonusIncorrect()));
 
-        hideText(finalScore);
-        hideText(rawScore);
-        hideText(bonusScore);
 
-        hideText(finalScoreText);
-        hideText(rawScoreText);
-        hideText(bonusScoreText);
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                hideChart(finalChart);
+                hideChart(rawChart);
+                hideChart(bonusChart);
 
-        hideText(rawScoreNumCorrect);
-        hideText(bonusScoreNumCorrect);
+                hideText(finalScore);
+                hideText(rawScore);
+                hideText(bonusScore);
 
-        animateChart(finalChart);
-        animateChart(rawChart);
-        animateChart(bonusChart);
+                hideText(finalScoreText);
+                hideText(rawScoreText);
+                hideText(bonusScoreText);
+
+                hideText(rawScoreNumCorrect);
+                hideText(bonusScoreNumCorrect);
+
+                animateCircle(finalCircle, finalChart, animStartDelay);
+                animateCircle(rawCircle, rawChart, animStartDelay + animRawCircleOffset);
+                animateCircle(bonusCircle, bonusChart, animStartDelay + animBonusCircleOffset);
+
+                AnimatorSet revealLineOne = new AnimatorSet();
+                AnimatorSet revealLineTwo = new AnimatorSet();
+                AnimatorSet revealLineThree = new AnimatorSet();
+
+                revealLineOne.playTogether(getRevealAnimator(finalScore), getRevealAnimator(rawScore), getRevealAnimator(bonusScore));
+                revealLineTwo.playTogether(getRevealAnimator(finalScoreText), getRevealAnimator(rawScoreText), getRevealAnimator(bonusScoreText));
+                revealLineThree.playTogether(getRevealAnimator(rawScoreNumCorrect), getRevealAnimator(bonusScoreNumCorrect));
+
+                AnimatorSet textReveal = new AnimatorSet();
+                textReveal.playSequentially(revealLineOne, revealLineTwo, revealLineThree);
+                textReveal.setStartDelay(animTextRevealStartDelay);
+                textReveal.start();
+            }
+        }, 0);
 
         return view;
     }
 
-
-    private void hideText(TextView view)
+    private ObjectAnimator getRevealAnimator(final View view)
     {
-        System.out.println(view.getY() + " " + view.getHeight());
-        view.setY(view.getY() - view.getHeight());
+        float endY = view.getY();
+        float height = view.getHeight();
+        final float startY = endY - height;
+        ObjectAnimator anim = ObjectAnimator.ofFloat(view, "y", startY, endY);
+        anim.setDuration(animTextRevealDuration);
+
+        anim.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                view.setVisibility(View.VISIBLE);
+            }
+        });
+        return anim;
     }
 
 
+    private void hideChart(PieChart chart) {
+        chart.setVisibility(View.INVISIBLE);
+    }
+
+    private void hideText(TextView view)
+    {
+        view.setVisibility(View.INVISIBLE);
+    }
+
+
+    private void animateCircle(View circle, final PieChart chart, int delay)
+    {
+        final Animation circleReveal = AnimationUtils.loadAnimation(MyApplication.getAppContext(), R.anim.chart_circle_show);
+        circleReveal.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {}
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                chart.setVisibility(View.VISIBLE);
+                animateChart(chart);
+            }
+            @Override
+            public void onAnimationRepeat(Animation animation) {}
+        });
+        circleReveal.setStartOffset(delay);
+        circle.startAnimation(circleReveal);
+    }
 
 
     private void animateChart(PieChart chart)
     {
-        chart.animateY(1500, Easing.EasingOption.EaseInOutQuad);
+        chart.animateY(animGraphDuration, Easing.EasingOption.EaseInOutQuad);
     }
 
     private void setChartStyles(PieChart chart, boolean mainChart, String description) {
@@ -153,16 +218,15 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         chart.setDescription("");
         chart.setDragDecelerationFrictionCoef(0.95f);
 
-        chart.setTransparentCircleColor(getResources().getColor((R.color.results_chart_backing_circle)));
-
         chart.setDrawHoleEnabled(mainChart);
         chart.setHoleColorTransparent(true);
-        chart.setHoleRadius(58f);
-        chart.setTransparentCircleRadius(61f);
-        chart.setTransparentCircleAlpha(0);
+        chart.setTransparentCircleColor(getResources().getColor((R.color.results_chart_backing_circle)));
+        chart.setHoleRadius(64f);
+        chart.setTransparentCircleRadius(16f);
+        chart.setAlpha(1);
 
         chart.setDrawCenterText(false);
-        chart.setRotationAngle(0);
+        chart.setRotationAngle(270f);
         chart.setRotationEnabled(false);
         chart.setDrawSliceText(false);
         chart.setTag(description);
@@ -192,15 +256,17 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         else if (chart.getTag().equals("Raw Score"))
         {
             colors.add(getResources().getColor(R.color.results_chart_standard));
-            colors.add(getResources().getColor(R.color.results_chart_backing_circle));
+            colors.add(getResources().getColor(R.color.blue_sixthly));
         }
         else
         {
             colors.add(getResources().getColor(R.color.results_chart_bonus));
-            colors.add(getResources().getColor(R.color.results_chart_backing_circle));
+            colors.add(getResources().getColor(R.color.blue_sixthly));
         }
 
         dataSet.setColors(colors);
+        dataSet.setSliceSpace(0);
+        dataSet.setSelectionShift(0);
 
         PieData data = new PieData(xVals, dataSet);
         data.setValueFormatter(new PercentFormatter());
@@ -272,23 +338,19 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
             return;
         }
 
-        HighScoreUtils.submitScore(finalScore, this);
+        HighScoreUtils.submitScore(finalScoreValue, this);
     }
 
     private void postHighScore()
     {
-        HighScoreUtils.postScore(finalScore, null);
+        HighScoreUtils.postScore(finalScoreValue, null);
     }
 
     @Override
-    public void onScoreSubmitting() {
-        progress.show();
-    }
+    public void onScoreSubmitting() {}
 
     @Override
     public void onScoreSubmitResults(HighScoreSubmitResult result) {
-        progress.setProgress(100);
-
         if (result == HighScoreSubmitResult.NOT_HIGH_SCORE)
             return;
 

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/results.background"
-    android:weightSum="1"
     android:id="@+id/RootLayout">
 
     <include
@@ -21,17 +20,21 @@
         app:tabIndicatorColor="@color/results.tab.selected"
         app:tabSelectedTextColor="@color/results.tab.selected"
         app:tabTextColor="@color/results.tab.standard"
-        />
+        android:layout_below="@+id/results_tool_bar" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/results_view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/results_tab_layout" />
 
     <include
         android:id="@+id/bottom_bar"
-        layout="@layout/bottom_bar" />
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 
 
-</LinearLayout>
+</RelativeLayout>
