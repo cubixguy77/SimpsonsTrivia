@@ -57,12 +57,30 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
     @Override
     public View onCreateView(LayoutInflater inflater,@Nullable ViewGroup container,@Nullable Bundle savedInstanceState)
     {
-        View view = inflater.inflate(R.layout.fragment_tab_results, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab_results_alt, container, false);
 
         PieChart finalChart = (PieChart) view.findViewById(R.id.finalScoreChart);
         PieChart rawChart = (PieChart) view.findViewById(R.id.rawChart);
         PieChart bonusChart = (PieChart) view.findViewById(R.id.bonusChart);
         rootLayout = (LinearLayout) view.findViewById(R.id.root_final_score_layout);
+
+        TextView finalScore = (TextView) view.findViewById(R.id.finalScore);
+        TextView rawScore = (TextView) view.findViewById(R.id.rawScore);
+        TextView bonusScore = (TextView) view.findViewById(R.id.bonusScore);
+
+
+
+        TextView finalScoreText = (TextView) view.findViewById(R.id.finalScoreText);
+        TextView rawScoreText = (TextView) view.findViewById(R.id.rawScoreText);
+        TextView bonusScoreText = (TextView) view.findViewById(R.id.bonusScoreText);
+
+
+
+        TextView rawScoreNumCorrect = (TextView) view.findViewById(R.id.rawScoreNumCorrect);
+        TextView bonusScoreNumCorrect = (TextView) view.findViewById(R.id.bonusScoreNumCorrect);
+
+
+
 
         progress = new ProgressDialog(getActivity());
         progress.setMessage("Downloading High Scores");
@@ -79,12 +97,34 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
         submitScore();
 
-        setData(finalChart, scoreModel.getStandardScore(), scoreModel.getBonusScore(), scoreModel.getFinalScore());
-        setData(rawChart, scoreModel.getNumStandardCorrect(), scoreModel.getNumStandardIncorrect(), scoreModel.getStandardScore());
+        setData(finalChart, scoreModel.getStandardScore(), scoreModel.getBonusScore());
+        setData(rawChart, scoreModel.getNumStandardCorrect(), scoreModel.getNumStandardIncorrect());
         if (gameMode.getGamePlayType() == GamePlayType.SPEED)
-            setData(bonusChart, scoreModel.getBonusScore(), scoreModel.getSpeedBonusDeficit(), scoreModel.getBonusScore());
+            setData(bonusChart, scoreModel.getBonusScore(), scoreModel.getSpeedBonusDeficit());
         else
-            setData(bonusChart, scoreModel.getNumBonusCorrect(), scoreModel.getNumBonusIncorrect(), scoreModel.getBonusScore());
+            setData(bonusChart, scoreModel.getNumBonusCorrect(), scoreModel.getNumBonusIncorrect());
+
+        finalScore.setText(Integer.toString(scoreModel.getFinalScore()));
+        rawScore.setText(Integer.toString(scoreModel.getStandardScore()));
+        bonusScore.setText(Integer.toString(scoreModel.getBonusScore()));
+
+        rawScoreNumCorrect.setText(scoreModel.getStandardScore() + " / " + scoreModel.getTotalAnswers());
+
+        if (gameMode.getGamePlayType() == GamePlayType.SPEED)
+            rawScoreNumCorrect.setText(scoreModel.getBonusScore() + " / " + Integer.toString(scoreModel.getTotalAnswers() * 30));
+        else
+            rawScoreNumCorrect.setText(scoreModel.getNumBonusCorrect() + " / " + Integer.toString(scoreModel.getNumBonusCorrect() + scoreModel.getNumBonusIncorrect()));
+
+        hideText(finalScore);
+        hideText(rawScore);
+        hideText(bonusScore);
+
+        hideText(finalScoreText);
+        hideText(rawScoreText);
+        hideText(bonusScoreText);
+
+        hideText(rawScoreNumCorrect);
+        hideText(bonusScoreNumCorrect);
 
         animateChart(finalChart);
         animateChart(rawChart);
@@ -94,7 +134,11 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
     }
 
 
-
+    private void hideText(TextView view)
+    {
+        System.out.println(view.getY() + " " + view.getHeight());
+        view.setY(view.getY() - view.getHeight());
+    }
 
 
 
@@ -108,27 +152,24 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         chart.setUsePercentValues(false);
         chart.setDescription("");
         chart.setDragDecelerationFrictionCoef(0.95f);
-        chart.setDrawHoleEnabled(true);
+
+        chart.setTransparentCircleColor(getResources().getColor((R.color.results_chart_backing_circle)));
+
+        chart.setDrawHoleEnabled(mainChart);
         chart.setHoleColorTransparent(true);
-        chart.setTransparentCircleColor(getResources().getColor((R.color.results_background)));
         chart.setHoleRadius(58f);
         chart.setTransparentCircleRadius(61f);
         chart.setTransparentCircleAlpha(0);
-        chart.setCenterTextTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
-        chart.setDrawCenterText(true);
-        chart.setCenterTextColor(getResources().getColor((R.color.colorPrimary)));
-        chart.setCenterTextSize(27);
-        if (!mainChart) chart.setCenterTextSize(20);
-        chart.setCenterTextWordWrapEnabled(false);
+
+        chart.setDrawCenterText(false);
         chart.setRotationAngle(0);
         chart.setRotationEnabled(false);
         chart.setDrawSliceText(false);
-        chart.setCenterText("0");
         chart.setTag(description);
         chart.getLegend().setEnabled(false);
     }
 
-    private void setData(PieChart chart, int numCorrect, int numWrong, int totalPoints) {
+    private void setData(PieChart chart, int numCorrect, int numWrong) {
         ArrayList<Entry> yVals1 = new ArrayList<>();
 
         yVals1.add(new Entry(numCorrect / (float) (numCorrect + numWrong), 0));
@@ -151,12 +192,12 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         else if (chart.getTag().equals("Raw Score"))
         {
             colors.add(getResources().getColor(R.color.results_chart_standard));
-            colors.add(getResources().getColor(R.color.results_chart_other));
+            colors.add(getResources().getColor(R.color.results_chart_backing_circle));
         }
         else
         {
             colors.add(getResources().getColor(R.color.results_chart_bonus));
-            colors.add(getResources().getColor(R.color.results_chart_other));
+            colors.add(getResources().getColor(R.color.results_chart_backing_circle));
         }
 
         dataSet.setColors(colors);
@@ -165,7 +206,6 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         data.setValueFormatter(new PercentFormatter());
         data.setDrawValues(false);
         chart.setData(data);
-        chart.setCenterText(Integer.toString(totalPoints));
         chart.highlightValues(null);
         chart.invalidate();
     }

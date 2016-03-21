@@ -33,6 +33,7 @@
     <color name="results.chart.standard">@color/yellow_primary</color>
     <color name="results.chart.bonus">@color/orange_primary</color>
     <color name="results.chart.other">@color/white</color>
+    <color name="results.chart.backing.circle">@color/blue_fifthly</color>
     <color name="results.tab.standard">@color/white</color>
     <color name="results.tab.selected">@color/yellow_primary</color>
     <color name="results.tab.snack.background">@color/orange_primary</color>
@@ -45,6 +46,7 @@
     <color name="blue_secondary">#4FC3F7</color>
     <color name="blue_tertiary">#E3F2FD</color>
     <color name="blue_quaternary">#BBDEFB</color>
+    <color name="blue_fifthly">#26008EF5</color>
     <color name="yellow_primary">#FFD54F</color>
     <color name="yellow_secondary">#FFF9E1</color>
     <color name="orange_primary">#FF6F00</color>

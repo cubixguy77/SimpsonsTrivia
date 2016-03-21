@@ -78,7 +78,7 @@
                 android:layout_alignParentStart="false"
                 android:layout_above="@+id/strut">
 
-                <View android:id="@+id/strut_classic"
+                <View android:id="@+id/strut"
                     android:layout_width="@dimen/main.buttons.margin.space_between_easy_hard"
                     android:layout_height="wrap_content"
                     android:visibility="invisible"
@@ -96,7 +96,7 @@
                     android:typeface="sans"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="false"
-                    android:layout_toLeftOf="@+id/strut_classic"
+                    android:layout_toLeftOf="@+id/strut"
                     android:textColor="@color/main.buttons.text"
                     android:stateListAnimator="@anim/button_elevation" />
 
@@ -112,7 +112,7 @@
                     android:typeface="sans"
                     android:layout_alignParentLeft="false"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/strut_classic"
+                    android:layout_toRightOf="@+id/strut"
                     android:layout_alignParentRight="true"
                     android:textColor="@color/main.buttons.text"
                     android:stateListAnimator="@anim/button_elevation" />
