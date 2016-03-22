@@ -62,8 +62,24 @@
 
 
     <!-- Results -->
+    <dimen name="results.main.circle.size">224dp</dimen>
+    <dimen name="results.main.chart.size">240dp</dimen>
+    <dimen name="results.main.score.size">30sp</dimen>
+    <dimen name="results.main.final_score_text.size">16sp</dimen>
 
+    <dimen name="results.raw.circle.size">80dp</dimen>
+    <dimen name="results.raw.chart.size">88dp</dimen>
+    <dimen name="results.raw.score.size">26sp</dimen>
+    <dimen name="results.raw.final_score_text.size">14sp</dimen>
+    <dimen name="results.raw.margin">86dp</dimen>
 
+    <dimen name="results.bonus.circle.size">@dimen/results.raw.circle.size</dimen>
+    <dimen name="results.bonus.chart.size">@dimen/results.raw.chart.size</dimen>
+    <dimen name="results.bonus.score.size">@dimen/results.raw.score.size</dimen>
+    <dimen name="results.bonus.final_score_text.size">@dimen/results.raw.final_score_text.size</dimen>
+
+    <dimen name="results.bottom.height">100dp</dimen>
+    <dimen name="results.bottom.text">26sp</dimen>
 
     <!-- Leaderboard -->
     <dimen name="leaderboard.no_wifi.image.width">175dp</dimen>

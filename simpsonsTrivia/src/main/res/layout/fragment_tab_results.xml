@@ -7,8 +7,8 @@
 
 
     <RelativeLayout
-        android:layout_width="224dp"
-        android:layout_height="224dp"
+        android:layout_width="@dimen/results.main.circle.size"
+        android:layout_height="@dimen/results.main.circle.size"
         android:background="@drawable/chart_back_circle"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
@@ -22,8 +22,8 @@
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/finalScoreChart"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
+            android:layout_width="@dimen/results.main.chart.size"
+            android:layout_height="@dimen/results.main.chart.size"
             android:layout_centerInParent="true" />
 
         <FrameLayout
@@ -39,7 +39,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="13000"
                 android:id="@+id/finalScore"
-                android:textSize="30sp"
+                android:textSize="@dimen/results.main.score.size"
                 android:includeFontPadding="false"
                 android:layout_marginBottom="-3dp" />
 
@@ -55,10 +55,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Final Score"
                 android:id="@+id/finalScoreText"
-                android:textSize="16sp"
+                android:textSize="@dimen/results.main.final_score_text.size"
                 android:layout_marginTop="-3dp" />
         </FrameLayout>
 
@@ -76,12 +75,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginRight="44dp"
+            android:layout_marginRight="@dimen/results.raw.margin"
             android:id="@+id/RawScoreGlobalContainer">
 
             <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/results.raw.circle.size"
+                android:layout_height="@dimen/results.raw.circle.size"
                 android:id="@+id/RawScoreChartContainer"
                 android:layout_gravity="right"
                 android:visibility="visible"
@@ -89,8 +88,8 @@
 
                 <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/rawChart"
-                    android:layout_width="88dp"
-                    android:layout_height="88dp"
+                    android:layout_width="@dimen/results.raw.chart.size"
+                    android:layout_height="@dimen/results.raw.chart.size"
                     android:layout_gravity="center" />
 
             </FrameLayout>
@@ -107,7 +106,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="2200"
                     android:id="@+id/rawScore"
-                    android:textSize="28sp"
+                    android:textSize="@dimen/results.raw.score.size"
                     android:layout_gravity="right"
                     android:layout_marginBottom="-3dp" />
             </FrameLayout>
@@ -121,10 +120,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Raw Score"
                     android:id="@+id/rawScoreText"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/results.raw.final_score_text.size"
                     android:layout_gravity="right"
                     android:layout_marginTop="-2dp" />
             </FrameLayout>
@@ -138,10 +136,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="14 / 20"
                     android:id="@+id/rawScoreNumCorrect"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/results.raw.final_score_text.size"
                     android:layout_gravity="right"
                     android:layout_marginTop="-2dp" />
             </FrameLayout>
@@ -156,19 +153,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/BonusScoreGlobalContainer"
-            android:layout_marginLeft="44dp">
+            android:layout_marginLeft="@dimen/results.raw.margin">
 
             <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/results.bonus.circle.size"
+                android:layout_height="@dimen/results.bonus.circle.size"
                 android:background="@drawable/chart_back_circle"
                 android:id="@+id/BonusScoreChartContainer"
                 android:layout_gravity="left">
 
                 <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/bonusChart"
-                    android:layout_width="88dp"
-                    android:layout_height="88dp"
+                    android:layout_width="@dimen/results.bonus.chart.size"
+                    android:layout_height="@dimen/results.bonus.chart.size"
                     android:layout_gravity="center" />
 
             </FrameLayout>
@@ -185,7 +182,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="1500"
                     android:id="@+id/bonusScore"
-                    android:textSize="28sp"
+                    android:textSize="@dimen/results.bonus.score.size"
                     android:layout_gravity="left"
                     android:layout_marginBottom="-3dp" />
             </FrameLayout>
@@ -199,10 +196,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Bonus Score"
                     android:id="@+id/bonusScoreText"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/results.bonus.final_score_text.size"
                     android:layout_gravity="left"
                     android:layout_marginTop="-2dp" />
             </FrameLayout>
@@ -216,10 +212,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="4 / 5"
                     android:id="@+id/bonusScoreNumCorrect"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/results.bonus.final_score_text.size"
                     android:layout_gravity="left"
                     android:layout_marginTop="-2dp" />
             </FrameLayout>

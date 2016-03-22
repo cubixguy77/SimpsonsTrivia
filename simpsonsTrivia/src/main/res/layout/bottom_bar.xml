@@ -3,19 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="70dp"
+    android:layout_height="@dimen/results.bottom.height"
     android:id="@+id/bottomBarLayout"
     android:background="@drawable/divider_top"
     tools:showIn="@layout/activity_results">
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="@dimen/results.bottom.height"
         android:text="@string/results.bottom_bar_buttons.home"
         android:textAllCaps="true"
         android:id="@+id/homeButton"
         android:layout_weight=".25"
-        android:background="@drawable/rounded_corners_button_transparent" />
+        android:background="@drawable/rounded_corners_button_transparent"
+        android:textSize="@dimen/results.bottom.text" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,6 +27,7 @@
         android:layout_weight=".75"
         android:layout_marginLeft="10dp"
         android:background="@drawable/rounded_corners_button"
-        android:layout_marginRight="5dp" />
+        android:layout_marginRight="5dp"
+        android:textSize="@dimen/results.bottom.text" />
 
 </LinearLayout>
