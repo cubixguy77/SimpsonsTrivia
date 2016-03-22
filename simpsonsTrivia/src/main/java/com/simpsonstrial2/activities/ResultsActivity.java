@@ -137,7 +137,7 @@ public class ResultsActivity extends AppCompatActivity
 
     private void goPlayAgain(float touchX, float touchY)
     {
-        CircularTransition transition = new CircularTransition(this, findViewById(R.id.RootLayout), true, touchX, touchY);
+        CircularTransition transition = new CircularTransition(this, findViewById(R.id.RootLayout), touchX, touchY);
         transition.start(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {

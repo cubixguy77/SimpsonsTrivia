@@ -204,7 +204,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	{
 		GameMode.newInstance(difficulty, gamePlayType);
 
-		CircularTransition transition = new CircularTransition(this, root, false, touchX, touchY);
+		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
 		transition.start(new AnimatorListenerAdapter() {
 			@Override
 			public void onAnimationEnd(Animator animation) {

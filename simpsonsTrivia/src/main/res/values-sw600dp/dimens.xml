@@ -26,9 +26,9 @@
 
     <dimen name="question.question_card.elevation">4dp</dimen>
     <dimen name="question.question_card.radius">25dp</dimen>
-    <dimen name="question.question_card.margin">16dp</dimen>
+    <dimen name="question.question_card.margin">48dp</dimen>
 
-    <dimen name="question.question_text.font_size">40sp</dimen>
+    <dimen name="question.question_text.font_size">35sp</dimen>
     <dimen name="question.question_text.padding">16dp</dimen>
     <dimen name="question.question_text.height">200dp</dimen>
 
@@ -36,7 +36,7 @@
     <dimen name="question.doh_text.margin">40dp</dimen>
 
     <dimen name="question.answer_button.margin">8dp</dimen>
-    <dimen name="question.answer_button.text_size">32sp</dimen>
+    <dimen name="question.answer_button.text_size">24sp</dimen>
     <dimen name="question.answer_button.text.padding">8dp</dimen>
     <dimen name="question.answer_button.height">60dp</dimen>
     <dimen name="question.answer_button.radius">20dp</dimen>
@@ -49,11 +49,11 @@
 
     <dimen name="question.bonus_round_instruction_text.margin.left">45dp</dimen>
     <dimen name="question.bonus_round_instruction_text.margin.right">35dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.text_size">45sp</dimen>
-    <dimen name="question.bonus_round_instruction_text.height">240dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.text_size">32sp</dimen>
+    <dimen name="question.bonus_round_instruction_text.height">220dp</dimen>
 
     <dimen name="question.bonus_round.button.size">128dp</dimen>
-    <dimen name="question.bonus_round.button.margin.top">70dp</dimen>
+    <dimen name="question.bonus_round.button.margin.top">0dp</dimen>
     <dimen name="question.bonus_round.button.elevation">6dp</dimen>
 
     <dimen name="question.bonus_round.go_text.text_size">54sp</dimen>
@@ -62,6 +62,7 @@
 
 
     <!-- Results -->
+    <dimen name="results.main.margin.top">15dp</dimen>
     <dimen name="results.main.circle.size">372dp</dimen>
     <dimen name="results.main.chart.size">400dp</dimen>
     <dimen name="results.main.score.size">50sp</dimen>

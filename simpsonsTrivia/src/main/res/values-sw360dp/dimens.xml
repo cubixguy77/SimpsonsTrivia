@@ -63,6 +63,7 @@
 
 
     <!-- Results -->
+    <dimen name="results.main.margin.top">10dp</dimen>
     <dimen name="results.main.circle.size">224dp</dimen>
     <dimen name="results.main.chart.size">240dp</dimen>
     <dimen name="results.main.score.size">32sp</dimen>

@@ -26,9 +26,9 @@
 
     <dimen name="question.question_card.elevation">4dp</dimen>
     <dimen name="question.question_card.radius">25dp</dimen>
-    <dimen name="question.question_card.margin">16dp</dimen>
+    <dimen name="question.question_card.margin">96dp</dimen>
 
-    <dimen name="question.question_text.font_size">60sp</dimen>
+    <dimen name="question.question_text.font_size">40sp</dimen>
     <dimen name="question.question_text.padding">16dp</dimen>
     <dimen name="question.question_text.height">300dp</dimen>
 
@@ -36,7 +36,7 @@
     <dimen name="question.doh_text.margin">60dp</dimen>
 
     <dimen name="question.answer_button.margin">8dp</dimen>
-    <dimen name="question.answer_button.text_size">45sp</dimen>
+    <dimen name="question.answer_button.text_size">26sp</dimen>
     <dimen name="question.answer_button.text.padding">8dp</dimen>
     <dimen name="question.answer_button.height">60dp</dimen>
     <dimen name="question.answer_button.radius">20dp</dimen>
@@ -62,15 +62,16 @@
 
 
     <!-- Results -->
-    <dimen name="results.main.circle.size">224dp</dimen>
-    <dimen name="results.main.chart.size">240dp</dimen>
-    <dimen name="results.main.score.size">30sp</dimen>
-    <dimen name="results.main.final_score_text.size">16sp</dimen>
+    <dimen name="results.main.margin.top">40dp</dimen>
+    <dimen name="results.main.circle.size">424dp</dimen>
+    <dimen name="results.main.chart.size">440dp</dimen>
+    <dimen name="results.main.score.size">60sp</dimen>
+    <dimen name="results.main.final_score_text.size">32sp</dimen>
 
-    <dimen name="results.raw.circle.size">80dp</dimen>
-    <dimen name="results.raw.chart.size">88dp</dimen>
-    <dimen name="results.raw.score.size">26sp</dimen>
-    <dimen name="results.raw.final_score_text.size">14sp</dimen>
+    <dimen name="results.raw.circle.size">160dp</dimen>
+    <dimen name="results.raw.chart.size">168dp</dimen>
+    <dimen name="results.raw.score.size">52sp</dimen>
+    <dimen name="results.raw.final_score_text.size">28sp</dimen>
     <dimen name="results.raw.margin">86dp</dimen>
 
     <dimen name="results.bonus.circle.size">@dimen/results.raw.circle.size</dimen>

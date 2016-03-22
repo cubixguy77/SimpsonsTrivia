@@ -8,21 +8,28 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.simpsonstrial2.MyApplication;
 import com.simpsonstrial2.R;
 
 public class CircularTransition extends ImageView {
 
-    public CircularTransition(Context context, View root, boolean linear, float x, float y) {
+    public CircularTransition(Context context, View root, float x, float y) {
         super(context);
 
         this.setImageResource(R.drawable.circle);
-        this.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+        if (root instanceof LinearLayout)
+            this.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+        else
+            this.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
+
         this.setVisibility(View.INVISIBLE);
 
-        if (linear)
+        if (root instanceof LinearLayout)
             ((LinearLayout) root).addView(this);
+        else if (root instanceof RelativeLayout)
+            ((RelativeLayout) root).addView(this);
         else
             ((FrameLayout) root).addView(this);
 

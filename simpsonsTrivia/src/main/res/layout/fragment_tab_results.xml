@@ -11,7 +11,7 @@
         android:layout_height="@dimen/results.main.circle.size"
         android:background="@drawable/chart_back_circle"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/results.main.margin.top"
         android:id="@+id/FinalChartContainer">
 
         <View android:id="@+id/strut"

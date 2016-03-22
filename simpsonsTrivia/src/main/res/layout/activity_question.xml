@@ -222,7 +222,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/question.question_card.margin"
         android:background="@drawable/bonus_round_instructions_card"
         android:id="@+id/BonusRoundInstructionsLayout"
         android:visibility="visible"
