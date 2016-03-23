@@ -50,7 +50,7 @@
     <dimen name="question.bonus_round_instruction_text.margin.left">45dp</dimen>
     <dimen name="question.bonus_round_instruction_text.margin.right">35dp</dimen>
     <dimen name="question.bonus_round_instruction_text.text_size">32sp</dimen>
-    <dimen name="question.bonus_round_instruction_text.height">220dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.height">200dp</dimen>
 
     <dimen name="question.bonus_round.button.size">128dp</dimen>
     <dimen name="question.bonus_round.button.margin.top">0dp</dimen>

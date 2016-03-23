@@ -301,7 +301,9 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
 
         removeListeners();
 
+
         startActivity(IntentManager.getResultsIntent(this, scoreModel.getScoreDataModel()));
+        overridePendingTransition(R.anim.slide_in_activity_right, R.anim.slide_out_activity_left);
 
         finish();
     }

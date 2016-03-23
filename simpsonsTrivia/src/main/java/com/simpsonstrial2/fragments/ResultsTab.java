@@ -52,11 +52,11 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
     private final int animGraphDuration = 800;
     private final int animStartDelay = 600;
-    private final int animRawCircleOffset = 400;
+    private final int animRawCircleOffset = 500;
     private final int animBonusCircleOffset = animRawCircleOffset + 100;
 
     private final int animTextRevealDuration = 400;
-    private final int animTextRevealStartDelay = animStartDelay + animBonusCircleOffset + animGraphDuration + 300;
+    private final int animTextRevealStartDelay = animStartDelay + animBonusCircleOffset + animGraphDuration + 200;
 
     public static ResultsTab newInstance(Bundle scoreModelBundle) {
         ResultsTab myFragment = new ResultsTab();
