@@ -50,7 +50,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private LinearLayout QuestionCard;
     private LinearLayout AnswerContainer;
     private RevealFrameLayout QuestionContainer;
-    private FrameLayout ToolbarContainer;
+    private android.support.design.widget.AppBarLayout ToolbarContainer;
 
     private ImageView ExtendedToolbarReveal;
 
@@ -143,7 +143,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         QuestionContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.QuestionContainer);
         InstructionsContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.InstructionsContainer);
         QuestionContainerContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.QuestionContainerContainer);
-        ToolbarContainer = (FrameLayout) mainActivity.findViewById(R.id.ToolbarFrame);
+        ToolbarContainer = (android.support.design.widget.AppBarLayout) mainActivity.findViewById(R.id.ToolbarFrame);
 
         ExtendedToolbarReveal = (ImageView) mainActivity.findViewById(R.id.ExtendedToolbarReveal);
 
@@ -226,7 +226,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 Animation.RELATIVE_TO_SELF, 0f, // Pivot point of X scaling
                 Animation.RELATIVE_TO_SELF, 0f); // Pivot point of Y scaling
         anim.setFillAfter(true); // Needed to keep the result of the animation
-        anim.setDuration(500);
+        anim.setDuration(300);
         anim.setStartOffset(50);
         anim.setInterpolator(new AccelerateInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
@@ -253,7 +253,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         ToolbarContainer.setVisibility(View.VISIBLE);
         ResizeAnimation anim = new ResizeAnimation(ToolbarContainer, toolbarHeight);
         anim.setDuration(500);
-        anim.setStartOffset(100);
+        anim.setStartOffset(500);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
