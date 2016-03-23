@@ -58,6 +58,9 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
     private final int animTextRevealDuration = 400;
     private final int animTextRevealStartDelay = animStartDelay + animBonusCircleOffset + animGraphDuration + 200;
 
+    private boolean loadingAnimationsInProgress = true;
+    private boolean showUserNameDialogOnAnimationsComplete = false;
+
     public static ResultsTab newInstance(Bundle scoreModelBundle) {
         ResultsTab myFragment = new ResultsTab();
 
@@ -154,6 +157,14 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
                 AnimatorSet textReveal = new AnimatorSet();
                 textReveal.playSequentially(revealLineOne, revealLineTwo, revealLineThree);
                 textReveal.setStartDelay(animTextRevealStartDelay);
+                textReveal.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        loadingAnimationsInProgress = false;
+                        if (showUserNameDialogOnAnimationsComplete)
+                            showUserNameDialog();
+                    }
+                });
                 textReveal.start();
             }
         }, 0);
@@ -361,7 +372,10 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         }
         else
         {
-            showUserNameDialog();
+            if (loadingAnimationsInProgress)
+                showUserNameDialogOnAnimationsComplete = true;
+            else
+                showUserNameDialog();
         }
     }
 }
