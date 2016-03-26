@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ListFragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +17,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -54,7 +53,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
     private RelativeLayout listContainer;
     private Spinner gameModePicker;
 
-    private ProgressBar progressBar;
     private int finalScore;
     private boolean scorePosted = false;
     private boolean firstViewing = true;
@@ -80,7 +78,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
         noConnectionText = (TextView) root.findViewById(R.id.no_connection_text);
         tapToRefreshText = (TextView) root.findViewById(R.id.tap_to_refresh_text);
         listContainer = (RelativeLayout) root.findViewById(R.id.ListContainer);
-        progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
 
         Bundle args = getArguments();
         if (args == null || args.getBoolean("ShowGameModePicker", false))
@@ -199,7 +196,7 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
             if (!listSetup)
                 setupHighScoreList();
 
-            if (finalScore > 0 && scorePosted == false)
+            if (finalScore > 0 && !scorePosted)
                 submitScore();
             else
                 refreshList();
@@ -229,9 +226,9 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
         View sbView = snackbar.getView();
         TextView text = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        text.setTextColor(getResources().getColor(R.color.results_tab_snack_text));
+        text.setTextColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_text));
         text.setGravity(Gravity.CENTER_HORIZONTAL);
-        sbView.setBackgroundColor(getResources().getColor(R.color.results_tab_snack_background));
+        sbView.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_background));
         snackbar.show();
 
         refreshList();
@@ -252,7 +249,7 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
             public void onClick(DialogInterface dialog, int which) {
                 String newUserName = input.getText().toString();
                 DataResult userNameValidation = User.isValidUsername(newUserName);
-                if (userNameValidation.result == false) {
+                if (!userNameValidation.result) {
                     Toast.makeText(MyApplication.getAppContext(), userNameValidation.message, Toast.LENGTH_LONG).show();
                     showUserNameDialog();
                     return;
@@ -260,7 +257,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
                     User.getInstance().setUserName(newUserName);
                     postHighScore();
                 }
-
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -287,13 +283,10 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
 
     @Override
-    public void onScoreSubmitting() {
-        showProgress();
-    }
+    public void onScoreSubmitting() {}
 
     @Override
     public void onScoreSubmitResults(HighScoreSubmitResult result) {
-        hideProgress();
         scorePosted = true;
 
         if (result == HighScoreSubmitResult.NOT_HIGH_SCORE)
@@ -310,30 +303,16 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
         }
     }
 
-    private void showProgress()
-    {
-        progressBar.setVisibility(View.VISIBLE);
-        Log.d("Progress", "Visible");
-    }
-
-    private void hideProgress()
-    {
-        progressBar.setVisibility(View.GONE);
-        Log.d("Progress", "Hidden");
-    }
-
-
 
 
 
     @Override
     public void onScoresRequested() {
-        showProgress();
+
     }
 
     @Override
     public void onScoresReturned(HighScoreList list) {
-        hideProgress();
         refreshAdapterData(list);
     }
 }

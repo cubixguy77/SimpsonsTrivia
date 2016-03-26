@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.view.Gravity;
@@ -231,7 +232,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
         chart.setDrawHoleEnabled(mainChart);
         chart.setHoleColorTransparent(true);
-        chart.setTransparentCircleColor(getResources().getColor((R.color.results_chart_backing_circle)));
+        chart.setTransparentCircleColor(ContextCompat.getColor(getActivity(), R.color.results_chart_backing_circle));
         chart.setHoleRadius(64f);
         chart.setTransparentCircleRadius(16f);
         chart.setAlpha(1);
@@ -261,18 +262,18 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         ArrayList<Integer> colors = new ArrayList<>();
         if (chart.getTag().equals("Final Results"))
         {
-            colors.add(getResources().getColor(R.color.results_chart_standard));
-            colors.add(getResources().getColor(R.color.results_chart_bonus));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.results_chart_standard));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.results_chart_bonus));
         }
         else if (chart.getTag().equals("Raw Score"))
         {
-            colors.add(getResources().getColor(R.color.results_chart_standard));
-            colors.add(getResources().getColor(R.color.blue_sixthly));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.results_chart_standard));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.blue_sixthly));
         }
         else
         {
-            colors.add(getResources().getColor(R.color.results_chart_bonus));
-            colors.add(getResources().getColor(R.color.blue_sixthly));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.results_chart_bonus));
+            colors.add(ContextCompat.getColor(getActivity(), R.color.blue_sixthly));
         }
 
         dataSet.setColors(colors);
@@ -301,9 +302,9 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
         View sbView = snackbar.getView();
         TextView text = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        text.setTextColor(getResources().getColor(R.color.results_tab_snack_text));
+        text.setTextColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_text));
         text.setGravity(Gravity.CENTER_HORIZONTAL);
-        sbView.setBackgroundColor(getResources().getColor(R.color.results_tab_snack_background));
+        sbView.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_background));
         snackbar.show();
     }
 
@@ -320,7 +321,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
             public void onClick(DialogInterface dialog, int which) {
                 String newUserName = input.getText().toString();
                 DataResult userNameValidation = User.isValidUsername(newUserName);
-                if (userNameValidation.result == false) {
+                if (!userNameValidation.result) {
                     Toast.makeText(MyApplication.getAppContext(), userNameValidation.message, Toast.LENGTH_LONG).show();
                     showUserNameDialog();
                     return;
@@ -343,7 +344,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
     }
 
     private void submitScore() {
-        if (HighScoreUtils.isNetworkAvailable() == false)
+        if (!HighScoreUtils.isNetworkAvailable())
         {
             onShowNoWifi();
             return;

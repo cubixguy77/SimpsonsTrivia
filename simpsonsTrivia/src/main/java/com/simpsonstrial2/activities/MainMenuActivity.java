@@ -8,6 +8,7 @@ import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -122,13 +123,13 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		super.onPause();
 
 		ChallengeButton.setVisibility(View.VISIBLE);
-		ChallengeButton.setTextColor(getResources().getColor(R.color.main_buttons_text));
-		//ChallengeButton.setText("CLASSIC");
+		ChallengeButton.setTextColor(ContextCompat.getColor(this, R.color.main_buttons_text));
+
 		EasyChallengeButton.setVisibility(View.INVISIBLE);
 		HardChallengeButton.setVisibility(View.INVISIBLE);
 
 		SpeedChallengeButton.setVisibility(View.VISIBLE);
-		SpeedChallengeButton.setTextColor(getResources().getColor(R.color.main_buttons_text));
+		SpeedChallengeButton.setTextColor(ContextCompat.getColor(this, R.color.main_buttons_text));
 		EasySpeedButton.setVisibility(View.INVISIBLE);
 		HardSpeedButton.setVisibility(View.INVISIBLE);
 	}
@@ -309,14 +310,12 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		collapseButton.addListener(new AnimatorListenerAdapter() {
 			@Override
 			public void onAnimationStart(Animator anion) {
-				mainButton.setTextColor(getResources().getColor(android.R.color.transparent));
-				//mainButton.setText("");
+				mainButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, android.R.color.transparent));
 			}
 
 			@Override
 			public void onAnimationEnd(Animator animation) {
 				mainButton.setVisibility(View.INVISIBLE);
-				//mainButton.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
 				mainButton.setScaleX(1.0f);
 				easyButton.setVisibility(View.VISIBLE);
 				hardButton.setVisibility(View.VISIBLE);
