@@ -11,15 +11,15 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
-import android.util.Log;
+import android.support.v4.content.ContextCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -226,9 +226,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 Animation.RELATIVE_TO_SELF, 0f, // Pivot point of X scaling
                 Animation.RELATIVE_TO_SELF, 0f); // Pivot point of Y scaling
         anim.setFillAfter(true); // Needed to keep the result of the animation
-        anim.setDuration(500);
-        anim.setStartOffset(50);
-        anim.setInterpolator(new AccelerateInterpolator());
+        anim.setDuration(200);
+        anim.setStartOffset(0);
+        anim.setInterpolator(new LinearInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -253,7 +253,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         ToolbarContainer.setVisibility(View.VISIBLE);
         ResizeAnimation anim = new ResizeAnimation(ToolbarContainer, toolbarHeight);
         anim.setDuration(500);
-        anim.setStartOffset(100);
+        anim.setStartOffset(0);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -300,14 +300,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     public void presentQuestion(final Question newQuestion, final boolean bonusRound)
     {
-        Log.d("present question", newQuestion.getQuestionText());
-        Log.d("ansResponseAnim", answerResponseAnimationsInProgress + "");
-        Log.d("nextQuestionReady", nextQuestionReady + "");
-        Log.d("bonusRoundTriggered", bonusRoundTriggered + "");
-        Log.d("bonusRound", bonusRound + "");
-        Log.d("timeExpired", timeExpired + "");
-        Log.d("question card", "visibility: " + QuestionCard.getVisibility());
-
         if (answerResponseAnimationsInProgress)
         {
             nextQuestionReady = true;
@@ -325,32 +317,22 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         /* Case 1: First question reveal */
         if (QuestionCard.getVisibility() == View.GONE || QuestionCard.getVisibility() == View.INVISIBLE)
         {
-            Log.d("case 1", "First question reveal");
             QuestionCard.setX(MyApplication.screenWidth);
             QuestionCard.setVisibility(View.VISIBLE);
             anim = getCardSlideInRight(QuestionCard, null);
-            Log.d("case 1", "First question reveal");
         }
         /* Case 2: Replace Bonus Round Instructions with new question*/
         else if (QuestionContainerContainer.getVisibility() == View.GONE)
         {
             anim = getReplaceBonusInstructionsWithQuestionAnim();
-            Log.d("case 2", "Replace Bonus Round Instructions with new question");
         }
         /* Case 3: Replace current question with new question */
         else
         {
             anim = getReplaceQuestionWithQuestionAnim();
-            Log.d("case 3", "Replace current question with new question");
         }
 
         anim.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-                Log.d("anim", "sliding in starting");
-                System.out.println(QuestionCard.getVisibility() + " visible");
-            }
-
             @Override
             /* Card has now moved into place */
             public void onAnimationEnd(Animator animation) {
@@ -498,7 +480,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         hideAnswerResultText();
         for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
             Button button = answerButtons.get(answerPosition);
-            answerButtons.get(answerPosition).setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_answer_button_text_standard));
+            answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
             if (answerPosition == 0)
                 button.setBackgroundResource(R.drawable.selector_answer_top_button);
             else if (answerPosition == 1 || answerPosition == 2)
@@ -514,12 +496,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     {
         if (timeExpired)
         {
-            onBonusRoundResultsHide(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    gameStateListener.onBonusRoundHidden();
-                }
-            });
+            onBonusRoundResultsHide();
         }
         if (nextQuestionReady && nextQuestion != null) {
             presentQuestion(nextQuestion, bonusRound);
@@ -541,11 +518,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     }
 
     private void presentQuestionTeardown(int delayInMilliseconds, final Button clickedButton, final int pos, final boolean isCorrectAnswer) {
-        Log.d("teardown", "Present question teardown");
         presentAnswerButtonCollapseAnimation(delayInMilliseconds, new SupportAnimator.SimpleAnimatorListener() {
             @Override
             public void onAnimationEnd() {
-                Log.d("teardown down", "answer buttons torn down");
                 restoreAnswerButtons(pos, clickedButton);
                 presentResponseTextCollapseAnimation(isCorrectAnswer ? woohooText : dohText, new SupportAnimator.SimpleAnimatorListener() {
                     @Override
@@ -602,8 +577,8 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     {
         ObjectAnimator anim = ObjectAnimator.ofInt(QuestionContainer,
                 "backgroundColor",
-                MyApplication.getAppContext().getResources().getColor(R.color.trivia_background_standard),
-                MyApplication.getAppContext().getResources().getColor(R.color.trivia_background_bonus));
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_standard),
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_bonus));
         anim.setDuration(1000);
         anim.setEvaluator(new ArgbEvaluator());
         anim.addListener(listener);
@@ -614,8 +589,8 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     {
         ObjectAnimator anim = ObjectAnimator.ofInt(QuestionContainer,
                 "backgroundColor",
-                MyApplication.getAppContext().getResources().getColor(R.color.trivia_background_bonus),
-                MyApplication.getAppContext().getResources().getColor(R.color.trivia_background_standard));
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_bonus),
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_standard));
         anim.setDuration(1000);
         anim.setEvaluator(new ArgbEvaluator());
         anim.start();
@@ -810,9 +785,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private void setSelectionStateAnswerButtonTextColor(Button button, boolean isSelected)
     {
         if (isSelected)
-            button.setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_answer_button_text_selected));
+            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_selected));
         else
-            button.setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_answer_button_text_faded));
+            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_faded));
 
     }
 
@@ -841,7 +816,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         else clickedButton.setBackgroundResource(R.drawable.selector_answer_bottom_button);
 
         for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
-            answerButtons.get(answerPosition).setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_answer_button_text_standard));
+            answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
         }
     }
 
@@ -880,18 +855,14 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 answerResponseAnimationsInProgress = false;
                 questionText.setVisibility(View.INVISIBLE);
                 timeExpired = false;
-                onBonusRoundResultsHide(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        gameStateListener.onBonusRoundHidden();
-                    }
-                });
+
+                gameStateListener.onBonusRoundComplete();
             }
         });
     }
 
 
-    public void onBonusRoundResultsHide(final AnimatorListenerAdapter listener)
+    public void onBonusRoundResultsHide()
     {
         timeExpired = false;
         answerResponseAnimationsInProgress = false;
@@ -922,7 +893,12 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 AnimatorSet hideBonusToolbar = new AnimatorSet();
                 hideBonusToolbar.playTogether(hideBonusLabelAnim, hideTimerAnim, hideScoreAnim);
                 hideBonusToolbar.setStartDelay(500);
-                hideBonusToolbar.addListener(listener);
+                hideBonusToolbar.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        gameStateListener.onBonusRoundHidden();
+                    }
+                });
                 hideBonusToolbar.start();
             }
         });

@@ -8,7 +8,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
-import android.util.Log;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,7 +71,7 @@ public class ScorePresenter implements ScoreModelListener {
         final ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_multiplier_text_fade_in);
         fadeInMultText.setTarget(multiplierText);
 
-        multGlowing = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_glowing), false)
+        multGlowing = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_glowing), false)
         {
             @Override
             public void onAnimationStart() {}
@@ -79,7 +79,7 @@ public class ScorePresenter implements ScoreModelListener {
             public void onAnimationFinish() {}
         }; multGlowing.setOneShot(false);
 
-        multStartup = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_startup), false)
+        multStartup = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_startup), false)
         {
             @Override
             public void onAnimationStart() {
@@ -96,7 +96,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multOneToTwo = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_one_to_two), false)
+        multOneToTwo = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_one_to_two), false)
         {
             @Override
             public void onAnimationStart() {
@@ -112,7 +112,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multTwoToThree = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_two_to_three), false)
+        multTwoToThree = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_two_to_three), false)
         {
             @Override
             public void onAnimationStart() {
@@ -128,7 +128,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multThreeToFour = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_three_to_four), false)
+        multThreeToFour = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_three_to_four), false)
         {
             @Override
             public void onAnimationStart() {
@@ -144,7 +144,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multFourToFive = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_four_to_five), false)
+        multFourToFive = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_four_to_five), false)
         {
             @Override
             public void onAnimationStart() {
@@ -169,7 +169,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multCollapse = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_collapse), false)
+        multCollapse = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_collapse), false)
         {
             @Override
             public void onAnimationStart() {
@@ -184,7 +184,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multTwoToOne = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_one_to_two), true)
+        multTwoToOne = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_one_to_two), true)
         {
             @Override
             public void onAnimationStart() {
@@ -199,7 +199,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multThreeToOne = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_two_to_three), true)
+        multThreeToOne = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_two_to_three), true)
         {
             @Override
             public void onAnimationStart() {
@@ -213,7 +213,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multFourToOne = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_three_to_four), true)
+        multFourToOne = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_three_to_four), true)
         {
             @Override
             public void onAnimationStart() {
@@ -227,7 +227,7 @@ public class ScorePresenter implements ScoreModelListener {
             }
         };
 
-        multFiveToOne = new CustomAnimationDrawable((AnimationDrawable) res.getDrawable(R.drawable.animation_mult_four_to_five), true)
+        multFiveToOne = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_four_to_five), true)
         {
             @Override
             public void onAnimationStart() {
@@ -299,7 +299,6 @@ public class ScorePresenter implements ScoreModelListener {
             return;
 
         final CustomAnimationDrawable anim;
-        Log.d("old new", oldMultiplier + " " + newMultiplier);
 
         if (oldMultiplier == 0 && newMultiplier == 1)
             anim = multStartup;

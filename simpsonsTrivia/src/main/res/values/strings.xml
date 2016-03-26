@@ -11,7 +11,7 @@
     <string name="trivia.bonus.title_brief">Bonus</string>
     <string name="trivia.bonus.instructions">You will have 30 seconds to identify the speaker in as many quotes as you can.</string>
     <string name="trivia.bonus.go">Go!</string>
-    <string name="trivia.bonus.times_up">Times Up!</string>
+    <string name="trivia.bonus.times_up">Time\'s Up!</string>
     <string name="trivia.bonus.result">You got {NUM_CORRECT} correct!</string>
 
     <string name="results.tab.results">Results</string>

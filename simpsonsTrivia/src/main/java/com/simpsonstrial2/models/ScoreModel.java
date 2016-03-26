@@ -1,20 +1,17 @@
 package com.simpsonstrial2.models;
 
-import android.os.Bundle;
-
 import com.simpsonstrial2.interfaces.ScoreModelListener;
 
 public class ScoreModel
 {
     private ScoreDataModel scoreDataModel;
 
-    private static final int maxMultiplier = 2;
+    private static final int maxMultiplier = 5;
 
     private int multiplier;
     private int speedBonus;
 
     private int currentBonusScore;
-    private int currentBonusNumCorrect;
 
     private ScoreModelListener scoreModelListener;
     private boolean speedBonusEnabled;
@@ -30,10 +27,6 @@ public class ScoreModel
         this.multiplier = 1;
         this.speedBonus = 0;
         this.scoreDataModel = new ScoreDataModel();
-    }
-
-    public Bundle getScoreDataModelBundle() {
-        return this.scoreDataModel.getBundle();
     }
 
     public ScoreDataModel getScoreDataModel()
@@ -107,7 +100,7 @@ public class ScoreModel
 
     public boolean isBonusRoundTriggered()
     {
-        return multiplier >= ScoreModel.maxMultiplier;
+        return multiplier >= ScoreModel.maxMultiplier && bonusRoundEnabled;
     }
 
     public void onWrongAnswer()
@@ -121,7 +114,6 @@ public class ScoreModel
     {
         scoreDataModel.totalBonusAnswers++;
         scoreDataModel.numBonusCorrect++;
-        currentBonusNumCorrect++;
 
         this.setBonusScore(this.getPointValue());
     }
@@ -134,7 +126,6 @@ public class ScoreModel
 
     public void onBonusRoundStart() {
         currentBonusScore = 0;
-        currentBonusNumCorrect = 0;
     }
 
     public void onBonusRoundHidden() {

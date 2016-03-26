@@ -38,20 +38,20 @@ public class AutoResizeTextView extends TextView {
 
     private TextPaint mPaint;
 
-    private float mMaxTextSize = 30;
+    private float mMaxTextSize = 50;
 
     private float mSpacingMult = 1.0f;
 
     private float mSpacingAdd = 0.0f;
 
-    private float mMinTextSize = 50;
+    private float mMinTextSize = 35;
 
     private int mWidthLimit;
 
     private static final int NO_LINE_LIMIT = -1;
     private int mMaxLines;
 
-    private boolean mEnableSizeCache = false;
+    private boolean mEnableSizeCache = true;
     private boolean mInitiallized;
 
     public AutoResizeTextView(Context context) {
@@ -242,8 +242,7 @@ public class AutoResizeTextView extends TextView {
         adjustTextSize(getText().toString());
     }
 
-    private int efficientTextSizeSearch(int start, int end,
-                                        SizeTester sizeTester, RectF availableSpace) {
+    private int efficientTextSizeSearch(int start, int end, SizeTester sizeTester, RectF availableSpace) {
         if (!mEnableSizeCache) {
             return binarySearch(start, end, sizeTester, availableSpace);
         }
@@ -258,8 +257,7 @@ public class AutoResizeTextView extends TextView {
         return size;
     }
 
-    private static int binarySearch(int start, int end, SizeTester sizeTester,
-                                    RectF availableSpace) {
+    private static int binarySearch(int start, int end, SizeTester sizeTester, RectF availableSpace) {
         int lastBest = start;
         int lo = start;
         int hi = end - 1;

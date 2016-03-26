@@ -7,7 +7,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Window;
 
 import com.simpsonstrial2.utils.IntentManager;
@@ -43,7 +42,6 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
     private TimerPresenter timerPresenter;
 
     private boolean gameStarted = false;
-    private boolean bonusTimerExpired = false;
 
 	/** Called when the activity is first created. */
     @Override
@@ -151,8 +149,6 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
     @Override
     public void onBonusRoundTimeExpired()
     {
-        Log.d("bonus round", "time expired");
-        bonusTimerExpired = true;
         onBonusRoundResultsShow();
     }
     /* End TimerListener */
@@ -221,6 +217,16 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         scorePresenter.onShowBonusRoundResults(scoreModel.getCurrentBonusScore(), scoreModel.getCurrentGameScore());
     }
 
+    public void onBonusRoundComplete() {
+        if (questionHandler.isGameOver()) {
+
+            onGameOver();
+        }
+        else {
+            questionPresenter.onBonusRoundResultsHide();
+        }
+    }
+
     public void onBonusRoundHidden()
     {
         questionPresenter.presentQuestionNumber();
@@ -228,7 +234,6 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         scorePresenter.presentCurrentScore();
         scorePresenter.startupMultiplier();
         bonusRoundTimer.reset();
-        bonusTimerExpired = false;
         onBonusRoundFinished();
     }
 

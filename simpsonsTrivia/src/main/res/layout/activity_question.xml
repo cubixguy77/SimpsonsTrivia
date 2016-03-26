@@ -66,7 +66,8 @@
         <io.codetail.widget.RevealFrameLayout
             android:layout_width="fill_parent"
             android:layout_height="@dimen/question.question_text.height"
-            android:id="@+id/QuestionTextContainer">
+            android:id="@+id/QuestionTextContainer"
+            android:layout_marginTop="16dp">
 
 
             <com.simpsonstrial2.views.AutoResizeTextView
@@ -75,7 +76,7 @@
                 android:layout_height="fill_parent"
                 android:textSize="@dimen/question.question_text.font_size"
                 android:gravity="center_vertical|center_horizontal"
-                tools:text="Who freezes themself in the Kwik-E-Mart freezer?"
+                tools:text="Remember that postcard Grampa sent us from Florida of that Alligator biting that woman's bottom? That's right, we all thought it was hilarious. But, it turns out we were wrong. That alligator was sexually harassing that woman."
                 android:textColor="@color/trivia.question_text"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -113,15 +114,13 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-            <LinearLayout
+             <LinearLayout
                 android:id="@+id/AnswerContainer"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:padding="@dimen/question.answer_button.margin"
                 android:animateLayoutChanges="true"
-                android:layout_margin="10dp">
+                android:layout_margin="16dp">
 
                 <io.codetail.widget.RevealFrameLayout
                     android:layout_width="fill_parent"

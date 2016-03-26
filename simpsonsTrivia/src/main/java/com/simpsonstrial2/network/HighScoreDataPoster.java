@@ -1,12 +1,10 @@
 package com.simpsonstrial2.network;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.simpsonstrial2.models.GameMode;
 import com.simpsonstrial2.models.HighScorePostRequest;
 import com.simpsonstrial2.interfaces.PostHighScoreDataListener;
-import com.simpsonstrial2.models.ScoreDataModel;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -48,7 +46,6 @@ public class HighScoreDataPoster extends AsyncTask<Boolean, Void, String>
         String serverDataString = null;
         try
         {
-            Log.d("url", request.getURL().toString());
             URL url = request.getURL();
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod(request.getRequestMethod());
@@ -68,11 +65,9 @@ public class HighScoreDataPoster extends AsyncTask<Boolean, Void, String>
             if (buffer.length() == 0) { return null; }
 
             serverDataString = buffer.toString();
-            Log.d("Server Data String", serverDataString);
         }
         catch (IOException e)
         {
-            Log.e("PlaceholderFragment", "Error ", e);
             return null;
         }
         finally
@@ -88,7 +83,6 @@ public class HighScoreDataPoster extends AsyncTask<Boolean, Void, String>
                     reader.close();
                 } catch (final IOException e)
                 {
-                    Log.e("PlaceholderFragment", "Error closing stream", e);
                 }
             }
 

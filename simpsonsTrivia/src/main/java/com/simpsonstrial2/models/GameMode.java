@@ -71,7 +71,7 @@ public class GameMode
         this.difficulty = difficulty;
         this.gamePlayType = gamePlayType;
 
-        this.quizLength = 2;
+        this.quizLength = 10;
         this.fiftyFiftyEnabled = false;
 
         if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.CHALLENGE)

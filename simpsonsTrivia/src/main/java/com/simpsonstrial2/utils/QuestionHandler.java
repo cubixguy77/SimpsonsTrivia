@@ -2,7 +2,6 @@ package com.simpsonstrial2.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.simpsonstrial2.enums.AnswerResult;
 import com.simpsonstrial2.interfaces.AnswerResultListener;
@@ -112,7 +111,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
         int[] usedBonusQuoteIDs = getQuestionIDs(10, true);
         bonusQuestionFetcher = GetBonusQuestionFetcher(usedBonusQuoteIDs);
         bonusQuestionFetcher.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        System.out.println("Executing bonus question fetch");
     }
 
 
@@ -148,7 +146,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
     @Override
     public void onQuestionReturned(Question nextQuestion)
     {
-        Log.d("question returned", nextQuestion.getQuestionText());
         questionHistory.add(new QuestionHistory(nextQuestion, AnswerResult.UNKNOWN));
         numSurplusQuestions++;
         if (immediateQuestionRequested)
@@ -163,7 +160,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
     @Override
     public void onBonusQuestionReturned(Question nextQuestion)
     {
-        System.out.println("bonus question load" + nextQuestion.getQuestionText());
         bonusQuestionHistory.add(new QuestionHistory(nextQuestion, AnswerResult.UNKNOWN));
         numBonusSurplusQuestions++;
         if (immediateBonusQuestionRequested)
@@ -182,7 +178,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
     {
         if (questionListener != null)
         {
-            System.out.println("Return question to client (" + currentQuestionNum + ") " + nextQuestion.getQuestionText());
             questionListener.onQuestionReturned(nextQuestion);
             questionListener.onQuestionNumChanged(currentQuestionNum);
             numSurplusQuestions--;
@@ -195,7 +190,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
 
     private void returnBonusQuestionToClient(Question nextQuestion)
     {
-        System.out.println("Return bonus question (" + currentBonusQuestionNum + ") " + nextQuestion.getQuestionText());
         questionListener.onBonusQuestionReturned(nextQuestion);
         numBonusSurplusQuestions--;
         immediateBonusQuestionRequested = false;
@@ -232,11 +226,13 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
     /* End AnswerResultListener */
 
 
-
+    public boolean isGameOver() {
+        return currentQuestionNum >= gameMode.getQuizLength();
+    }
 
     public void GetNextQuestion()
     {
-        if (currentQuestionNum >= gameMode.getQuizLength())
+        if (isGameOver())
         {
             questionListener.onGameOver();
             return;

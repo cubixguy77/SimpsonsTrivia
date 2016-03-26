@@ -6,7 +6,7 @@
     <dimen name="nav_drawer_header_height">100dp</dimen>
     <dimen name="button_elevation">2dp</dimen>
     <dimen name="button_press_elevation">6dp</dimen>
-    <dimen name="minTextSize">40.0px</dimen>
+    <dimen name="minTextSize">26dp</dimen>
 
     <!-- Main Menu -->
     <dimen name="main.title_text.margin.margin_top">256dp</dimen>

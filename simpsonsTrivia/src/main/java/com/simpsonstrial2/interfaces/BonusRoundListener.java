@@ -9,6 +9,7 @@ public interface BonusRoundListener
     void onBonusRoundNewQuestion();
     void onBonusRoundTimeExpired();
     void onBonusRoundResultsShow();
+    void onBonusRoundComplete();
     void onBonusRoundHidden();
     void onBonusRoundFinished();
 }
