@@ -24,13 +24,11 @@
         android:src="@color/colorPrimary"
         android:cropToPadding="false" />
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+    <android.support.design.widget.AppBarLayout
         android:id="@+id/ToolbarFrame"
-        android:visibility="visible"
-        android:outlineProvider="bounds"
-        android:elevation="4dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="10dp">
 
         <include
             android:id="@+id/tool_bar"
@@ -38,7 +36,7 @@
             android:layout_height="fill_parent"
             android:layout_width="fill_parent" />
 
-    </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <io.codetail.widget.RevealFrameLayout
         android:layout_width="fill_parent"
