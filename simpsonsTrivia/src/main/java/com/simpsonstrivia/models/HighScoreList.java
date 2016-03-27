@@ -39,14 +39,11 @@ public class HighScoreList
 
             if (score > highScoreList.get(i).getIntScore())
             {
-                System.out.println("score " + score + " > " + highScoreList.get(i).getIntScore() + " which is ranked " + highScoreList.get(i).getRank());
                 for (int j=i; j<highScoreList.size(); j++)
                 {
-                    System.out.println("Moving: " + highScoreList.get(j).getRank() + " to " + (Integer.toString(Integer.parseInt(highScoreList.get(j).getRank()) + 1)));
                     highScoreList.get(j).setRank(Integer.toString(Integer.parseInt(highScoreList.get(j).getRank()) + 1));
                 }
 
-                System.out.println("adding " + i);
                 highScoreList.add(i, new HighScoreItem(Integer.toString(i+1), Integer.toString(score), User.getInstance().getUserName(), true));
                 return;
             }

@@ -57,21 +57,18 @@ public class AutoResizeTextView extends TextView {
     public AutoResizeTextView(Context context) {
         super(context);
         mMinTextSize = context.getResources().getDimension(R.dimen.minTextSize);
-        System.out.println("1Min text size: " + mMinTextSize);
         initialize();
     }
 
     public AutoResizeTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mMinTextSize = context.getResources().getDimension(R.dimen.minTextSize);
-        System.out.println("2Min text size: " + mMinTextSize);
         initialize();
     }
 
     public AutoResizeTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mMinTextSize = context.getResources().getDimension(R.dimen.minTextSize);
-        System.out.println("3Min text size: " + mMinTextSize);
         initialize();
     }
 

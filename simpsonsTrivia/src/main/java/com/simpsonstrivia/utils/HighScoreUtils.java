@@ -24,8 +24,6 @@ public class HighScoreUtils {
     /* Tests whether the given score is a high score */
     public static void submitScore(final int score, final HighScoreSubmitListener listener)
     {
-        System.out.println("Submitting score: " + score);
-
         if (cachedList == null)
             cachedList = new HashMap<>();
 
@@ -59,8 +57,6 @@ public class HighScoreUtils {
 
     public static void postScore(final int score, final HighScoreRequestListener listener)
     {
-        System.out.println("Posting score: " + score);
-
         if (cachedList == null)
             cachedList = new HashMap<>();
 
@@ -90,7 +86,6 @@ public class HighScoreUtils {
             public void onScoresRequested() {}
             @Override
             public void onScoresReturned(HighScoreList list) {
-                System.out.println("Scores refreshed");
                 putCache(list);
                 if (listener != null)
                     listener.onScoresReturned(list);

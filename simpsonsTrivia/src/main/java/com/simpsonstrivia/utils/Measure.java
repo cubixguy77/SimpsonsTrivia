@@ -16,8 +16,6 @@ public class Measure {
         display.getSize(size);
         MyApplication.screenWidth = size.x;
         MyApplication.screenHeight = size.y;
-        System.out.println("Screen Width: " + MyApplication.screenWidth);
-        System.out.println("Screen Height: " + MyApplication.screenHeight);
     }
 
 

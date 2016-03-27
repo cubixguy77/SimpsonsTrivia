@@ -59,7 +59,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
     public static LeaderboardTab newInstance(boolean showGameModePicker, Bundle scoreModelBundle) {
         LeaderboardTab myFragment = new LeaderboardTab();
-        System.out.println("New leaderboard fragment instance created");
 
         Bundle args = new Bundle();
         args.putBoolean("ShowGameModePicker", showGameModePicker);
@@ -100,8 +99,6 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
         if (HighScoreUtils.isNetworkAvailable())
         {
             setupHighScoreList();
-            //refreshList();
-            //System.out.println("Results retrieved for leaderboard");
         }
         else
         {

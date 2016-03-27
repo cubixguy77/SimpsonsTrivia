@@ -60,7 +60,7 @@ public class GameMode
     private String questionXmlFileName;
     private String quoteXmlFileName;
     private boolean fiftyFiftyEnabled;
-    private boolean debugMode = true;
+    private boolean debugMode = false;
     private String getHighScoreURL;
     private String putHighScoreURL;
     private String gameModeTitle;

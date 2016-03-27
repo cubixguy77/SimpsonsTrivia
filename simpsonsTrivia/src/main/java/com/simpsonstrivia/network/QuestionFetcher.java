@@ -44,13 +44,10 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
             this.inputStream = assetManager.open(xmlFileName);
         }
         catch(Exception e) {}
-
-        System.out.println("Initializing question fetcher");
     }
 
     public void pause()
     {
-        System.out.println("Pausing question loading");
         isPaused = true;
     }
 
@@ -61,25 +58,18 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
 
     public void resume()
     {
-        System.out.println("Resuming question loading");
         isPaused = false;
     }
 
     @Override
     protected Boolean doInBackground(Integer... index)
     {
-        System.out.println("fetching questions....");
         return GetQuestions();
     }
 
     @Override
     protected void onPostExecute(Boolean result)
     {
-        //if (this.bonusRound)
-       //     listener.onBonusQuestionReturned(question);
-        //else
-       //     listener.onQuestionReturned(question);
-
         this.listener = null;
         this.inputStream = null;
     }
@@ -130,7 +120,6 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
         }
         catch (Exception p)
         {
-            System.out.println(p.toString());
         }
 
         return true;
