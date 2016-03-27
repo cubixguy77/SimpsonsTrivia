@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.simpsonstrial2"
+      package="com.triviabilities.simpsonstrivia"
       android:versionCode="9"
       android:versionName="2.0">
-    <uses-sdk android:minSdkVersion="14"
-              android:targetSdkVersion="22" />
 	
 	<supports-screens
         android:largeScreens  = "true"
@@ -17,11 +15,11 @@
     <application
         android:icon="@drawable/icon"
         android:label="@string/app.title"
-        android:name="MyApplication"
+        android:name="com.simpsonstrivia.MyApplication"
         android:theme="@style/MyMaterialTheme">
        
         <activity
-            android:name=".activities.MainMenuActivity"
+            android:name="com.simpsonstrivia.activities.MainMenuActivity"
             android:theme="@style/MyMaterialTheme.BrandedLaunch"
             android:label="@string/app.title"
             android:screenOrientation="portrait"
@@ -32,9 +30,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.QuestionActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".activities.HighScoreActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard"></activity>
-        <activity android:name=".activities.ResultsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.simpsonstrivia.activities.QuestionActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.simpsonstrivia.activities.HighScoreActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard"></activity>
+        <activity android:name="com.simpsonstrivia.activities.ResultsActivity" android:screenOrientation="portrait"></activity>
 
     </application>
     

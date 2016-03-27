@@ -68,7 +68,7 @@
             android:layout_marginTop="16dp">
 
 
-            <com.simpsonstrial2.views.AutoResizeTextView
+            <com.simpsonstrivia.views.AutoResizeTextView
                 android:id="@+id/QuestionText"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
