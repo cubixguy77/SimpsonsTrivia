@@ -97,7 +97,8 @@ public class HighScoreUtils {
 
     private static void putCache(HighScoreList list)
     {
-        cachedList.put(GameMode.getGameMode().getId(), list);
+        if (GameMode.getGameMode() != null)
+            cachedList.put(GameMode.getGameMode().getId(), list);
     }
 
 

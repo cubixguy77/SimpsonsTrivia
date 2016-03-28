@@ -86,19 +86,23 @@ public class ResultsActivity extends AppCompatActivity
     private void setupButtons() {
         gestureDetector = new GestureDetector(this, new SingleTapGesture());
 
-        Button homeButton = (Button) findViewById(R.id.homeButton);
+        final Button homeButton = (Button) findViewById(R.id.homeButton);
+        final Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                playAgainButton.setEnabled(false);
                 goHome();
             }
         });
 
-        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
         playAgainButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (gestureDetector.onTouchEvent(motionEvent)) {
+                    homeButton.setEnabled(false);
+
                     float touchX = motionEvent.getRawX();
                     float touchY = motionEvent.getRawY() - MyApplication.screenHeight;
 

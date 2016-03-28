@@ -226,7 +226,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 Animation.RELATIVE_TO_SELF, 0f); // Pivot point of Y scaling
         anim.setFillAfter(true); // Needed to keep the result of the animation
         anim.setDuration(200);
-        anim.setStartOffset(0);
+        anim.setStartOffset(200);
         anim.setInterpolator(new LinearInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override

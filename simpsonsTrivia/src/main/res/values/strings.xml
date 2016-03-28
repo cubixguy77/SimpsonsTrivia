@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app.title">Trivia for The Simpsons</string>
+    <string name="app.title">Simpsons Trivia</string>
 
     <string name="main.button.classic">Classic</string>
     <string name="main.button.speed">Speed</string>
