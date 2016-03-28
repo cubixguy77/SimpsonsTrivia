@@ -33,7 +33,7 @@ public class HighScoreActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.icon);
+        toolbar.setNavigationIcon(R.mipmap.icon);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
