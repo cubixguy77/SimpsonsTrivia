@@ -342,8 +342,14 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                     @Override
                     /* Question Text is now visible */
                     public void onAnimationEnd() {
+                        int correctPos = 0;
                         for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
-                            loadAnswerButton(answerButtons.get(answerPosition), answerPosition, newQuestion.getAnswerText(answerPosition), newQuestion.isCorrectAnswer(answerPosition), bonusRound);
+                            if(newQuestion.isCorrectAnswer(answerPosition))
+                                correctPos = answerPosition;
+                        }
+
+                        for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
+                            loadAnswerButton(answerButtons.get(answerPosition), answerPosition, newQuestion.getAnswerText(answerPosition), newQuestion.isCorrectAnswer(answerPosition), bonusRound, correctPos);
                         }
 
                         revealAnswerButtons(new SupportAnimator.SimpleAnimatorListener() {
@@ -367,7 +373,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         presentQuestion(newQuestion, true);
     }
 
-    private void loadAnswerButton(final Button answerButton, final int pos, String answerText, final boolean isCorrectAnswer, final boolean bonusRound) {
+    private void loadAnswerButton(final Button answerButton, final int pos, String answerText, final boolean isCorrectAnswer, final boolean bonusRound, final int correctPos) {
         answerButton.setVisibility(View.VISIBLE);
         answerButton.setText(answerText);
 
@@ -380,7 +386,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 if (gestureDetector.onTouchEvent(motionEvent)) {
                     disableAnswerButtons();
 
-                    presentAnswerResponseAnimations(answerButton, pos, isCorrectAnswer, (int) motionEvent.getX(), (int) motionEvent.getY());
+                    presentAnswerResponseAnimations(answerButton, pos, isCorrectAnswer, (int) motionEvent.getX(), (int) motionEvent.getY(), correctPos);
 
                     if (bonusRound) {
                         if (isCorrectAnswer)
@@ -434,7 +440,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
 /************ Answer Response Animations ************************/
 
-    public void presentAnswerResponseAnimations(final Button clickedButton, final int pos, final boolean isCorrectAnswer, int startX, int startY) {
+    public void presentAnswerResponseAnimations(final Button clickedButton, final int pos, final boolean isCorrectAnswer, int startX, int startY, final int correctPos) {
         answerResponseAnimationsInProgress = true;
 
         for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
@@ -448,7 +454,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             woohooText.setVisibility(View.VISIBLE);
         } else {
             setSelectedAnswerButtonBackground(clickedButton, pos, false);
+            setSelectedAnswerButtonBackground(answerButtons.get(correctPos), correctPos, true);
             setSelectionStateAnswerButtonTextColor(clickedButton, true);
+            setSelectionStateAnswerButtonTextColor(answerButtons.get(correctPos), true);
             questionText.setVisibility(View.INVISIBLE);
             dohText.setVisibility(View.VISIBLE);
         }
@@ -808,13 +816,14 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     public void restoreAnswerButtons(int pos, Button clickedButton)
     {
-        if (pos == 0)
-            clickedButton.setBackgroundResource(R.drawable.selector_answer_top_button);
-        else if (pos == 1 || pos == 2)
-            clickedButton.setBackgroundResource(R.drawable.selector_answer_middle_button);
-        else clickedButton.setBackgroundResource(R.drawable.selector_answer_bottom_button);
-
         for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
+            if (answerPosition == 0)
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_top_button);
+            else if (answerPosition == 1 || answerPosition == 2)
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_middle_button);
+            else
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_bottom_button);
+
             answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
         }
     }
