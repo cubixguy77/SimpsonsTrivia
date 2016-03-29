@@ -454,9 +454,16 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             woohooText.setVisibility(View.VISIBLE);
         } else {
             setSelectedAnswerButtonBackground(clickedButton, pos, false);
-            setSelectedAnswerButtonBackground(answerButtons.get(correctPos), correctPos, true);
+
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    setSelectedAnswerButtonBackground(answerButtons.get(correctPos), correctPos, true);
+                    setSelectionStateAnswerButtonTextColor(answerButtons.get(correctPos), true);
+                }
+            }, 800);
+
             setSelectionStateAnswerButtonTextColor(clickedButton, true);
-            setSelectionStateAnswerButtonTextColor(answerButtons.get(correctPos), true);
             questionText.setVisibility(View.INVISIBLE);
             dohText.setVisibility(View.VISIBLE);
         }
