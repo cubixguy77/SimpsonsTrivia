@@ -4791,7 +4791,7 @@
 		<QuestionText>Where did Lisa find Jebediah Springfield's confession?</QuestionText>
 		<Answers>
 			<Answer>Jebediah's fife</Answer>
-			<Answer>In Lisa's new saxaphone</Answer>
+			<Answer>In Lisa's new saxophone</Answer>
 			<Answer>Under a rug</Answer>
 			<Answer>Floating in a bottle in the river</Answer>
 		</Answers>
@@ -5609,7 +5609,7 @@
 	<Question QuestionNumber="623">
 		<QuestionText>What happens to Homer and Bart when they fall off a waterfall?</QuestionText>
 		<Answers>
-			<Answer>They loose their clothes</Answer>
+			<Answer>They lose their clothes</Answer>
 			<Answer>They find a village</Answer>
 			<Answer>They break their legs</Answer>
 			<Answer>They go up the cliff and fall down again</Answer>
@@ -5629,7 +5629,7 @@
 		<Answers>
 			<Answer>Dr. Marvin Monroe</Answer>
 			<Answer>Dr. Nick</Answer>
-			<Answer>Dr. Hibert</Answer>
+			<Answer>Dr. Hibbert</Answer>
 			<Answer>Dr. Bob</Answer>
 		</Answers>
 	</Question>
@@ -5655,8 +5655,8 @@
 		<QuestionText>What does Bart get Marge for her birthday?</QuestionText>
 		<Answers>
 			<Answer>French perfume</Answer>
-			<Answer>Ear pearcing</Answer>
-			<Answer>Earings</Answer>
+			<Answer>Ear piercing</Answer>
+			<Answer>Earrings</Answer>
 			<Answer>Photo of Bart</Answer>
 		</Answers>
 	</Question>
@@ -5711,7 +5711,7 @@
 			<Answer>Spy camera</Answer>
 			<Answer>Decoder pen</Answer>
 			<Answer>Invisible spray</Answer>
-			<Answer>Whoopie coushin</Answer>
+			<Answer>Whoopie cushion</Answer>
 		</Answers>
 	</Question>
 	<Question QuestionNumber="635">
@@ -5729,7 +5729,7 @@
 			<Answer>Repeating Krusty doll</Answer>
 			<Answer>Infomercials</Answer>
 			<Answer>Answering machine</Answer>
-			<Answer>Lisa's Saxaphone</Answer>
+			<Answer>Lisa's saxophone</Answer>
 		</Answers>
 	</Question>
 	<Question QuestionNumber="637">
@@ -7437,7 +7437,7 @@
 		<QuestionText>What is the name of Bleeding Gums Murphy's jazz CD?</QuestionText>
 		<Answers>
 			<Answer>Sax on the Beach</Answer>
-			<Answer>Saxamophone</Answer>
+			<Answer>Saxomophone</Answer>
 			<Answer>The Jazz Man</Answer>
 			<Answer>Jazz It Up</Answer>
 		</Answers>
@@ -7473,7 +7473,7 @@
 		<QuestionText>Moe transformed his bar into a family restaurant called what?</QuestionText>
 		<Answers>
 			<Answer>Uncle Moe's Family Feedbag</Answer>
-			<Answer>Chairman Moes Magic Walk</Answer>
+			<Answer>Chairman Moe's Magic Walk</Answer>
 			<Answer>Madman Moe's Pressure Cooker</Answer>
 			<Answer>Moe's Family Establishment</Answer>
 		</Answers>
