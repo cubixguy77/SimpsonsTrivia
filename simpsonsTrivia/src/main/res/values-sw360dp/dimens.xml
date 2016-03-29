@@ -24,7 +24,9 @@
     <dimen name="question.question_card.radius">25dp</dimen>
     <dimen name="question.question_card.margin">16dp</dimen>
 
-    <dimen name="question.question_text.font_size">22sp</dimen>
+    <dimen name="question.question_text.font_size.minimum">14sp</dimen>
+    <dimen name="question.question_text.font_size.medium">16sp</dimen>
+    <dimen name="question.question_text.font_size.max">19sp</dimen>
     <dimen name="question.question_text.padding">16dp</dimen>
     <dimen name="question.question_text.height">100dp</dimen>
 

@@ -68,13 +68,13 @@
             android:layout_marginTop="16dp">
 
 
-            <com.simpsonstrivia.views.AutoResizeTextView
+            <TextView
                 android:id="@+id/QuestionText"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:textSize="@dimen/question.question_text.font_size"
+                android:textSize="@dimen/question.question_text.font_size.max"
                 android:gravity="center_vertical|center_horizontal"
-                tools:text="Remember that postcard Grampa sent us from Florida of that Alligator biting that woman's bottom? That's right, we all thought it was hilarious. But, it turns out we were wrong. That alligator was sexually harassing that woman."
+                tools:text="Marge and homer give couples advice to tabitha vizz, who does what for a living askjldfnkasdhf asfd"
                 android:textColor="@color/trivia.question_text"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"

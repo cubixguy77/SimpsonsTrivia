@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
+import android.util.TypedValue;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -56,6 +57,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private RevealFrameLayout QuestionContainerContainer;
 
     private TextView questionText;
+    private float mMinTextSize;
+    private float mMidTextSize;
+    private float mMaxTextSize;
     private ArrayList<Button> answerButtons;
 
     private AnswerResultListener answerResultListener;
@@ -160,6 +164,10 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         answerButtons.add((Button) mainActivity.findViewById(R.id.AnswerB));
         answerButtons.add((Button) mainActivity.findViewById(R.id.AnswerC));
         answerButtons.add((Button) mainActivity.findViewById(R.id.AnswerD));
+
+        mMinTextSize = mainActivity.getResources().getDimension(R.dimen.question_question_text_font_size_minimum);
+        mMidTextSize = mainActivity.getResources().getDimension(R.dimen.question_question_text_font_size_medium);
+        mMaxTextSize = mainActivity.getResources().getDimension(R.dimen.question_question_text_font_size_max);
 
         /* Bonus Round Instructions */
         bonusRoundTitleText = (TextView) mainActivity.findViewById(R.id.BonusRoundTitleText);
@@ -410,15 +418,35 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     private void revealQuestionText(String text, SupportAnimator.AnimatorListener listener)
     {
+        questionText.setTextSize(TypedValue.COMPLEX_UNIT_PX, getTextSize(text));
         questionText.setText(text);
         questionText.setVisibility(View.VISIBLE);
+
         int centerX = (int) questionText.getX() + questionText.getWidth() / 2;
         int centerY = (int) questionText.getY() + questionText.getHeight()  / 2;
+
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(questionText, centerX, centerY, 10, questionText.getWidth());
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.setDuration(400);
         animator.addListener(listener);
         animator.start();
+    }
+
+    private float getTextSize(String text)
+    {
+        System.out.println("Text length: " + text.length());
+        if (text.length() < 100) {
+            System.out.println("Max size: " + mMaxTextSize);
+            return mMaxTextSize;
+        }
+        else if (text.length() < 180) {
+            System.out.println("Mid size: " + mMidTextSize);
+            return mMidTextSize;
+        }
+        else {
+            System.out.println("Min size: " + mMidTextSize);
+            return mMinTextSize;
+        }
     }
 
     public void revealAnswerButtons(SupportAnimator.SimpleAnimatorListener listener)
