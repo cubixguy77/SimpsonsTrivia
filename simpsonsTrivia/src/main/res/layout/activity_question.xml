@@ -74,7 +74,7 @@
                 android:layout_height="fill_parent"
                 android:textSize="@dimen/question.question_text.font_size.max"
                 android:gravity="center_vertical|center_horizontal"
-                tools:text="Marge and homer give couples advice to tabitha vizz, who does what for a living askjldfnkasdhf asfd"
+                tools:text="Who freezes himself in the Quik-E-Mart freezer?"
                 android:textColor="@color/trivia.question_text"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -133,7 +133,6 @@
                     android:layout_height="fill_parent"
                     android:background="@drawable/selector_answer_top_button"
                     android:textColor="@color/trivia.answer_button.text.standard"
-
                     android:textSize="@dimen/question.answer_button.text_size"
                     android:paddingLeft="@dimen/question.answer_button.text.padding"
                     android:paddingRight="@dimen/question.answer_button.text.padding" />
