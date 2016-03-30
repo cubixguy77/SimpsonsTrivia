@@ -20,6 +20,7 @@
     <color name="trivia.answer_button.background.standard">@color/yellow_secondary</color>
     <color name="trivia.answer_button.background.pressed">@color/white</color>
     <color name="trivia.answer_button.background.correct">@color/green</color>
+    <color name="trivia.answer_button.background.correct_after_wrong">@color/green_secondary</color>
     <color name="trivia.answer_button.background.wrong">@color/orange_primary</color>
     <color name="trivia.toolbar.text.standard">@color/grey_secondary</color>
     <color name="trivia.toolbar.text.accent">@color/yellow_primary</color>
@@ -56,6 +57,7 @@
     <color name="grey_ripple">#FFBAC8C5</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#81C784</color>
+    <color name="green_secondary">#b6e294</color>
     <color name="black">#4D4C48</color>
 
     </resources>

@@ -8,6 +8,7 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -486,7 +487,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {
-                    setSelectedAnswerButtonBackground(answerButtons.get(correctPos), correctPos, true);
+                    setAnswerButtonBackgroundCorrectAfterWrong(answerButtons.get(correctPos), correctPos);
                     setSelectionStateAnswerButtonTextColor(answerButtons.get(correctPos), true);
                 }
             }, 800);
@@ -841,6 +842,19 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_middle_correct : R.drawable.shape_button_answer_middle_wrong);
         else
             button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_bottom_correct : R.drawable.shape_button_answer_bottom_wrong);
+    }
+
+    private void setAnswerButtonBackgroundCorrectAfterWrong(Button button, int pos)
+    {
+        if (pos == 0)
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_top);
+        else if (pos == 1 || pos == 2)
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_middle);
+        else
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_bottom);
+
+        TransitionDrawable d = (TransitionDrawable) button.getBackground();
+        d.startTransition(100);
     }
 
     private void hideAnswerResultText() {
