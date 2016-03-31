@@ -3,6 +3,8 @@ package com.simpsonstrivia;
 import android.app.Application;
 import android.content.Context;
 
+import com.squareup.leakcanary.LeakCanary;
+
 public class MyApplication extends Application {
 
     private static Context context;
@@ -11,6 +13,7 @@ public class MyApplication extends Application {
 
     public void onCreate(){
         super.onCreate();
+        LeakCanary.install(this);
         MyApplication.context = getApplicationContext();
     }
 
