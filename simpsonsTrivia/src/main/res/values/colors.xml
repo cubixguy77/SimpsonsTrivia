@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">@color/blue_primary</color>
     <color name="colorPrimaryDark">#0C83EF</color>
-    <color name="colorAccent">#e90b55</color>
+    <color name="colorAccent">#f50057</color>
 
     <color name="main.buttons.text">@color/black</color>
     <color name="main.buttons.background">@color/yellow_primary</color>
@@ -43,21 +43,21 @@
     <color name="leaderboard.row.background.standard">@color/blue_tertiary</color>
     <color name="leaderboard.row.background.selected">@color/blue_quaternary</color>
 
-    <color name="blue_primary">#2695F3</color>
+    <color name="blue_primary">#2196f3</color>
     <color name="blue_secondary">#4FC3F7</color>
     <color name="blue_tertiary">#E3F2FD</color>
     <color name="blue_quaternary">#BBDEFB</color>
     <color name="blue_fifthly">#26008EF5</color>
     <color name="blue_sixthly">#CCC1E3FC</color>
     <color name="yellow_primary">#FFD54F</color>
-    <color name="yellow_secondary">#FFF9E1</color>
+    <color name="yellow_secondary">#fff8e1</color>
     <color name="orange_primary">#FF6F00</color>
     <color name="grey">#C4C4C4</color>
     <color name="grey_secondary">#b3ffffff</color>
     <color name="grey_ripple">#FFBAC8C5</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#81C784</color>
-    <color name="green_secondary">#b6e294</color>
-    <color name="black">#4D4C48</color>
+    <color name="green_secondary">#a5d6a7</color>
+    <color name="black">#424242</color>
 
     </resources>

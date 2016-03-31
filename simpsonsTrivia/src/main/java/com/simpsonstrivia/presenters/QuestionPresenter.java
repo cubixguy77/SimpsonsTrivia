@@ -96,6 +96,13 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private FloatingActionButton goButton;
     private TextView goText;
 
+    /* Animation timing values */
+    private final int answerResponseDisplayDuration = 1500;
+    private final int correctAnswerShowDelay = 900;
+    private final int answerContainerCollapseDuration = 500;
+    private final int answerResponseTextCollapseDuration = 300;
+    private final int answerButtonClickResponseDuration = 300;
+
     public QuestionPresenter(Activity mainActivity, AnswerResultListener answerResultListener, GameStateListener gameStateListener, TimerListener timerListener, ScorePresenter scorePresenter) {
         this.answerResultListener = answerResultListener;
         this.gameStateListener = gameStateListener;
@@ -113,8 +120,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
 
 
-/************* Loading ************/
-
+/************* Load UI Components ************/
     private void loadUiComponents(final Activity mainActivity) {
         QuestionCard = (LinearLayout) mainActivity.findViewById(R.id.QuestionCard);
         QuestionCard.setVisibility(View.INVISIBLE);
@@ -180,44 +186,15 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             public void onClick(View v) { gameStateListener.onBonusRoundInstructionsHide(); }
         });
     }
+/************* End Loading UI Components *************/
 
-    public Animator getReplaceQuestionWithQuestionAnim() {
-        Animator slideOutLeft = getCardSlideOutLeft(QuestionCard, null);
-        Animator slideInRight = getCardSlideInRight(QuestionCard, null);
 
-        AnimatorSet set = new AnimatorSet();
-        set.playSequentially(slideOutLeft, slideInRight);
-        return set;
-    }
 
-    public Animator getReplaceBonusInstructionsWithQuestionAnim() {
-        Animator slideOutLeft = getCardSlideOutLeft(BonusInstructionsCard, new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                QuestionContainerContainer.setVisibility(View.VISIBLE);
-                InstructionsContainer.setVisibility(View.GONE);
-            }
-        });
-        Animator slideInRight = getCardSlideInRight(QuestionCard, new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-                QuestionCard.setVisibility(View.VISIBLE);
-            }
-        });
 
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.playSequentially(slideOutLeft, slideInRight);
-        return animSet;
-    }
 
-/******** End Loading **********/
 
 
 /******* Intro Animation *******/
-
-
-
-
     private void prepViewsForIntroTransition()
     {
         QuestionCard.setVisibility(View.INVISIBLE);
@@ -278,17 +255,30 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         });
         ToolbarContainer.startAnimation(anim);
     }
-
-
-
-/******* End Intro Animation ******/
+/************* End Intro Animation ***********/
 
 
 
 
 
 
-/******* Question Presentation **************/
+
+    private void next()
+    {
+        if (timeExpired)
+        {
+            onBonusRoundResultsHide();
+        }
+        if (nextQuestionReady && nextQuestion != null) {
+            presentQuestion(nextQuestion, bonusRound);
+        } else if (bonusRoundTriggered) {
+            onBonusRoundInstructionsLaunch();
+        }
+    }
+
+
+
+/************* Question Presentation **************/
 
     public void SetQuestionNumber(int newQuestionNumber, int quizLength)
     {
@@ -377,6 +367,15 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         anim.start();
     }
 
+    public Animator getReplaceQuestionWithQuestionAnim() {
+        Animator slideOutLeft = getCardSlideOutLeft(QuestionCard, null);
+        Animator slideInRight = getCardSlideInRight(QuestionCard, null);
+
+        AnimatorSet set = new AnimatorSet();
+        set.playSequentially(slideOutLeft, slideInRight);
+        return set;
+    }
+
     public void presentBonusQuestion(Question newQuestion) {
         bonusRound = true;
         presentQuestion(newQuestion, true);
@@ -414,8 +413,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             }
         });
     }
-
-
 
     private void revealQuestionText(String text, SupportAnimator.AnimatorListener listener)
     {
@@ -462,13 +459,16 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         animator.addListener(listener);
         animator.start();
     }
-
 /************ End Question Presentation ***************/
 
 
 
-/************ Answer Response Animations ************************/
 
+
+
+
+
+/************ Answer Response Animations ************************/
     public void presentAnswerResponseAnimations(final Button clickedButton, final int pos, final boolean isCorrectAnswer, int startX, int startY, final int correctPos) {
         answerResponseAnimationsInProgress = true;
 
@@ -490,7 +490,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                     setAnswerButtonBackgroundCorrectAfterWrong(answerButtons.get(correctPos), correctPos);
                     setSelectionStateAnswerButtonTextColor(answerButtons.get(correctPos), true);
                 }
-            }, 800);
+            }, correctAnswerShowDelay);
 
             setSelectionStateAnswerButtonTextColor(clickedButton, true);
             questionText.setVisibility(View.INVISIBLE);
@@ -506,10 +506,53 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             @Override
             public void onAnimationEnd() {
                 if (!bonusRoundTriggered)
-                    presentQuestionTeardown(1500, clickedButton, pos, isCorrectAnswer);
+                    presentQuestionTeardown(isCorrectAnswer);
             }
         });
     }
+
+    /* Highlights the clicked button */
+    private void presentClickedButtonAnimation(Button clickedButton, int startX, int startY, SupportAnimator.SimpleAnimatorListener listener)
+    {
+        SupportAnimator clickedButtonAnimator = ViewAnimationUtils.createCircularReveal(clickedButton, startX, startY, 10, QuestionCard.getHeight());
+        clickedButtonAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+        clickedButtonAnimator.setDuration(answerButtonClickResponseDuration);
+        clickedButtonAnimator.addListener(listener);
+        clickedButtonAnimator.start();
+    }
+
+    private void setSelectionStateAnswerButtonTextColor(Button button, boolean isSelected)
+    {
+        if (isSelected)
+            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_selected));
+        else
+            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_faded));
+
+    }
+
+    private void setSelectedAnswerButtonBackground(Button button, int pos, boolean isCorrectAnswer)
+    {
+        if (pos == 0)
+            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_top_correct : R.drawable.shape_button_answer_top_wrong);
+        else if (pos == 1 || pos == 2)
+            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_middle_correct : R.drawable.shape_button_answer_middle_wrong);
+        else
+            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_bottom_correct : R.drawable.shape_button_answer_bottom_wrong);
+    }
+
+    private void setAnswerButtonBackgroundCorrectAfterWrong(Button button, int pos)
+    {
+        if (pos == 0)
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_top);
+        else if (pos == 1 || pos == 2)
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_middle);
+        else
+            button.setBackgroundResource(R.drawable.transition_to_green_answer_bottom);
+
+        TransitionDrawable d = (TransitionDrawable) button.getBackground();
+        d.startTransition(100);
+    }
+
 
     public boolean isAnimationsRunning()
     {
@@ -518,35 +561,20 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     public void stopAnimations()
     {
         presentQuestionTeardown(0, null);
-
         answerResponseAnimationsInProgress = false;
         hideAnswerResultText();
-        for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
-            Button button = answerButtons.get(answerPosition);
-            answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
-            if (answerPosition == 0)
-                button.setBackgroundResource(R.drawable.selector_answer_top_button);
-            else if (answerPosition == 1 || answerPosition == 2)
-                button.setBackgroundResource(R.drawable.selector_answer_middle_button);
-            else
-                button.setBackgroundResource(R.drawable.selector_answer_bottom_button);
-        }
-
+        restoreAnswerButtons();
         next();
     }
+/************ End Answer Response Animations ************/
 
-    private void next()
-    {
-        if (timeExpired)
-        {
-            onBonusRoundResultsHide();
-        }
-        if (nextQuestionReady && nextQuestion != null) {
-            presentQuestion(nextQuestion, bonusRound);
-        } else if (bonusRoundTriggered) {
-            onBonusRoundInstructionsLaunch();
-        }
-    }
+
+
+
+
+
+
+/************ Start Question Teardown ***************/
 
     public void presentQuestionTeardown(int delay, final SupportAnimator.SimpleAnimatorListener listener)
     {
@@ -560,17 +588,16 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         });
     }
 
-    private void presentQuestionTeardown(int delayInMilliseconds, final Button clickedButton, final int pos, final boolean isCorrectAnswer) {
-        presentAnswerButtonCollapseAnimation(delayInMilliseconds, new SupportAnimator.SimpleAnimatorListener() {
+    private void presentQuestionTeardown(final boolean isCorrectAnswer) {
+        presentAnswerButtonCollapseAnimation(answerResponseDisplayDuration, new SupportAnimator.SimpleAnimatorListener() {
             @Override
             public void onAnimationEnd() {
-                restoreAnswerButtons(pos, clickedButton);
+                restoreAnswerButtons();
                 presentResponseTextCollapseAnimation(isCorrectAnswer ? woohooText : dohText, new SupportAnimator.SimpleAnimatorListener() {
                     @Override
                     public void onAnimationEnd() {
                         hideAnswerResultText();
                         answerResponseAnimationsInProgress = false;
-
                         next();
                     }
                 });
@@ -578,11 +605,73 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         });
     }
 
-    /******* End Answer Response Animations ************/
+
+    private void presentAnswerButtonCollapseAnimation(final int delayInMilliseconds, final SupportAnimator.SimpleAnimatorListener listener)
+    {
+        /* Start the collapse 1500 milliseconds after the answer result has been shown */
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable()
+        {
+            @Override
+            public void run() {
+                int centerX = (int) AnswerContainer.getX() + (AnswerContainer.getWidth() / 2);
+                int centerY = 0; //(int) AnswerContainer.getY() + AnswerContainer.getHeight()*2;
+                if (isViewAttached(AnswerContainer))
+                {
+                    final SupportAnimator collapseAnswers = ViewAnimationUtils.createCircularReveal(AnswerContainer, centerX, centerY, 0, MyApplication.screenHeight).reverse();
+                    collapseAnswers.setInterpolator(new AccelerateDecelerateInterpolator());
+                    collapseAnswers.setDuration(answerContainerCollapseDuration);
+                    collapseAnswers.addListener(listener);
+                    collapseAnswers.start();
+                }
+            }
+        }, delayInMilliseconds);
+    }
+
+
+    private void presentResponseTextCollapseAnimation(View view, SupportAnimator.SimpleAnimatorListener listener)
+    {
+        AnswerContainer.setVisibility(View.INVISIBLE);
+        int centerX = (int) AnswerContainer.getX() + (AnswerContainer.getWidth() / 2);
+        int centerY = (int) AnswerContainer.getY() + AnswerContainer.getHeight() / 2;
+        if (view != null && isViewAttached(view))
+        {
+            SupportAnimator collapseResponseAnimator = ViewAnimationUtils.createCircularReveal(view, centerX, centerY, 0, questionText.getWidth()).reverse();
+            collapseResponseAnimator.setDuration(answerResponseTextCollapseDuration);
+            if (listener != null)
+                collapseResponseAnimator.addListener(listener);
+            collapseResponseAnimator.start();
+        }
+    }
+
+    private void hideAnswerResultText() {
+        woohooText.setVisibility(View.INVISIBLE);
+        dohText.setVisibility(View.INVISIBLE);
+    }
+
+    public void restoreAnswerButtons()
+    {
+        for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
+            if (answerPosition == 0)
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_top_button);
+            else if (answerPosition == 1 || answerPosition == 2)
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_middle_button);
+            else
+                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_bottom_button);
+
+            answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
+        }
+    }
+
+/************ End Question Teardown ************/
 
 
 
-    /************ Bonus Round Instructions ************************/
+
+
+
+
+/**************** Bonus Round Instructions ************************/
     public void onBonusRoundInstructionsLaunch() {
         if (answerResponseAnimationsInProgress) {
             bonusRoundTriggered = true;
@@ -628,16 +717,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         anim.start();
     }
 
-    private void presentStandardBackground()
-    {
-        ObjectAnimator anim = ObjectAnimator.ofInt(QuestionContainer,
-                "backgroundColor",
-                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_bonus),
-                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_standard));
-        anim.setDuration(1000);
-        anim.setEvaluator(new ArgbEvaluator());
-        anim.start();
-    }
+
 
     private void showBonusRoundViews()
     {
@@ -764,118 +844,44 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         toolbarElementsShowAnim.start();
     }
 
-
-
-
-
-
-    /* Highlights the clicked button */
-    private void presentClickedButtonAnimation(Button clickedButton, int startX, int startY, SupportAnimator.SimpleAnimatorListener listener)
-    {
-        SupportAnimator clickedButtonAnimator = ViewAnimationUtils.createCircularReveal(clickedButton, startX, startY, 10, QuestionCard.getHeight());
-        clickedButtonAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-        clickedButtonAnimator.setDuration(300);
-        clickedButtonAnimator.addListener(listener);
-        clickedButtonAnimator.start();
-    }
-
-    /* collapses the answer buttons */
-    private void presentAnswerButtonCollapseAnimation(final int delayInMilliseconds, final SupportAnimator.SimpleAnimatorListener listener)
-    {
-        /* Start the collapse 1500 milliseconds after the answer result has been shown */
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable()
-        {
+    public Animator getReplaceBonusInstructionsWithQuestionAnim() {
+        Animator slideOutLeft = getCardSlideOutLeft(BonusInstructionsCard, new AnimatorListenerAdapter() {
             @Override
-            public void run() {
-                int centerX = (int) AnswerContainer.getX() + (AnswerContainer.getWidth() / 2);
-                int centerY = 0; //(int) AnswerContainer.getY() + AnswerContainer.getHeight()*2;
-                if (isViewAttached(AnswerContainer))
-                {
-                    final SupportAnimator collapseAnswers = ViewAnimationUtils.createCircularReveal(AnswerContainer, centerX, centerY, 0, MyApplication.screenHeight).reverse();
-                    collapseAnswers.setInterpolator(new AccelerateDecelerateInterpolator());
-                    collapseAnswers.setDuration(500);
-                    collapseAnswers.addListener(listener);
-                    collapseAnswers.start();
-                }
+            public void onAnimationEnd(Animator animation) {
+                QuestionContainerContainer.setVisibility(View.VISIBLE);
+                InstructionsContainer.setVisibility(View.GONE);
             }
-        }, delayInMilliseconds);
+        });
+        Animator slideInRight = getCardSlideInRight(QuestionCard, new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                QuestionCard.setVisibility(View.VISIBLE);
+            }
+        });
+
+        AnimatorSet animSet = new AnimatorSet();
+        animSet.playSequentially(slideOutLeft, slideInRight);
+        return animSet;
     }
-
-    private boolean isViewAttached(View view)
-    {
-        return view.isShown();
-    }
-
-    /* collapses the answer response text - woohoo/doh - */
-    private void presentResponseTextCollapseAnimation(View view, SupportAnimator.SimpleAnimatorListener listener)
-    {
-        AnswerContainer.setVisibility(View.INVISIBLE);
-        int centerX = (int) AnswerContainer.getX() + (AnswerContainer.getWidth() / 2);
-        int centerY = (int) AnswerContainer.getY() + AnswerContainer.getHeight() / 2;
-        if (view != null && isViewAttached(view))
-        {
-            SupportAnimator collapseResponseAnimator = ViewAnimationUtils.createCircularReveal(view, centerX, centerY, 0, questionText.getWidth()).reverse();
-            collapseResponseAnimator.setDuration(300);
-            if (listener != null)
-                collapseResponseAnimator.addListener(listener);
-            collapseResponseAnimator.start();
-        }
-    }
+/**************** End Bonus Round Instructions ************************/
 
 
 
-    private void setSelectionStateAnswerButtonTextColor(Button button, boolean isSelected)
-    {
-        if (isSelected)
-            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_selected));
-        else
-            button.setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_faded));
-
-    }
-
-    private void setSelectedAnswerButtonBackground(Button button, int pos, boolean isCorrectAnswer)
-    {
-        if (pos == 0)
-            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_top_correct : R.drawable.shape_button_answer_top_wrong);
-        else if (pos == 1 || pos == 2)
-            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_middle_correct : R.drawable.shape_button_answer_middle_wrong);
-        else
-            button.setBackgroundResource(isCorrectAnswer ? R.drawable.shape_button_answer_bottom_correct : R.drawable.shape_button_answer_bottom_wrong);
-    }
-
-    private void setAnswerButtonBackgroundCorrectAfterWrong(Button button, int pos)
-    {
-        if (pos == 0)
-            button.setBackgroundResource(R.drawable.transition_to_green_answer_top);
-        else if (pos == 1 || pos == 2)
-            button.setBackgroundResource(R.drawable.transition_to_green_answer_middle);
-        else
-            button.setBackgroundResource(R.drawable.transition_to_green_answer_bottom);
-
-        TransitionDrawable d = (TransitionDrawable) button.getBackground();
-        d.startTransition(100);
-    }
-
-    private void hideAnswerResultText() {
-        woohooText.setVisibility(View.INVISIBLE);
-        dohText.setVisibility(View.INVISIBLE);
-    }
 
 
-    public void restoreAnswerButtons(int pos, Button clickedButton)
-    {
-        for (int answerPosition = 0; answerPosition <= 3; answerPosition++) {
-            if (answerPosition == 0)
-                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_top_button);
-            else if (answerPosition == 1 || answerPosition == 2)
-                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_middle_button);
-            else
-                answerButtons.get(answerPosition).setBackgroundResource(R.drawable.selector_answer_bottom_button);
 
-            answerButtons.get(answerPosition).setTextColor(ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_answer_button_text_standard));
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -917,7 +923,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             }
         });
     }
-
 
     public void onBonusRoundResultsHide()
     {
@@ -966,8 +971,30 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         bonusRound = false;
     }
 
+    private void presentStandardBackground()
+    {
+        ObjectAnimator anim = ObjectAnimator.ofInt(
+                QuestionContainer,
+                "backgroundColor",
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_bonus),
+                ContextCompat.getColor(MyApplication.getAppContext(), R.color.trivia_background_standard));
+        anim.setDuration(1000);
+        anim.setEvaluator(new ArgbEvaluator());
+        anim.start();
+    }
+/******* End Bonus Round Results Animations ***********/
+
+
+
+
+
 
     /* Utils */
+
+    private boolean isViewAttached(View view)
+{
+    return view.isShown();
+}
 
     private Animator getCardSlideOutLeft(View view, AnimatorListenerAdapter listener) {
         ObjectAnimator slide = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_card_slide_out_left);
