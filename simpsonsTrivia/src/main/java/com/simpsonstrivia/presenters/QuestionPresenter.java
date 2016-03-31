@@ -102,6 +102,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private final int answerContainerCollapseDuration = 500;
     private final int answerResponseTextCollapseDuration = 300;
     private final int answerButtonClickResponseDuration = 300;
+    private final int toolbarShowHideDuration = 500;
 
     public QuestionPresenter(Activity mainActivity, AnswerResultListener answerResultListener, GameStateListener gameStateListener, TimerListener timerListener, ScorePresenter scorePresenter) {
         this.answerResultListener = answerResultListener;
@@ -275,6 +276,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
             onBonusRoundInstructionsLaunch();
         }
     }
+
+
+
 
 
 
@@ -696,8 +700,8 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     private void presentToolbarCollapse(AnimatorListenerAdapter listener)
     {
-        ObjectAnimator questionNumberTextAnim = getToolbarHideAnimator(questionNumberText, 500, null);
-        ObjectAnimator scoreTextAnim = getToolbarHideAnimator(scoreText, 500, null);
+        ObjectAnimator questionNumberTextAnim = getToolbarHideAnimator(questionNumberText, toolbarShowHideDuration, null);
+        ObjectAnimator scoreTextAnim = getToolbarHideAnimator(scoreText, toolbarShowHideDuration, null);
 
         AnimatorSet toolbar = new AnimatorSet();
         toolbar.playTogether(questionNumberTextAnim, scoreTextAnim);
@@ -937,20 +941,20 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 QuestionCard.setX(MyApplication.screenWidth);
                 QuestionCard.setVisibility(View.INVISIBLE);
 
-                Animator hideBonusLabelAnim = getToolbarHideAnimator(questionNumberText, 500, new AnimatorListenerAdapter() {
+                Animator hideBonusLabelAnim = getToolbarHideAnimator(questionNumberText, toolbarShowHideDuration, new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         questionNumberText.setVisibility(View.INVISIBLE);
                     }
                 });
 
-                Animator hideTimerAnim = getToolbarHideAnimator(timerText, 500, new AnimatorListenerAdapter() {
+                Animator hideTimerAnim = getToolbarHideAnimator(timerText, toolbarShowHideDuration, new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         timerText.setVisibility(View.GONE);
                     }
                 });
-                Animator hideScoreAnim = getToolbarHideAnimator(scoreText, 500, null);
+                Animator hideScoreAnim = getToolbarHideAnimator(scoreText, toolbarShowHideDuration, null);
 
                 AnimatorSet hideBonusToolbar = new AnimatorSet();
                 hideBonusToolbar.playTogether(hideBonusLabelAnim, hideTimerAnim, hideScoreAnim);
