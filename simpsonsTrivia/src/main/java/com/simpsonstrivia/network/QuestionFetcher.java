@@ -8,12 +8,7 @@ import android.os.AsyncTask;
 import com.simpsonstrivia.interfaces.QuestionFetcherListener;
 import com.simpsonstrivia.models.Question;
 
-import org.w3c.dom.Element;
-
 import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
 import java.io.InputStream;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -99,6 +94,9 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
             {
                 while(isPaused())
                 {
+                    if (isCancelled())
+                        return false;
+
                     sleep(5000);
                 }
 
@@ -118,9 +116,7 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
                 publishProgress(new Question(questionText, answerA, answerB, answerC, answerD, "A"));
             }
         }
-        catch (Exception p)
-        {
-        }
+        catch (Exception p){}
 
         return true;
     }
@@ -129,14 +125,16 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
     {
         try
         {
-            Thread.sleep(sleepDuration);
+            if (!isCancelled())
+                Thread.sleep(sleepDuration);
         }
         catch(InterruptedException e)
         {
-            e.printStackTrace();
         }
     }
 
+
+    /*
     private Question GetQuestionByNode2(NodeList nodeList)
     {
         Node questionTextNode = nodeList.item(1);
@@ -177,4 +175,5 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
 
         return new Question(questionText, answerA, answerB, answerC, answerD, "A");
     }
+    */
 }

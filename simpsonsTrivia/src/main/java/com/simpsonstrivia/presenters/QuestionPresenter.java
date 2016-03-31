@@ -101,8 +101,10 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private final int correctAnswerShowDelay = 900;
     private final int answerContainerCollapseDuration = 500;
     private final int answerResponseTextCollapseDuration = 300;
-    private final int answerButtonClickResponseDuration = 300;
+    private final int answerButtonClickResponseDuration = 200;
     private final int toolbarShowHideDuration = 500;
+    private final int toolbarIntroDuration = 200;
+    private final int toolbarIntroRevealDuration = 500;
 
     public QuestionPresenter(Activity mainActivity, AnswerResultListener answerResultListener, GameStateListener gameStateListener, TimerListener timerListener, ScorePresenter scorePresenter) {
         this.answerResultListener = answerResultListener;
@@ -212,8 +214,8 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 Animation.RELATIVE_TO_SELF, 0f, // Pivot point of X scaling
                 Animation.RELATIVE_TO_SELF, 0f); // Pivot point of Y scaling
         anim.setFillAfter(true); // Needed to keep the result of the animation
-        anim.setDuration(200);
-        anim.setStartOffset(200);
+        anim.setDuration(toolbarIntroDuration);
+        anim.setStartOffset(0);
         anim.setInterpolator(new LinearInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -238,7 +240,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         ToolbarContainer.getLayoutParams().height = 0;
         ToolbarContainer.setVisibility(View.VISIBLE);
         ResizeAnimation anim = new ResizeAnimation(ToolbarContainer, toolbarHeight);
-        anim.setDuration(500);
+        anim.setDuration(toolbarIntroRevealDuration);
         anim.setStartOffset(0);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
         anim.setAnimationListener(new Animation.AnimationListener() {
