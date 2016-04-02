@@ -5,12 +5,16 @@ android {
     buildToolsVersion '23.0.2'
 
     defaultConfig {
-        applicationId "com.simpsonstrial2"
+        applicationId "com.triviabilities.simpsonstrivia"
         minSdkVersion 14
         targetSdkVersion 23
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
