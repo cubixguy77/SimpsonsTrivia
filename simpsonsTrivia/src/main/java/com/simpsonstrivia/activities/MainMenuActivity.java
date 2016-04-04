@@ -115,6 +115,8 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		{
 			root.removeViewAt(2);
 		}
+
+		enableButtons(true);
 	}
 
 	@Override
@@ -201,8 +203,21 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		return result;
 	}
 
+	private void enableButtons(boolean enabled)
+	{
+		ChallengeButton.setEnabled(enabled);
+		SpeedChallengeButton.setEnabled(enabled);
+
+		EasyChallengeButton.setEnabled(enabled);
+		HardChallengeButton.setEnabled(enabled);
+		EasySpeedButton.setEnabled(enabled);
+		HardSpeedButton.setEnabled(enabled);
+	}
+
 	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
 	{
+		enableButtons(false);
+
 		GameMode.newInstance(difficulty, gamePlayType);
 
 		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
