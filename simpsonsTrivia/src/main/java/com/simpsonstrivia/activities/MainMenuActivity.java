@@ -19,6 +19,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.crashlytics.android.Crashlytics;
 import com.simpsonstrivia.MyApplication;
 import com.triviabilities.simpsonstrivia.R;
 import com.simpsonstrivia.enums.Difficulty;
@@ -31,6 +32,7 @@ import com.simpsonstrivia.views.SingleTapGesture;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
+import io.fabric.sdk.android.Fabric;
 
 /* Home Screen */
 public class MainMenuActivity extends AppCompatActivity implements View.OnTouchListener
@@ -62,6 +64,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
     public void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.MyMaterialTheme);
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main_menu);
 
 		gestureDetector = new GestureDetector(this, new SingleTapGesture());

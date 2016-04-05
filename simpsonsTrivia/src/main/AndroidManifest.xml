@@ -36,5 +36,8 @@
         <activity android:name="com.simpsonstrivia.activities.HighScoreActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard" />
         <activity android:name="com.simpsonstrivia.activities.ResultsActivity" android:screenOrientation="portrait" />
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f2160560f4ffbab52d7d24cfcfe22749f16a2b50" />
     </application>
 </manifest>

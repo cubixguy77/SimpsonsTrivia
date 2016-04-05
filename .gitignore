@@ -42,3 +42,5 @@ proguard/
 # Android Studio captures folder
 captures/
 keystore.jks
+release.properties
+simpsonsTrivia/fabric.properties
