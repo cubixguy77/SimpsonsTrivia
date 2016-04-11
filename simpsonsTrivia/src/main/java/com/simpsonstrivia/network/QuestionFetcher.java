@@ -130,6 +130,8 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
         }
         catch(InterruptedException e)
         {
+            listener = null;
+            inputStream = null;
         }
     }
 
