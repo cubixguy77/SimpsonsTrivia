@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <fragment
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:name="com.triviabilities.fragments.LeaderboardTab"
+        android:id="@+id/leaderboard_tab"
+        tools:layout="@layout/fragment_high_score_list" />
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/bottom_bar" />
+
+</LinearLayout>

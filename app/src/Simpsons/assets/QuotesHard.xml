@@ -1,0 +1,5622 @@
+<Questions>
+	<Question>
+		<QuestionText>Miracles always happen to poor kids at Christmas. It happened to Tiny Tim, it happened to Charlie Brown, it happened to The Smurfs, and it's gonna happen to us.</QuestionText>
+		<QuestionNum>0</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>My turn. Kwyjibo. K-W-Y-J-I-B-O, 22 points, plus triple word score, plus 50 points for using all my letters.</QuestionText>
+		<QuestionNum>1</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What? And violate the code of the schoolyard? I'd rather Bart die.</QuestionText>
+		<QuestionNum>2</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Herman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You know, you play pretty well for someone with no real problems.</QuestionText>
+		<QuestionNum>3</QuestionNum>
+		<Answers>
+			<Answer>Bleeding Gums Murphy</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Is that a good siren? Am I approved?</QuestionText>
+		<QuestionNum>4</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Nah, might land on my face and end up looking like you.</QuestionText>
+		<QuestionNum>5</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Entirely my fault. It is nice to meet you... Homer.</QuestionText>
+		<QuestionNum>6</QuestionNum>
+		<Answers>
+			<Answer>Jacques</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, no, no. Homer is my... ball's name.</QuestionText>
+		<QuestionNum>7</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well it's hard for me to judge, since I've never bowled in my life!</QuestionText>
+		<QuestionNum>8</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Maybe Lisa's right about America being the land of opportunity, and maybe Adil's got a point about the machinery of capitalism being oiled with the blood of the workers.</QuestionText>
+		<QuestionNum>9</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Never have I seen you look so unhappy while purchasing such a large quantity of ice cream.</QuestionText>
+		<QuestionNum>10</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Lou</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'll never forgive you for making me say this, but you're smarter than me.</QuestionText>
+		<QuestionNum>11</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Treat kids like equals, they're people too. They're smarter than you think. They were smart enough to catch me.</QuestionText>
+		<QuestionNum>12</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Sideshow Mel</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Bumblebee Man</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Actually the Simpsons are neighbors of ours and we found them to be a quite misunderstood and underrated family.</QuestionText>
+		<QuestionNum>13</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I have a test today that I am not ready for. Could you please crash the bus or something?</QuestionText>
+		<QuestionNum>14</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>As a natural enemy, I don't know why I should care, but the information regarding America's colonial period you received is erroneous.</QuestionText>
+		<QuestionNum>15</QuestionNum>
+		<Answers>
+			<Answer>Martin</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A blindfolded chimp with a pencil in his teeth has a better chance of passing this test than you do.</QuestionText>
+		<QuestionNum>16</QuestionNum>
+		<Answers>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Quit complaining, Chrome Dome.</QuestionText>
+		<QuestionNum>17</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well, it’s in the union contract, sir. One token promotion from within per year.</QuestionText>
+		<QuestionNum>18</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I, who feel the tranquility far outweighs the actual catching of fish, am using nothing.</QuestionText>
+		<QuestionNum>19</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This anonymous clan of slack-jawed troglodytes has cost me the election, and yet if I were to have them killed, I would be the one to go to jail.</QuestionText>
+		<QuestionNum>20</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your beer comes from farther away than my beer, you and your son like each other, your wife's butt is higher than my wife's butt! You make me sick!</QuestionText>
+		<QuestionNum>21</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Having never received any words of encouragement myself, I'm not sure how they're supposed to sound, but here goes: I believe in you.</QuestionText>
+		<QuestionNum>22</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's not yours Bart, this is family glue.</QuestionText>
+		<QuestionNum>23</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Just because I wrecked something she worked really hard on and I made her cr... uh, oh.</QuestionText>
+		<QuestionNum>24</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I bet you could throw a dead body in there, and no one would ever find it.</QuestionText>
+		<QuestionNum>25</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dear purveyors of senseless violence...</QuestionText>
+		<QuestionNum>26</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Our research shows that one person cannot make a difference, no matter how big a screwball she is.</QuestionText>
+		<QuestionNum>27</QuestionNum>
+		<Answers>
+			<Answer>Roger Meyers Jr.</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Mayor Qwimby</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Here's my card, it turns into a sponge when you put it in water.</QuestionText>
+		<QuestionNum>28</QuestionNum>
+		<Answers>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Dr. Nick</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now, a little death anxiety is normal. You can expect to go through five stages. The first is denial.</QuestionText>
+		<QuestionNum>29</QuestionNum>
+		<Answers>
+			<Answer>Dr. Hibbert</Answer>
+			<Answer>Dr. Marvin Monroe</Answer>
+			<Answer>Dr. Nick</Answer>
+			<Answer>Professor Frink</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When you stop this car, I'm gonna hug you. And kiss you. And I'll never be able to let you go.</QuestionText>
+		<QuestionNum>30</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Of course, back then, if a fight lasted less than fifty rounds, we demanded our nickel back.</QuestionText>
+		<QuestionNum>31</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's Patty who chose a life of celibacy. Selma simply had celibacy thrust upon her.</QuestionText>
+		<QuestionNum>32</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Come on, one of you guys has gotta be Homer Sexual.</QuestionText>
+		<QuestionNum>33</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Otto</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Of course I'd have been better off, as far as I'm concerned, I have no brother!</QuestionText>
+		<QuestionNum>34</QuestionNum>
+		<Answers>
+			<Answer>Herb</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Rod</Answer>
+			<Answer>Todd</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Because of me, you lost your business, your home and all your possessions. I can't help but think that maybe you'd have been better off if I'd never come into your life.</QuestionText>
+		<QuestionNum>35</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I value every second we're together. From the moment I squeeze his orange juice in the morning, till I tuck him in at night.</QuestionText>
+		<QuestionNum>36</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's scalding me as we speak.</QuestionText>
+		<QuestionNum>37</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Snake</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Unless the next word was burped, you didn't have to.</QuestionText>
+		<QuestionNum>38</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Selma</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You are Lisa Simpson.</QuestionText>
+		<QuestionNum>39</QuestionNum>
+		<Answers>
+			<Answer>Mr. Bergstrom</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey, just because I don't care doesn't mean I don't understand.</QuestionText>
+		<QuestionNum>40</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If you want him to live through the night, I suggest you roll him onto his stomach.</QuestionText>
+		<QuestionNum>41</QuestionNum>
+		<Answers>
+			<Answer>Dr. Hibbert</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Lunchlady Dorris</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>She means you should get a job, stupid!</QuestionText>
+		<QuestionNum>42</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>In the off-chance of a nuclear disaster, this sign will tell you, the good citizens of Springfield, what to do.</QuestionText>
+		<QuestionNum>43</QuestionNum>
+		<Answers>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I guess the moral is the squeaky wheel gets the grease.</QuestionText>
+		<QuestionNum>44</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Mom said she was sleeping. She lied, she lied.</QuestionText>
+		<QuestionNum>45</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Remember last month when I paid back that loan? Well now I need you to do a favor for me.</QuestionText>
+		<QuestionNum>46</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, meltdown. It's one of these annoying buzzwords. We prefer to call it an unrequested fission surplus.</QuestionText>
+		<QuestionNum>47</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A nuclear reactor's a lot like a woman: You just have to read the manual and press the right buttons.</QuestionText>
+		<QuestionNum>48</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>For great is the car with power steering and dyna-flow suspension.</QuestionText>
+		<QuestionNum>49</QuestionNum>
+		<Answers>
+			<Answer>Rabbi Krustofski</Answer>
+			<Answer>Herb Powell</Answer>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I have no son.</QuestionText>
+		<QuestionNum>50</QuestionNum>
+		<Answers>
+			<Answer>Rabbi Krustofski</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Sideshow Mel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This isn't rocket science, it's brain surgery.</QuestionText>
+		<QuestionNum>51</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Dr. Nick</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I also tried Mr. Flanders, Aunt Patty, Aunt Selma, Dr. Hibbert, Reverend Lovejoy, and that nice man who caught the snake in our basement.</QuestionText>
+		<QuestionNum>52</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He reminds me of me before the weight of the world crushed my spirit.</QuestionText>
+		<QuestionNum>53</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hello, St. Louis.</QuestionText>
+		<QuestionNum>54</QuestionNum>
+		<Answers>
+			<Answer>Steven Tyler</Answer>
+			<Answer>Paul McCartney</Answer>
+			<Answer>Michael Jackson</Answer>
+			<Answer>George Harrison</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I heard radiation can make you sterile.</QuestionText>
+		<QuestionNum>55</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm paying for this delivery, so if you wanna stay, you'd better show me some respect.</QuestionText>
+		<QuestionNum>56</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Selma</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I used to hate the smell of your smelly feet. Now, it's the smell of victory.</QuestionText>
+		<QuestionNum>57</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're a very selfish man.</QuestionText>
+		<QuestionNum>58</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You think you know fear? Well, I've seen them naked.</QuestionText>
+		<QuestionNum>59</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'd like a banana fudge sundae. With whipped cream! And some chocolate chip cheesecake. And a bottle of tequila.</QuestionText>
+		<QuestionNum>60</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Selma</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I said I don't want any damn vegetables.</QuestionText>
+		<QuestionNum>61</QuestionNum>
+		<Answers>
+			<Answer>Todd Flanders</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Rod Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>No matter how good you are at something, there's always about a million people better than you.</QuestionText>
+		<QuestionNum>62</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Gotcha. Can't win, don't try.</QuestionText>
+		<QuestionNum>63</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And I say that England's greatest prime minister was Lord Palmerston.</QuestionText>
+		<QuestionNum>64</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm not sure random locker searches are permitted by the Supreme Court.</QuestionText>
+		<QuestionNum>65</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I know you're a good man, but I have a dog that's very sick.</QuestionText>
+		<QuestionNum>66</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If I came into your house and started sniffing at your crotch and slobbering all over your face, what would you say?</QuestionText>
+		<QuestionNum>67</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>First of all, he's not a genius, he's an actor. And second, he's not much of an actor.</QuestionText>
+		<QuestionNum>68</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>There's plenty of money out there for a guy who knows how to fake his own death.</QuestionText>
+		<QuestionNum>69</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're the coolest adult I've ever met.</QuestionText>
+		<QuestionNum>70</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've never been called an adult before. I've been tried as one.</QuestionText>
+		<QuestionNum>71</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Disingenuous mountebanks with their subliminal chicanery!</QuestionText>
+		<QuestionNum>72</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Sideshow Mel</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If you really want something in this life, you have to work for it. Now quiet, they're about to announce the lottery numbers.</QuestionText>
+		<QuestionNum>73</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Don't ask stupid questions. Is there any frontal nudity?</QuestionText>
+		<QuestionNum>74</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Why should I spend half my Sunday hearing about how I'm going to hell?</QuestionText>
+		<QuestionNum>75</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Jessica Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Show me who to smite, and they shall be smoten!</QuestionText>
+		<QuestionNum>76</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Maude Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're homely as a mule's butt.</QuestionText>
+		<QuestionNum>77</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Will you remember this the next time I wreck your life?</QuestionText>
+		<QuestionNum>78</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm not a zombie. But hey, when in Rome.</QuestionText>
+		<QuestionNum>79</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Eat lead, Einstein.</QuestionText>
+		<QuestionNum>80</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Show's over, Shakespeare.</QuestionText>
+		<QuestionNum>81</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What if one of us has been good and one of us has been bad?</QuestionText>
+		<QuestionNum>82</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Springtime fresh, winter white. What could be better?</QuestionText>
+		<QuestionNum>83</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Care to join me in a belt of Scotch?</QuestionText>
+		<QuestionNum>84</QuestionNum>
+		<Answers>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A woman is a lot like a refrigerator, they're about six feet tall, 300 pounds, they make ice.</QuestionText>
+		<QuestionNum>85</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A woman is more like a beer. They smell good, they look good, you'd step over your own mother just to get one.</QuestionText>
+		<QuestionNum>86</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>But you can't stop at one, you wanna drink another woman.</QuestionText>
+		<QuestionNum>87</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>So long, Superman, your secret identity is safe with me.</QuestionText>
+		<QuestionNum>88</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Everything's snowed in; all I can see is white.</QuestionText>
+		<QuestionNum>89</QuestionNum>
+		<Answers>
+			<Answer>Arnie Pie</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You didn't build this house; you won it on a crooked '50s game show.</QuestionText>
+		<QuestionNum>90</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>How much are these free burgers gonna cost me?</QuestionText>
+		<QuestionNum>91</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I personally am gonna spit in every fiftieth burger.</QuestionText>
+		<QuestionNum>92</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lunchlady Dorris</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Nothing you say can upset us. We're the MTV generation.</QuestionText>
+		<QuestionNum>93</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well I got news for ya: this ain't makeup.</QuestionText>
+		<QuestionNum>94</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Sideshow Mel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I call the big one Bitey.</QuestionText>
+		<QuestionNum>95</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I am the Lizard Queen.</QuestionText>
+		<QuestionNum>96</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Gretchen</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Rachel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your son Bart sounds very bad.</QuestionText>
+		<QuestionNum>97</QuestionNum>
+		<Answers>
+			<Answer>Pepi</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This just in, a fist-fight is in process in downtown Springfield. Initial reports indicate, and these are very preliminary, that one of the fighters is a giant lizard.</QuestionText>
+		<QuestionNum>98</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Arnie Pie</Answer>
+			<Answer>Bumblebee Man</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Do we have a source on this? A bunch of drunken frat boys.</QuestionText>
+		<QuestionNum>99</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Arnie Pie</Answer>
+			<Answer>Bumblebee Man</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He must mean trunk.</QuestionText>
+		<QuestionNum>100</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I even have the Krusty Home Pregnancy test.</QuestionText>
+		<QuestionNum>101</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>One day, honest citizens are gonna stand up to you crooked cops.</QuestionText>
+		<QuestionNum>102</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Rex Banner</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Drinking has ruined my life.  I'm only 31 years old.</QuestionText>
+		<QuestionNum>103</QuestionNum>
+		<Answers>
+			<Answer>Hans Moleman</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The Japanese? Those sandal-wearing goldfish-tenders?</QuestionText>
+		<QuestionNum>104</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It was the best of times, it was the blurst of times.</QuestionText>
+		<QuestionNum>105</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Looks like there's beer coming out of the chimney.</QuestionText>
+		<QuestionNum>106</QuestionNum>
+		<Answers>
+			<Answer>Lou</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Rex Banner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Cartoons have writers?</QuestionText>
+		<QuestionNum>107</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's so sad that Krusty is ashamed of his roots.</QuestionText>
+		<QuestionNum>108</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What are you going to change your name to when you grow up?</QuestionText>
+		<QuestionNum>109</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And when are we going to get our mountain bikes?</QuestionText>
+		<QuestionNum>110</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Kearney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Would the world judge me harshly if I threw away the key?</QuestionText>
+		<QuestionNum>111</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Eddie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>How could you do this to snakes after all they've done for you?</QuestionText>
+		<QuestionNum>112</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Mrs. Glick, who killed all the rats in your basement?</QuestionText>
+		<QuestionNum>113</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I love the sexy slither of a lady snake, oh baby.</QuestionText>
+		<QuestionNum>114</QuestionNum>
+		<Answers>
+			<Answer>Barry White</Answer>
+			<Answer>Issac Hayes</Answer>
+			<Answer>Tay Zonday</Answer>
+			<Answer>Steven Taylor</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He's had it in for me ever since I kinda ran over his dog.</QuestionText>
+		<QuestionNum>115</QuestionNum>
+		<Answers>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Replace the word 'kinda' with the word 'repeatedly', and the word 'dog' with 'son'.</QuestionText>
+		<QuestionNum>116</QuestionNum>
+		<Answers>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well everything's stolen nowadays. Why the fax machine is nothing but a waffle iron with a phone attached.</QuestionText>
+		<QuestionNum>117</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What can I do? In the name of God, you've gotta tell me.</QuestionText>
+		<QuestionNum>118</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>For the love of God sir, there are two Seats.</QuestionText>
+		<QuestionNum>119</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Gentlemen, I've decided there will be no investigation. Now if you'll excuse me, I'll go away.</QuestionText>
+		<QuestionNum>120</QuestionNum>
+		<Answers>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The painters moved your desk, sir.</QuestionText>
+		<QuestionNum>121</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Lou</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Here's an impression of Mr. Burns that you might find, a little cheeky.</QuestionText>
+		<QuestionNum>122</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If I don't finish this last bite, you don't get my soul, do you?</QuestionText>
+		<QuestionNum>123</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm smarter than the Devil.</QuestionText>
+		<QuestionNum>124</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Ah, fresh victims for my ever growing army of the undead.</QuestionText>
+		<QuestionNum>125</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're absolutely right, Homer. We don't need a babysitter.</QuestionText>
+		<QuestionNum>126</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Rod</Answer>
+			<Answer>Todd</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I was just going through your garbage, when I couldn't help but overhear you are in need of a babysitter.</QuestionText>
+		<QuestionNum>127</QuestionNum>
+		<Answers>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Weaseling out of things is important to learn. It's what separates us from the animals, except the weasel.</QuestionText>
+		<QuestionNum>128</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm going to shave you bald, young man, until you learn that hair is not a right, it's a privilege.</QuestionText>
+		<QuestionNum>129</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I got a dirty word shaved into the back of my head.</QuestionText>
+		<QuestionNum>130</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I won't bore you with the details of our miraculous escape, but we desperately need a real emergency exit.</QuestionText>
+		<QuestionNum>131</QuestionNum>
+		<Answers>
+			<Answer>Charlie</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You see, I have this friend called Joey Joe Joe Junior Shabadoo.</QuestionText>
+		<QuestionNum>132</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey, Joey Joe Joe!</QuestionText>
+		<QuestionNum>133</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The sum of the square roots of any two sides of an isosceles triangle is equal to the square root of the remaining side.</QuestionText>
+		<QuestionNum>134</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Mrs. Hoover</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I call him 'Gamblor', and it’s time to free your mother from his neon claws.</QuestionText>
+		<QuestionNum>135</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The burglar even took my stamp collection.</QuestionText>
+		<QuestionNum>136</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Would you say it's time for our viewers to crack each other's heads open and feast on the goo inside?</QuestionText>
+		<QuestionNum>137</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Arnie Pie</Answer>
+			<Answer>Sideshow Mel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>People can come up with statistics to prove anything. 14% of people know that.</QuestionText>
+		<QuestionNum>138</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Dr. Marvin Monroe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's my job to be repetitive. My job. My job. Repetitiveness is my job.</QuestionText>
+		<QuestionNum>139</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And now you can go back to just being you, instead of a one-dimensional character with a silly catchphrase.</QuestionText>
+		<QuestionNum>140</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If anyone wants me, I'll be in my room.</QuestionText>
+		<QuestionNum>141</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh I am so sorry. Please accept five pounds of frozen shrimp.</QuestionText>
+		<QuestionNum>142</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Lunchlady Dorris</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>We've come up with a camera so tiny it fits into this over-sized novelty hat.</QuestionText>
+		<QuestionNum>143</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You have to get in and out in 10 minutes, or you’ll suffer permanent neck damage.</QuestionText>
+		<QuestionNum>144</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Just go about your daily routine like I'm not wearing a hat.</QuestionText>
+		<QuestionNum>145</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The only danger is if they send us to that terrible Planet of the Apes.</QuestionText>
+		<QuestionNum>146</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's not God. That's just a waffle Bart threw up there.</QuestionText>
+		<QuestionNum>147</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>There's a little crippled boy sitting in a hospital who wants you to win this game. I know because I crippled him myself to inspire you.</QuestionText>
+		<QuestionNum>148</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I hope they win or Mr. Burns said he's coming back.</QuestionText>
+		<QuestionNum>149</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>We got a tip from a five-year-old that there's a dead Martian down there.</QuestionText>
+		<QuestionNum>150</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When you participate in sporting events, it's not whether you win or lose.  It's how drunk you get.</QuestionText>
+		<QuestionNum>151</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I have had many jobs throughout my life. Whale hunter, seal clubber, president of the Fox network. And like most people, yeah, I've dealt a little ivory.</QuestionText>
+		<QuestionNum>152</QuestionNum>
+		<Answers>
+			<Answer>Mr. Blackheart</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Snake</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, look. A bird has become petrified and lost its sense of direction.</QuestionText>
+		<QuestionNum>153</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Did you just call me a liar?</QuestionText>
+		<QuestionNum>154</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>God has no place within these walls, just like facts have no place within organized religion.</QuestionText>
+		<QuestionNum>155</QuestionNum>
+		<Answers>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That is the biggest Rice Krispie square I've ever seen! Boy, the rich sure know how to live.</QuestionText>
+		<QuestionNum>156</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hotels expect you to take a few things. It's a souvenir.</QuestionText>
+		<QuestionNum>157</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What if there's a really bad, crummy guy who's going to jail, but I know he's innocent?</QuestionText>
+		<QuestionNum>158</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They'll be horrible freaks with pink skin, no overbites, and five fingers on each hand!</QuestionText>
+		<QuestionNum>159</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Remember when I took that home wine-making course and I forgot how to drive?</QuestionText>
+		<QuestionNum>160</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Just about everything is a sin, you ever sat down and read this thing?</QuestionText>
+		<QuestionNum>161</QuestionNum>
+		<Answers>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Technically, we're not allowed to go to the bathroom.</QuestionText>
+		<QuestionNum>162</QuestionNum>
+		<Answers>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey Bart, your epidermis is showing.</QuestionText>
+		<QuestionNum>163</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Do not be alarmed. Continue swimming naked.</QuestionText>
+		<QuestionNum>164</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I wish there was some other explanation for this. But there isn't. I'm a murderer, I'm a murderer!</QuestionText>
+		<QuestionNum>165</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Sideshow Bob</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And you don't think I made any money. I found a dollar while waiting for the bus.</QuestionText>
+		<QuestionNum>166</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When was the last time you heard anyone talk about Ren &amp; Stimpy?</QuestionText>
+		<QuestionNum>167</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Romance is dead. It was acquired in a hostile takeover by Hallmark and Disney, homogenized, and sold off piece by piece.</QuestionText>
+		<QuestionNum>168</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Look at this Bible I just bought, fifteen bucks! And talk about a preachy book, everyone's a sinner. Except for this guy.</QuestionText>
+		<QuestionNum>169</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now you be a good Pinitichio, and don't-a you lie.</QuestionText>
+		<QuestionNum>170</QuestionNum>
+		<Answers>
+			<Answer>Scratchy</Answer>
+			<Answer>Itchy</Answer>
+			<Answer>Poochy</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Attempted murder, now honestly what was that?  Do they give out a Nobel Prize for attempted chemistry?</QuestionText>
+		<QuestionNum>171</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Snake</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your guilty conscience may force you to vote Democratic, but deep down, you secretly long for a cold-hearted Republican to lower taxes, brutalize criminals and rule you like a king.</QuestionText>
+		<QuestionNum>172</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Rainier Wolfcastle</Answer>
+			<Answer>Mayor Qwimby</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're turning me into a criminal when all I want to be is a petty thug.</QuestionText>
+		<QuestionNum>173</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Kearney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Here's Johnny.</QuestionText>
+		<QuestionNum>174</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+			<Answer>Maggie</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm Mike Wallace, I'm Morley Safer, and I'm Ed Bradley! All this and Andy Rooney tonight on 60 Minutes.</QuestionText>
+		<QuestionNum>175</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Troy McClure</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This is indeed a disturbing universe.</QuestionText>
+		<QuestionNum>176</QuestionNum>
+		<Answers>
+			<Answer>Maggie</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>All right, first academic alert: Wiggum, Ralph.</QuestionText>
+		<QuestionNum>177</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Males aren't hard to tame. They all follow their video cartridges.</QuestionText>
+		<QuestionNum>178</QuestionNum>
+		<Answers>
+			<Answer>Ashley</Answer>
+			<Answer>Jessica Lovejoy</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's just hard not to listen to TV: it's spent so much more time raising us than you have.</QuestionText>
+		<QuestionNum>179</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Lots of candy left for breakfast.</QuestionText>
+		<QuestionNum>180</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Remember that postcard Grampa sent us from Florida of that alligator biting that woman's bottom?</QuestionText>
+		<QuestionNum>181</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>But it turns out we were wrong. That alligator was sexually harassing that woman.</QuestionText>
+		<QuestionNum>182</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>So, Mr. Simpson, you admit you grabbed her can.</QuestionText>
+		<QuestionNum>183</QuestionNum>
+		<Answers>
+			<Answer>Godfrey Jones</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Are you hungry? Sleepy? Gassy? Is it gas? It's gas, isn't it?</QuestionText>
+		<QuestionNum>184</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Gil</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I just realized we never had a wedding for the cat and the dog. They've been living in sin!</QuestionText>
+		<QuestionNum>185</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You'll be picking many a bean.</QuestionText>
+		<QuestionNum>186</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Getting what you want all the time will ultimately leave you unfulfilled and joyless.</QuestionText>
+		<QuestionNum>187</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Dr. Marvin Monroe</Answer>
+			<Answer>Dr. Hibbert</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's a boy, and what a boy.</QuestionText>
+		<QuestionNum>188</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Dr. Nick</Answer>
+			<Answer>Dr. Hibbert</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've said it before and I'll say it again: democracy simply doesn't work.</QuestionText>
+		<QuestionNum>189</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The same Homer Simpson who crashed his car through the wall of our club?</QuestionText>
+		<QuestionNum>190</QuestionNum>
+		<Answers>
+			<Answer>Fat Tony</Answer>
+			<Answer>Legs</Answer>
+			<Answer>Louie</Answer>
+			<Answer>Johnny Tightlips</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The same Barney Gumble who keeps taking pictures of my sister?</QuestionText>
+		<QuestionNum>191</QuestionNum>
+		<Answers>
+			<Answer>Legs</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Louie</Answer>
+			<Answer>Johnny Tightlips</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The same Joe Valachi who squealed to the Senate Committee about organized crime?</QuestionText>
+		<QuestionNum>192</QuestionNum>
+		<Answers>
+			<Answer>Louie</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Legs</Answer>
+			<Answer>Johnny Tightlips</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The same Benedict Arnold who plotted to surrender West Point to the hated British?</QuestionText>
+		<QuestionNum>193</QuestionNum>
+		<Answers>
+			<Answer>Legs</Answer>
+			<Answer>Louie</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Johnny Tightlips</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He’s spinning the ball on his finger! Just take it! Take the ball!</QuestionText>
+		<QuestionNum>194</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's not a knife. That's a spoon.</QuestionText>
+		<QuestionNum>195</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I can't be expected to keep track of all my wheelings and dealings.</QuestionText>
+		<QuestionNum>196</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Did you ever notice how men always leave the toilet seat up? That's the joke.</QuestionText>
+		<QuestionNum>197</QuestionNum>
+		<Answers>
+			<Answer>Rainier Wolfcastle</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Sideshow Mel</Answer>
+			<Answer>Sideshow Bob</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm a neurotic nerd who likes to sleep with little girls.</QuestionText>
+		<QuestionNum>198</QuestionNum>
+		<Answers>
+			<Answer>Rainier Wolfcastle</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Sideshow Bob</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Listen, Senor Spielbergo, I want you to do for me what Spielberg did for Oskar Schindler.</QuestionText>
+		<QuestionNum>199</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>We're both factory owners, we both made shells for the Nazis, but mine worked, dammit.</QuestionText>
+		<QuestionNum>200</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Hans Moleman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Remember, an elevator is called a lift, a mile is called a kilometer, and botulism is called steak and kidney pie.</QuestionText>
+		<QuestionNum>201</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Krabappel said you would give the teachers anything they wanted.</QuestionText>
+		<QuestionNum>202</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well we'll show him, especially for that 'purple monkey dishwasher' comment.</QuestionText>
+		<QuestionNum>203</QuestionNum>
+		<Answers>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He's dead? Well why didn't you say so?</QuestionText>
+		<QuestionNum>204</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I won't, not until you step back from the brink of insanity.</QuestionText>
+		<QuestionNum>205</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now, would you unhook this already, please?! I don't deserve this kind of shabby treatment!</QuestionText>
+		<QuestionNum>206</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>All right! I'm going to sit at home and ogle the ladies in the Victoria's Secret catalog... Sears catalog.</QuestionText>
+		<QuestionNum>207</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>George Burns was right. Show business is a hideous bitch goddess.</QuestionText>
+		<QuestionNum>208</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I can suck up to him. Like the religious people suck up to God.</QuestionText>
+		<QuestionNum>209</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You took a baptismal for me. How do you feel?</QuestionText>
+		<QuestionNum>210</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I feel like St. Augustine of Hippo after his conversion by Ambrose of Milan.</QuestionText>
+		<QuestionNum>211</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The deep fryer's here! I got it used from the Army. You can flash-fry a buffalo in 40 seconds.</QuestionText>
+		<QuestionNum>212</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A certain agitator, for privacy's sake let's call her Lisa S. No, that's too obvious. Let's say L. Simpson.</QuestionText>
+		<QuestionNum>213</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I have this crazy friend who says it's wrong to eat meat. Is he crazy?</QuestionText>
+		<QuestionNum>214</QuestionNum>
+		<Answers>
+			<Answer>Jimmy</Answer>
+			<Answer>Billy</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You see, your crazy friend hasn't heard of the food chain. Just ask this scientitian.</QuestionText>
+		<QuestionNum>215</QuestionNum>
+		<Answers>
+			<Answer>Troy McClure</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If a cow got the chance he'd eat you and everyone you care about.</QuestionText>
+		<QuestionNum>216</QuestionNum>
+		<Answers>
+			<Answer>Troy McClure</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your quick-thinking and bravery have turned a potential Chernobyl into a mere Three Mile Island.</QuestionText>
+		<QuestionNum>217</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Frank Grimes</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Bah! I'll just pay for the blasted liposuction.</QuestionText>
+		<QuestionNum>218</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm sorry I never visit, I'm just not a cemetery person.</QuestionText>
+		<QuestionNum>219</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I admit it, I am the Lindbergh baby.</QuestionText>
+		<QuestionNum>220</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Hans Moleman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Or what? You'll release the dogs or the bees? Or the dogs with bees in their mouths and when they bark, they shoot bees at you? Well, go ahead: Do your worst!</QuestionText>
+		<QuestionNum>221</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>His ass is gonna blow!</QuestionText>
+		<QuestionNum>222</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>For that ending to work, you would have to ignore all the Simpson DNA evidence, and that would be downright nutty!</QuestionText>
+		<QuestionNum>223</QuestionNum>
+		<Answers>
+			<Answer>Troy McClure</Answer>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Please take my 59 dollars, I don't want it, it's yours.</QuestionText>
+		<QuestionNum>224</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What's the matter with your face? Is that a fake nose? Are you wearing chin putty?</QuestionText>
+		<QuestionNum>225</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm better than dirt.  Well most kinds of dirt. I mean, not that fancy store-bought dirt. That stuff's loaded with nutrients.  I can't compete with that stuff.</QuestionText>
+		<QuestionNum>226</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I bet I'll get respect once I get that Harvard diploma.</QuestionText>
+		<QuestionNum>227</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Boy, I sure I could go for a hundred tacos right about now.</QuestionText>
+		<QuestionNum>228</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I don't know why. It's a perfectly cromulent word.</QuestionText>
+		<QuestionNum>229</QuestionNum>
+		<Answers>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He's embiggened that role with his cromulent performance.</QuestionText>
+		<QuestionNum>230</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Is it about my cube?</QuestionText>
+		<QuestionNum>231</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>His thugs kicked me out of his office, and dropped an anvil on me.</QuestionText>
+		<QuestionNum>232</QuestionNum>
+		<Answers>
+			<Answer>Chester</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Hans Moleman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your Honor, you take away our right to steal ideas, where are they gonna come from?</QuestionText>
+		<QuestionNum>233</QuestionNum>
+		<Answers>
+			<Answer>Roger Myers, Jr.</Answer>
+			<Answer>Chester</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This has purple stuff inside. Purple is a fruit.</QuestionText>
+		<QuestionNum>234</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Lunchlady Dorris</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>For the next five minutes I'm going to party like it's on sale for $19.99!</QuestionText>
+		<QuestionNum>235</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Luigi</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>But I cleaned them with my napkin.</QuestionText>
+		<QuestionNum>236</QuestionNum>
+		<Answers>
+			<Answer>Dr. Nick</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Aurora borealis? At this time of year, at this time of day, in this part of the country, localized entirely within your kitchen!</QuestionText>
+		<QuestionNum>237</QuestionNum>
+		<Answers>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The most important thing is that you're safe. Now, let's go get that treasure.</QuestionText>
+		<QuestionNum>238</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Eddie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're a give-em'-hell daredevil with a never-say-die attitude and a fourth-grade education. You could have made sergeant.</QuestionText>
+		<QuestionNum>239</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And really, your only crime was violating U.S. law.</QuestionText>
+		<QuestionNum>240</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Because this particular flag is ridiculously out of date. The library must have purchased it during the brief period in 1912 after New Mexico became a state but before Arizona did.</QuestionText>
+		<QuestionNum>241</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Isn't that the voice that caused all these suicides?</QuestionText>
+		<QuestionNum>242</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Ethnictown, where hard-working immigrants dream of becoming lazy, overfed Americans.</QuestionText>
+		<QuestionNum>243</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Don't spit on my cupcake and tell me it's frosting!</QuestionText>
+		<QuestionNum>244</QuestionNum>
+		<Answers>
+			<Answer>Judge Harm</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I don't understand. She was my young sexy fiancée and he was my sexually virile best friend, and they just drove off in my Bugatti Sexarossa.</QuestionText>
+		<QuestionNum>245</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What are you doing in my corpse hatch?</QuestionText>
+		<QuestionNum>246</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Snake</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'll tell you someone who cares. He's got long hair, works as a carpenter, has a lot of crazy ideas about love and brotherhood.</QuestionText>
+		<QuestionNum>247</QuestionNum>
+		<Answers>
+			<Answer>Dolph</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Kearney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What? That's it, no more chat rooms for you.</QuestionText>
+		<QuestionNum>248</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Canada? Why should we leave America to visit America Junior?</QuestionText>
+		<QuestionNum>249</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And another thing, no death races.</QuestionText>
+		<QuestionNum>250</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm sorry, I have a bladder the size of a Brazil nut.</QuestionText>
+		<QuestionNum>251</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It smells like the art teacher's office.</QuestionText>
+		<QuestionNum>252</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Homer Simpson's breath is strong.</QuestionText>
+		<QuestionNum>253</QuestionNum>
+		<Answers>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Are you sure you don't want to come? In a Civil War re-enactment we need lots of Indians to shoot.</QuestionText>
+		<QuestionNum>254</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>No offense, but you remind me of the monkey man who slaughtered my family's chickens!</QuestionText>
+		<QuestionNum>255</QuestionNum>
+		<Answers>
+			<Answer>Manjula</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Cletus</Answer>
+			<Answer>Brandine</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hmm... According to this, he's telling the truth.</QuestionText>
+		<QuestionNum>256</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I payed some idiot to walk up and down the escalator all day.</QuestionText>
+		<QuestionNum>257</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Come on, it's just a game. We're not really hurting anybody. </QuestionText>
+		<QuestionNum>258</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dad! I don't need a chaperon. I'm 400 years old.</QuestionText>
+		<QuestionNum>259</QuestionNum>
+		<Answers>
+			<Answer>Edmund</Answer>
+			<Answer>Edward</Answer>
+			<Answer>Jacob</Answer>
+			<Answer>Joseph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They say vampires live forever, but I die of embarrassment every day.</QuestionText>
+		<QuestionNum>260</QuestionNum>
+		<Answers>
+			<Answer>Edmund</Answer>
+			<Answer>Edward</Answer>
+			<Answer>Jacob</Answer>
+			<Answer>Joseph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Let us move between the trees the way a bat does, by jumping.</QuestionText>
+		<QuestionNum>261</QuestionNum>
+		<Answers>
+			<Answer>Edmund</Answer>
+			<Answer>Edward</Answer>
+			<Answer>Jacob</Answer>
+			<Answer>Joseph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey, who are you gonna vote for: Me, who pretended to be gay, or a Republican, whose policies are so anti-gay they prove that he's super-gay?</QuestionText>
+		<QuestionNum>262</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Ow, my non-lazy eye!</QuestionText>
+		<QuestionNum>263</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Gil</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>America has so many enemies. Iran, Iraq, China, Mordor, the hoochies that laid low Tiger Woods…</QuestionText>
+		<QuestionNum>264</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Growing up, I had roundworm. Heck I was more worm than man some months.</QuestionText>
+		<QuestionNum>265</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I dabbled in Satanism until I was asked to leave. Oh and one month I ate nothing but aquarium fish.</QuestionText>
+		<QuestionNum>266</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kirk Van Houten</Answer>
+			<Answer>Gil</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I just have one questionText about hair, where does mine start?</QuestionText>
+		<QuestionNum>267</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Call me Delta Airlines, because I can't handle all your extra baggage.</QuestionText>
+		<QuestionNum>268</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If fairy tales have taught us anything, first wives are the best and second wives are terrible.</QuestionText>
+		<QuestionNum>269</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You two look good, open casket good.</QuestionText>
+		<QuestionNum>270</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're as pure as the ether that puts you to sleep.</QuestionText>
+		<QuestionNum>271</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Dr. Nick</Answer>
+			<Answer>Dr. Hibbert</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Prepare to have everything you knew about milk cans challenged.</QuestionText>
+		<QuestionNum>272</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I can't do it. A balloon saved one of my arteries. It wouldn't seem right to shoot one of his cousins.</QuestionText>
+		<QuestionNum>273</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What can I do for you? Eat something green? Vote for someone brown?</QuestionText>
+		<QuestionNum>274</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Not bad. Like Frisbee Golf, I'm glad I tried it once.</QuestionText>
+		<QuestionNum>275</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'd have to move in with mom, who's dead and doesn't have a house.</QuestionText>
+		<QuestionNum>276</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They think they're better than us because their performance review reflects it!</QuestionText>
+		<QuestionNum>277</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Kid, this company's bust. For years I've been giving away free toys and getting cookies in return. It's not a sustainable business model.</QuestionText>
+		<QuestionNum>278</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well, you need an expensive couch to watch an expensive TV.</QuestionText>
+		<QuestionNum>279</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The Spellympics is being sued by the Olympics for use of the suffix 'lympics.'</QuestionText>
+		<QuestionNum>280</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Lionel Hutz</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Stop laughing. It'll scar him for life!</QuestionText>
+		<QuestionNum>281</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I wish God were alive to see this.</QuestionText>
+		<QuestionNum>282</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Marriage is a beautiful thing, but it's also a constant battle for moral superiority. So I can't apologize.</QuestionText>
+		<QuestionNum>283</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh no, the Pawnee have returned. They probably want their souls back.</QuestionText>
+		<QuestionNum>284</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The status quo? Aye Carumba!</QuestionText>
+		<QuestionNum>285</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Teletubbies get away with more than this.</QuestionText>
+		<QuestionNum>286</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Can't beat a skybox! All the excitement of being in the sky, with the security of being in a box.</QuestionText>
+		<QuestionNum>287</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yeah, those golden curls are to die for.</QuestionText>
+		<QuestionNum>288</QuestionNum>
+		<Answers>
+			<Answer>Kearney</Answer>
+			<Answer>Terri</Answer>
+			<Answer>Sherry</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Urkel O's? Delicious, but forbidden.</QuestionText>
+		<QuestionNum>289</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dogs eat barf only on Wednesday, Mable.</QuestionText>
+		<QuestionNum>290</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You idiot, Merlin was in Vietnam!</QuestionText>
+		<QuestionNum>291</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And I don't recall her being this granulated.</QuestionText>
+		<QuestionNum>292</QuestionNum>
+		<Answers>
+			<Answer>Cletus</Answer>
+			<Answer>Brandine</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm gonna go to a 2-year technical school then work in a garage.</QuestionText>
+		<QuestionNum>293</QuestionNum>
+		<Answers>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Otto</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The government has issued an orange alert, which, once again, means nothing.</QuestionText>
+		<QuestionNum>294</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Lesbian? This isn't my army reunion.</QuestionText>
+		<QuestionNum>295</QuestionNum>
+		<Answers>
+			<Answer>Hans Moleman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It used to be, back in the bad old days, you know. Of course, every generation hyphenates the way it wants to. Then there's N'SYNC, what the hell is that?</QuestionText>
+		<QuestionNum>296</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Am I the only one here who's in horrible pain?</QuestionText>
+		<QuestionNum>297</QuestionNum>
+		<Answers>
+			<Answer>Bart </Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Help me; some bullies threw my shoes over a telephone wire. With me in them!</QuestionText>
+		<QuestionNum>298</QuestionNum>
+		<Answers>
+			<Answer>Hans Moleman</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now I insist you take off your shoes when you get inside. And while you're in there, grab as much cancer as you can.</QuestionText>
+		<QuestionNum>299</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>There there, I think your grilled crayon sandwich was delicious.</QuestionText>
+		<QuestionNum>300</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Can you taste the thumbtacks?</QuestionText>
+		<QuestionNum>301</QuestionNum>
+		<Answers>
+			<Answer>Ralph</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>She's just as god made her. Plump as a Christmas goose.</QuestionText>
+		<QuestionNum>302</QuestionNum>
+		<Answers>
+			<Answer>Willie</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey I'm sure it's just a phase, like when I used to stand on the overpass and drop computers on the freeway.</QuestionText>
+		<QuestionNum>303</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This is the most exciting scandal since the juice was on the loose.</QuestionText>
+		<QuestionNum>304</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I love you Chloe. And I love you too, brake fluid.</QuestionText>
+		<QuestionNum>305</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Praying to Buddha, Jesus, SpongeBob, there's no time to be picky!</QuestionText>
+		<QuestionNum>306</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's harsh. I knew I was an adult the day the judge said, we're trying you as an adult.</QuestionText>
+		<QuestionNum>307</QuestionNum>
+		<Answers>
+			<Answer>Kearney</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Watcha realizing, jerk?</QuestionText>
+		<QuestionNum>308</QuestionNum>
+		<Answers>
+			<Answer>Jimbo</Answer>
+			<Answer>Kearney</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Get Bent? Well the only thing that could mean is kneel down and pray. Get bent everyone!</QuestionText>
+		<QuestionNum>309</QuestionNum>
+		<Answers>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Leave me alone. This expresses my rage at the machine.</QuestionText>
+		<QuestionNum>310</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>God, please give your daughter, the Tooth Fairy, the strength to carry my cash and the integrity not to dip her wand in the till.</QuestionText>
+		<QuestionNum>311</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What? Can't we sit on the couch without something happening?</QuestionText>
+		<QuestionNum>312</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This must be the nasty surprise he mentioned in the invitation.</QuestionText>
+		<QuestionNum>313</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They warned me Satan would be attractive.</QuestionText>
+		<QuestionNum>314</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now, we have three parachutes. This one's for me, and these two are gifts for my nephews.</QuestionText>
+		<QuestionNum>315</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Thanks Homer, no one's ever trusted me before. Except for that one guy who shouldn't have.</QuestionText>
+		<QuestionNum>316</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You'd be quite a catch if you'd just shower and shave and stop swearing under your breath.</QuestionText>
+		<QuestionNum>317</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yeah, you help me and I in turn am helped by you! </QuestionText>
+		<QuestionNum>318</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I thought America was hungry for meaning. I shoulda just sent a crocodile into space like I originally planned.</QuestionText>
+		<QuestionNum>319</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Rappers stopped saying 'illin 12 years ago.</QuestionText>
+		<QuestionNum>320</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I order you to step off, dawg.</QuestionText>
+		<QuestionNum>321</QuestionNum>
+		<Answers>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Time to face my punishment like a man, or find my way out of it like a kid.</QuestionText>
+		<QuestionNum>322</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I propose we also legalize gay funerals. Starting with this guy.</QuestionText>
+		<QuestionNum>323</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Kearney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Do you, Cletus, take Brandine to be, wait a minute are you two brother and sister?</QuestionText>
+		<QuestionNum>324</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's the stupidest idea I've ever heard. And I know exactly who would pay top dollar for it.</QuestionText>
+		<QuestionNum>325</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Is this one of those reality deals where a guy gets a million bucks for marrying Aunt Patty, but they have to honeymoon in a box full of snakes?</QuestionText>
+		<QuestionNum>326</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>While I disagree with you t-shirts assertion I do encourage anything that raises glacier awareness.</QuestionText>
+		<QuestionNum>327</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yes, Homer Simpson is my whole world. I love him.</QuestionText>
+		<QuestionNum>328</QuestionNum>
+		<Answers>
+			<Answer>Selma</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Helen Lovejoy</Answer>
+			<Answer>Maude Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I just felt a chill go through my very soul.</QuestionText>
+		<QuestionNum>329</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Look at him sleeping.  He's like a little angel that killed 50 million people.</QuestionText>
+		<QuestionNum>330</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What, can't I get a cup of coffee without doing a monkey dance for you freaks?</QuestionText>
+		<QuestionNum>331</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You are a wise woman, it's a shame you dress like a Lebanese prostitute.</QuestionText>
+		<QuestionNum>332</QuestionNum>
+		<Answers>
+			<Answer>Sea Captain</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Agnus Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Good luck, blobby!</QuestionText>
+		<QuestionNum>333</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Who wants ass frosting?</QuestionText>
+		<QuestionNum>334</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've learned that even made up corporate shills can lie to you.</QuestionText>
+		<QuestionNum>335</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yeah even though McDonalds owns Yale now, it's still a great school.</QuestionText>
+		<QuestionNum>336</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm talkin' Springfield, where nobody sucks, except for Flanders.</QuestionText>
+		<QuestionNum>337</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>He's about to learn the most important lesson in the music business. Don't trust people in the music business.</QuestionText>
+		<QuestionNum>338</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Otto</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Hey Nostra-dumbass. Did the rapture come? I can't recall. Oh in fact I can recall, and it didn't, and you suck.</QuestionText>
+		<QuestionNum>339</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Two girls? Who would want that!</QuestionText>
+		<QuestionNum>340</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You mean the mayor who kept me waiting for two hours at that restaurant? I ate so much bread!</QuestionText>
+		<QuestionNum>341</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well I can't take that rattlesnake out of his mailbox now, can I?</QuestionText>
+		<QuestionNum>342</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well let me ask you this. Shut up.</QuestionText>
+		<QuestionNum>343</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lou</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Why can't you have a normal dream, like being an Olympic figure skater?</QuestionText>
+		<QuestionNum>344</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The place where I was born is now a gator farm.</QuestionText>
+		<QuestionNum>345</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now in the spirit of the holiday season, start shopping.</QuestionText>
+		<QuestionNum>346</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Kirk Van Houten</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh wow, it just stings a little.</QuestionText>
+		<QuestionNum>347</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Did you agree to be married to a drunken lout who wouldn't respect you?</QuestionText>
+		<QuestionNum>348</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Selma</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's not your fault. It's just that you came out the wrong sex and ruined everything.</QuestionText>
+		<QuestionNum>349</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What about all the times I didn't wear a tutu? Nobody ever brings those up.</QuestionText>
+		<QuestionNum>350</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I got a court order bringing him back. The judge said I was the most pathetic person he'd ever seen in court.</QuestionText>
+		<QuestionNum>351</QuestionNum>
+		<Answers>
+			<Answer>Kirk</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Gil</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's called 'Goth,' eternally clueless one. My new name is Raven Crow Neversmiles.</QuestionText>
+		<QuestionNum>352</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You were asked to chug-a-lug, and a-lug you shall chug!</QuestionText>
+		<QuestionNum>353</QuestionNum>
+		<Answers>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Passion is for teens and immigrants.</QuestionText>
+		<QuestionNum>354</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, that's cool! Or is that lame? I guess I'll go with lame. You're lame!</QuestionText>
+		<QuestionNum>355</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This is an outrage. Since when are public figures fair game for satire?</QuestionText>
+		<QuestionNum>356</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I can't be held responsible for what my goons were ordered to do.</QuestionText>
+		<QuestionNum>357</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Lost your spine, huh? You just keep finding new ways to disappoint me.</QuestionText>
+		<QuestionNum>358</QuestionNum>
+		<Answers>
+			<Answer>Agnes</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm gonna play naked basketball!</QuestionText>
+		<QuestionNum>359</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Just one of life's mysteries. Like why is my nose jammed full of army men.</QuestionText>
+		<QuestionNum>360</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Ralph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Go hug your floozie.</QuestionText>
+		<QuestionNum>361</QuestionNum>
+		<Answers>
+			<Answer>Agnes</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're going away for a long time Mrs. Simpson, or shall I call you Anita Bonghit.</QuestionText>
+		<QuestionNum>362</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Lou</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Apparently we're not TV pretty.</QuestionText>
+		<QuestionNum>363</QuestionNum>
+		<Answers>
+			<Answer>Selma</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Chief, that guy shouldn't be in the carpool lane. His passenger is just a big ball of candy.</QuestionText>
+		<QuestionNum>364</QuestionNum>
+		<Answers>
+			<Answer>Lou</Answer>
+			<Answer>Eddie</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>But how will I find out what you had for lunch in 1928?</QuestionText>
+		<QuestionNum>365</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Terri</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>My fee for this evening goes to the victims of my criminal recidivisms, so relax, have fun and please god, don't piss me off.</QuestionText>
+		<QuestionNum>366</QuestionNum>
+		<Answers>
+			<Answer>Drederick Tatum</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I wish I married a businessman. Then I'd have nice things. </QuestionText>
+		<QuestionNum>367</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Selma</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Uh, it'd have to be someone famous. I'm gonna say… Hitler. </QuestionText>
+		<QuestionNum>368</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I just felt the cultural differences between us were too great. Plus as the boat pulled away from the dock I thought you looked fat.</QuestionText>
+		<QuestionNum>369</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've lived so hard there's big gaps in my memory. I remember learning to ride a bike. Then pretty much nothing till right now.</QuestionText>
+		<QuestionNum>370</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>How come oldies stations are always playing the same song? How about some new oldies, geniuses.</QuestionText>
+		<QuestionNum>371</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Simpson I hate to bother you when you're eating but you're always eating. Will you sign an autograph for my boy?</QuestionText>
+		<QuestionNum>372</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Kirk Van Houten</Answer>
+			<Answer>Fat Tony</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I say live fast, die young, and leave a big fat corpse!</QuestionText>
+		<QuestionNum>373</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Kearney</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>How about a show where girls think I'm a millionaire, but what they don't know is, I'm rife with disease.</QuestionText>
+		<QuestionNum>374</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>What do you care, Mrs. Krabappel. Or should I say Mrs. Crab-Apple!</QuestionText>
+		<QuestionNum>375</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That is one bitchin' bike.</QuestionText>
+		<QuestionNum>376</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Snake</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I would stop but I love my voice. </QuestionText>
+		<QuestionNum>377</QuestionNum>
+		<Answers>
+			<Answer>Artie</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well he can't break my heart, cause he kinda makes me sick. This could work! </QuestionText>
+		<QuestionNum>378</QuestionNum>
+		<Answers>
+			<Answer>Selma</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Patty</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Have you ever walked on stilts? It's not that great.</QuestionText>
+		<QuestionNum>379</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You know how some people are chocoholics? Well I'm an alcoholic.</QuestionText>
+		<QuestionNum>380</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It looks good, but I'm not gonna celebrate till he's gaffed, gutted, and hanging in my trophy room.</QuestionText>
+		<QuestionNum>381</QuestionNum>
+		<Answers>
+			<Answer>Edna</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Every second without you is like a million kicks in the crotch.</QuestionText>
+		<QuestionNum>382</QuestionNum>
+		<Answers>
+			<Answer>Skinner</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I would kill the children of a thousand planets just to see you smile.</QuestionText>
+		<QuestionNum>383</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Professor Frink</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You look like a Malaysian transsexual.</QuestionText>
+		<QuestionNum>384</QuestionNum>
+		<Answers>
+			<Answer>Agnes</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I wouldn't mind pushing that in the mud.</QuestionText>
+		<QuestionNum>385</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Kearney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The United States has its grandeur and its follies but mostly it's the place where all our stuff is.</QuestionText>
+		<QuestionNum>386</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>My god, are you always on? </QuestionText>
+		<QuestionNum>387</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You read a book all the way through? Why?</QuestionText>
+		<QuestionNum>388</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Gotta keep calm. If Scooby Doo has taught me anything it's that the only thing to fear are crooked Real Estate Agents.</QuestionText>
+		<QuestionNum>389</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>All right Homer! You beat those stamp Nazis with good old fashion American complainin'.</QuestionText>
+		<QuestionNum>390</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Burns has only been chasing us six hours and you've already resorted to cannibalism.</QuestionText>
+		<QuestionNum>391</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And I'm Jared from the Subway ads. I'm only a little overweight and sexually ambiguous. </QuestionText>
+		<QuestionNum>392</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>We hope you had as much fun watching our show as the Koreans did animating it.</QuestionText>
+		<QuestionNum>393</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Roger Myers</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I smell fear and curry.</QuestionText>
+		<QuestionNum>394</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Marge called ya, she said she loves you and she hopes you break the guys arm so hard that it pokes through his skin.</QuestionText>
+		<QuestionNum>395</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That song is a pop music footnote … I didn't say stop!</QuestionText>
+		<QuestionNum>396</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm afraid it doesn't keep any drinks anything.</QuestionText>
+		<QuestionNum>397</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Take this plane anywhere girls are going wild.</QuestionText>
+		<QuestionNum>398</QuestionNum>
+		<Answers>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If you're lame enough to vote, vote for me.</QuestionText>
+		<QuestionNum>399</QuestionNum>
+		<Answers>
+			<Answer>Jimbo</Answer>
+			<Answer>Kearney</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Why should we let this election be influenced by a photo taken hours ago?</QuestionText>
+		<QuestionNum>400</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I got the combination from Burns after I let him feel me up during the depression.</QuestionText>
+		<QuestionNum>401</QuestionNum>
+		<Answers>
+			<Answer>Agnes Skinner</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Hans Moleman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>These feet were made for stompin' and that's just what they'll do. One of these days these feet will make Chianti out of you.</QuestionText>
+		<QuestionNum>402</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Vendetta means... Vendetta!</QuestionText>
+		<QuestionNum>403</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Let me check the navigation system. Says here we should turn left at a fat chicken in a tutu being fed by a midget.</QuestionText>
+		<QuestionNum>404</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Cletus</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You backstabber! And I let you spoon me!</QuestionText>
+		<QuestionNum>405</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Somebody should have beaten you with a tricycle years ago!</QuestionText>
+		<QuestionNum>406</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If I hadn't invented a jet ski made of coconuts I'd have never gotten home.</QuestionText>
+		<QuestionNum>407</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Who cares? It's Christmas! I wanna shoot something.</QuestionText>
+		<QuestionNum>408</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Cletus</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You'll pay for that, you haiku-spouting savages!</QuestionText>
+		<QuestionNum>409</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Mona cheated on me? I don't know how she found the time with her late night pottery classes and supermarket trips that took all weekend.</QuestionText>
+		<QuestionNum>410</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Lenny</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'll take any test you want. Eye test, pap test, memory test, memory test, Vinnie Testaverde, Ferarri Testerossa.</QuestionText>
+		<QuestionNum>411</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Then I put my name first on the list for a new heart. My old one's fine, but you never know.</QuestionText>
+		<QuestionNum>412</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>These steam tunnels are awesome. It's like we're in the school's lymphatic system. And we're the lymph!</QuestionText>
+		<QuestionNum>413</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Silly Indians, our god made their god.</QuestionText>
+		<QuestionNum>414</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Liberal midget!</QuestionText>
+		<QuestionNum>415</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Who knew saints had such fat heads?</QuestionText>
+		<QuestionNum>416</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's a lie! Mr. Teeny was born in Funnytown. Krusty said so.</QuestionText>
+		<QuestionNum>417</QuestionNum>
+		<Answers>
+			<Answer>Nelson</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Sideshow Bob</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Wow, that might be interesting. Or it could damage many, many lives.</QuestionText>
+		<QuestionNum>418</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I don't get what he's doing and I'm smart. Not book-smart or street-smart, or brain-smart, but something.</QuestionText>
+		<QuestionNum>419</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Barney</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Anyways, I just wanted to let you know that I'm throwing a little party tonight, to celebrate that only half of us have died so far.</QuestionText>
+		<QuestionNum>420</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>We've been through more hardships than the Jews and Charlie Brown put together.</QuestionText>
+		<QuestionNum>421</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's not a song! Real songs are about deals with the devil and far off lands where you'd find smoke in relation to water.</QuestionText>
+		<QuestionNum>422</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, knock it off Kearney. Why are you still in this school anyway? We were in third grade together.</QuestionText>
+		<QuestionNum>423</QuestionNum>
+		<Answers>
+			<Answer>Otto</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>There's a triple-A battery in my Macaronian cheese.</QuestionText>
+		<QuestionNum>424</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Ralph</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>My arm, it hurts where the tiger's biting it.</QuestionText>
+		<QuestionNum>425</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>It's like you're the Jesus of carpentry.</QuestionText>
+		<QuestionNum>426</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A lady carpenter? I don't know. What if you get pregnant and I'm stuck with half a hot tub? </QuestionText>
+		<QuestionNum>427</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Selma</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I don't get it. What's so ‘great’ about this depression?</QuestionText>
+		<QuestionNum>428</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's a terrific title. It jumps out at you like a rat in your underwear drawer.</QuestionText>
+		<QuestionNum>429</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Kirk Van Houten</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Wow, just think, earlier tonight a newly published poet cleaned up my barf.</QuestionText>
+		<QuestionNum>430</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>See, it's statements like that that make people think we're gay.</QuestionText>
+		<QuestionNum>431</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Mr. Largo</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This movie isn't silent, I can hear it sucking.</QuestionText>
+		<QuestionNum>432</QuestionNum>
+		<Answers>
+			<Answer>Kearney</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I have that disease that makes you look like an old man, but they gave me medicine for it and I took too much.</QuestionText>
+		<QuestionNum>433</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Homer gave me a kidney once. It wasn't his, I didn't need it, and it came with postage due, but it was a lovely gesture.</QuestionText>
+		<QuestionNum>434</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Then I had this dream that my whole family was just cartoon characters, and that our success had led to some crazy propaganda network called 'Fox News'.</QuestionText>
+		<QuestionNum>435</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They say the more soldiers you tickle, the easier it gets. Well, sir, it doesn't.</QuestionText>
+		<QuestionNum>436</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And my sister once saw Burt Reynolds at an airport, and he wouldn't even cosign her mortgage.</QuestionText>
+		<QuestionNum>437</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You know one time I saw him eating dinner with his children. He wouldn't take the time to do all the funny bits from his movies.</QuestionText>
+		<QuestionNum>438</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yeah, it's the American tradition to cut people down to size because they're brought so much joy into our lives.</QuestionText>
+		<QuestionNum>439</QuestionNum>
+		<Answers>
+			<Answer>Carl</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Kirk Van Houten</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Wait, stop. If you kill me, I'll egg your houses in real life!</QuestionText>
+		<QuestionNum>440</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Jimbo</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Dolph</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Zombie file grievance.</QuestionText>
+		<QuestionNum>441</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dentist? You said we were going to ride dirt bikes around the cemetery!</QuestionText>
+		<QuestionNum>442</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now let's enjoy the Miami of Canada: Chicago!</QuestionText>
+		<QuestionNum>443</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>American sober or Irish sober?</QuestionText>
+		<QuestionNum>444</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I hate when they tell me things about themselves.</QuestionText>
+		<QuestionNum>445</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>America has a tradition of turning outlaws into legends after their deaths: Billy the Kid, Bonnie and Clyde, Jesus Christ.</QuestionText>
+		<QuestionNum>446</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That's like asking your horse to do your taxes, which I did in 1998.</QuestionText>
+		<QuestionNum>447</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The Constitution? I'm pretty sure the Patriot Act killed it to ensure our freedoms.</QuestionText>
+		<QuestionNum>448</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I thought global warming would take care of it. Al Gore can't do anything right.</QuestionText>
+		<QuestionNum>449</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I want to wait until I'm married, or at least really drunk.</QuestionText>
+		<QuestionNum>450</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I never dreamed an American car designed in Germany, assembled in Mexico from parts made in Canada, could be so amazing.</QuestionText>
+		<QuestionNum>451</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The rat symbolizes obviousness!</QuestionText>
+		<QuestionNum>452</QuestionNum>
+		<Answers>
+			<Answer>Ralph</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Conservation of mass. It's the law!</QuestionText>
+		<QuestionNum>453</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Professor Frink</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You have made a very powerless enemy.</QuestionText>
+		<QuestionNum>454</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Applause is an addiction, like heroin or checking your e-mail.</QuestionText>
+		<QuestionNum>455</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Mel</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Let's pick up those hitch-hikers. They don't look like the stabby kind.</QuestionText>
+		<QuestionNum>456</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You know, for a bartender bookie, you're awfully judgmental.</QuestionText>
+		<QuestionNum>457</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've never been called 'fierce' before. 'Strident.' 'Hectoring' has been tossed around.</QuestionText>
+		<QuestionNum>458</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Book stores don't have answers; they just have creepy guys sitting in easy chairs at the end of aisle ways.</QuestionText>
+		<QuestionNum>459</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You can apologize in hell.</QuestionText>
+		<QuestionNum>460</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Fat Tony</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A little tip, you might want to wash me before you eat me.</QuestionText>
+		<QuestionNum>461</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'd put rocks in your pocket and walk you out to sea for before I'd let that happen.</QuestionText>
+		<QuestionNum>462</QuestionNum>
+		<Answers>
+			<Answer>Flanders</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well if you miss him, you can yell into a toilet.</QuestionText>
+		<QuestionNum>463</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Ralph</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>First girls ruin Sex in the City, and now this!</QuestionText>
+		<QuestionNum>464</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Jimbo</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Wait, I'm shooting at Nazis? That's not how I remember it.</QuestionText>
+		<QuestionNum>465</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm laughing to fit in, but I still don't get it.</QuestionText>
+		<QuestionNum>466</QuestionNum>
+		<Answers>
+			<Answer>Groundskeeper Willie</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Pile it on. I want him to be Korean by the time he's done.</QuestionText>
+		<QuestionNum>467</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Nelson</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Apparently the people she hired to de-program her sister from that cult were an even worse cult.</QuestionText>
+		<QuestionNum>468</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Operator! Give me the number for 911! </QuestionText>
+		<QuestionNum>469</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Weaseling out of things is important to learn. It's what separates us from the animals! Except the weasel. </QuestionText>
+		<QuestionNum>470</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You know, boys, a nuclear reactor is a lot like a woman. You just have to read the manual and press the right buttons. </QuestionText>
+		<QuestionNum>471</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If you don't like your job you don't strike. You just go in every day and do it really half-assed. That's the American way.</QuestionText>
+		<QuestionNum>472</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When will I learn? The answer to life's problems aren't at the bottom of a bottle, they're on TV.</QuestionText>
+		<QuestionNum>473</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Comic Book Guy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You tried your best and you failed miserably. The lesson is, never try. </QuestionText>
+		<QuestionNum>474</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Ms. Hoover</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When I look at the smiles on all the children's faces, I just know they're about to jab me with something. </QuestionText>
+		<QuestionNum>475</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Getting out of jury duty is easy. The trick is to say you're prejudiced against all races. </QuestionText>
+		<QuestionNum>476</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Oh, people can come up with statistics to prove anything, Kent. 14% of people know that. </QuestionText>
+		<QuestionNum>477</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Roger Myers</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Lionel Hutz</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Alcohol is a way of life, alcohol is my way of life, and I aim to keep it. </QuestionText>
+		<QuestionNum>478</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>No children have ever meddled with the Republican Party and lived to tell about it.</QuestionText>
+		<QuestionNum>479</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Don’t kid yourself, Jimmy. If a cow ever got the chance, he’d eat you and everyone you care about!</QuestionText>
+		<QuestionNum>480</QuestionNum>
+		<Answers>
+			<Answer>Troy McClure</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The Internet King? I wonder if he could provide faster nudity.</QuestionText>
+		<QuestionNum>481</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I’ve done everything the Bible says, even the stuff that contradicts the other stuff.</QuestionText>
+		<QuestionNum>482</QuestionNum>
+		<Answers>
+			<Answer>Ned Flanders</Answer>
+			<Answer>Maude Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Helen Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your questions have become more redundant and annoying than the last three Highlander movies.</QuestionText>
+		<QuestionNum>483</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I’ll be back. You can’t keep the Democrats out of the White House forever, and when they get in, I’m back on the streets with all my criminal buddies.</QuestionText>
+		<QuestionNum>484</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Snake</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Fat Tony</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Remember the time he ate my goldfish? And you lied and said I never had goldfish. Then why did I have the bowl, Bart? Why did I have the bowl?</QuestionText>
+		<QuestionNum>485</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I stand by my racial slur.</QuestionText>
+		<QuestionNum>486</QuestionNum>
+		<Answers>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Loneliness and cheeseburgers are a dangerous mix.</QuestionText>
+		<QuestionNum>487</QuestionNum>
+		<Answers>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Chief Wiggum</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Fat Tony is a cancer on this fair city! He is the cancer and I am the uh... what cures cancer?</QuestionText>
+		<QuestionNum>488</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Fame was like a drug. But what was even more like a drug were the drugs.</QuestionText>
+		<QuestionNum>489</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>No, they’re saying Boo-urns, Boo-urns.</QuestionText>
+		<QuestionNum>490</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I was saying Boo-urns.</QuestionText>
+		<QuestionNum>491</QuestionNum>
+		<Answers>
+			<Answer>Hans Moleman</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I hope this has taught you kids a lesson: kids never learn.</QuestionText>
+		<QuestionNum>492</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dear Mr. President, There are too many states nowadays. Please eliminate three.</QuestionText>
+		<QuestionNum>493</QuestionNum>
+		<Answers>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Jasper</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Please do not offer my god a peanut.</QuestionText>
+		<QuestionNum>494</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Otto</Answer>
+			<Answer>Flanders</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>They only come out in the night. Or in this case, the day.</QuestionText>
+		<QuestionNum>495</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Apu</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Slow down, Bart. My legs don’t know how to be as long as yours.</QuestionText>
+		<QuestionNum>496</QuestionNum>
+		<Answers>
+			<Answer>Ralph</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Yes, I am a citizen! Now which way to the welfare office?</QuestionText>
+		<QuestionNum>497</QuestionNum>
+		<Answers>
+			<Answer>Apu</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Luigi</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Look out, Itchy! He’s Irish!</QuestionText>
+		<QuestionNum>498</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I’m allergic to bee stings. They cause me to … die.</QuestionText>
+		<QuestionNum>499</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Natural light! Get it off me! Get it off me!</QuestionText>
+		<QuestionNum>500</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Your guilty consciences may make you vote Democratic, but secretly you all yearn for a Republican president to lower taxes, brutalize criminals, and rule you like a king!</QuestionText>
+		<QuestionNum>501</QuestionNum>
+		<Answers>
+			<Answer>Sideshow Bob</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Jesus must be spinning in his grave!</QuestionText>
+		<QuestionNum>502</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Fire can be our friend; whether it’s toasting marshmallows or raining down on Charlie.</QuestionText>
+		<QuestionNum>503</QuestionNum>
+		<Answers>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Herman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I can’t go to juvie. They use guys like me as currency.</QuestionText>
+		<QuestionNum>504</QuestionNum>
+		<Answers>
+			<Answer>Milhouse</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Martin</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Things aren't as happy as they used to be down here at the unemployment office.</QuestionText>
+		<QuestionNum>505</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Selma</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Joblessness is no longer just for philosophy majors. Useful people are starting to feel the pinch.</QuestionText>
+		<QuestionNum>506</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And I, for one, welcome our new insect overlords.</QuestionText>
+		<QuestionNum>507</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Mankind has always dreamed of destroying the sun.</QuestionText>
+		<QuestionNum>508</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I ought to club them and eat their bones!</QuestionText>
+		<QuestionNum>509</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm afraid we have a bad image, people see you as a bit of an ogre.</QuestionText>
+		<QuestionNum>510</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Sideshow Mel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>An election? That's one of those deals where they close the bars isn't it?</QuestionText>
+		<QuestionNum>511</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>There are no good wars, with the following exceptions: The American Revolution, World War II, and the Star Wars Trilogy.</QuestionText>
+		<QuestionNum>512</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm not calling you a liar but... I can't think of a way to finish that sentence.</QuestionText>
+		<QuestionNum>513</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>In theory, communism works. In theory.</QuestionText>
+		<QuestionNum>514</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Ms. Hoover</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I want to set the record straight: I thought the cop was a prostitute.</QuestionText>
+		<QuestionNum>515</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Call this an unfair generalization if you must, but old people are no good at everything.</QuestionText>
+		<QuestionNum>516</QuestionNum>
+		<Answers>
+			<Answer>Moe</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Bart</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If my plant pollutes the water and poisons the town, by your logic, that would make me a criminal.</QuestionText>
+		<QuestionNum>517</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Go back to Russia!</QuestionText>
+		<QuestionNum>518</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Go ahead, Homer, laugh at me.</QuestionText>
+		<QuestionNum>519</QuestionNum>
+		<Answers>
+			<Answer>Kirk Van Houten</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Paddling the school canoe, you better believe that’s a paddling.</QuestionText>
+		<QuestionNum>520</QuestionNum>
+		<Answers>
+			<Answer>Jasper</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Hans Moleman</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>And have me smell like cheap drug store cologne the rest of the day? You may hug my shadow.</QuestionText>
+		<QuestionNum>521</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Sideshow Mel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I want to die quietly on my own terms, crushing as many of those baby sea turtles as I possibly can.</QuestionText>
+		<QuestionNum>522</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Now, without further ado, here's what happened next. But first, I'll daydream about a sport utility vehicle, a crispy chicken sandwich, and a wonderful blue pill!</QuestionText>
+		<QuestionNum>523</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Find my doctor and find out why I'd ask for something as insane as strike ribs.</QuestionText>
+		<QuestionNum>524</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'll tell you my tale, by thinking it to myself.</QuestionText>
+		<QuestionNum>525</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>She'll do anything for you. Anything except sex. And I do mean anything.</QuestionText>
+		<QuestionNum>526</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>This is Eduardo. He's the pool boy. He thinks he's an angry old rich man.</QuestionText>
+		<QuestionNum>527</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Apu</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That sponge has corners you know.</QuestionText>
+		<QuestionNum>528</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Hans Moleman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Once something has been approved by the government, it's no longer immoral.</QuestionText>
+		<QuestionNum>529</QuestionNum>
+		<Answers>
+			<Answer>Reverend Lovejoy</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>That plane crashed on my property!</QuestionText>
+		<QuestionNum>530</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Cletus</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm always interrupting people!</QuestionText>
+		<QuestionNum>531</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Smithers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Bobo? I meant Lobo...Sherrif Lobo, they should have never canceled that show.</QuestionText>
+		<QuestionNum>532</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Kirk Van Houten</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've arranged for the people of Australia to join hands tonight and spell out your name with candles. There's a satellite hookup on that monitor if you turn your head slightly.</QuestionText>
+		<QuestionNum>533</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Dismember the corpse and send his widow a corsage.</QuestionText>
+		<QuestionNum>534</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Fat Tony</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I'm giving you the beating of your life!</QuestionText>
+		<QuestionNum>535</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I mean, if I should slip something into your pocket, what's the harm?</QuestionText>
+		<QuestionNum>536</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I wanted to give you something to remember me by, I know you've always had your eye on this photo of Elvis and me.</QuestionText>
+		<QuestionNum>537</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Are you acquainted with our state's stringent usury laws?</QuestionText>
+		<QuestionNum>538</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mayor Qwimby</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>May I suggest a random firing? Just to throw the fear of God into them?</QuestionText>
+		<QuestionNum>539</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>His job description clearly specifies an illiterate.</QuestionText>
+		<QuestionNum>540</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Sideshow Bob</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I hardly see what destroying our meager possessions is going to accomplish.</QuestionText>
+		<QuestionNum>541</QuestionNum>
+		<Answers>
+			<Answer>Lisa</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>God is teasing me. Just like he teased Moses in the desert.</QuestionText>
+		<QuestionNum>542</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Flanders</Answer>
+			<Answer>Reverend Lovejoy</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You failed, Seymour. What is it with you and failure?</QuestionText>
+		<QuestionNum>543</QuestionNum>
+		<Answers>
+			<Answer>Agnus Skinner</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>No one made it out alive, not even Willie!</QuestionText>
+		<QuestionNum>544</QuestionNum>
+		<Answers>
+			<Answer>Groundskeeper Willie</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Superintendent Chalmers</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Well, my dad's always yelling about the white man keeping him down.</QuestionText>
+		<QuestionNum>545</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+			<Answer>Nelson</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>You're smarter than you look, or sound, or our best testing indicates. </QuestionText>
+		<QuestionNum>546</QuestionNum>
+		<Answers>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Groundskeeper Willie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Why are there children walking on my head?</QuestionText>
+		<QuestionNum>547</QuestionNum>
+		<Answers>
+			<Answer>Superintendent Chalmers</Answer>
+			<Answer>Agnus Skinner</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I've got more trophies than Wayne Gretzky and the Pope combined. </QuestionText>
+		<QuestionNum>548</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Milhouse</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The problem in the world today is communication. Too much communication.</QuestionText>
+		<QuestionNum>549</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Principal Skinner</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>So then I said to the cop, No, you're driving under the influence, of being a jerk!</QuestionText>
+		<QuestionNum>550</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>A woman doctor? Well, now I've seen everything.</QuestionText>
+		<QuestionNum>551</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>I guess it was a pretty funny practical joke. I like the ones where nothing catches on fire.</QuestionText>
+		<QuestionNum>552</QuestionNum>
+		<Answers>
+			<Answer>Marge</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Mrs. Krabappel</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>When we die there should be two planets, one for the French and one for the Chinese.</QuestionText>
+		<QuestionNum>553</QuestionNum>
+		<Answers>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Grampa</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Let me just type it up on my invisible typewriter.</QuestionText>
+		<QuestionNum>554</QuestionNum>
+		<Answers>
+			<Answer>Chief Wiggum</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Smithers</Answer>
+			<Answer>Krusty</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>As long as you're doing things for me, will you tie up your bathrobe when you walk around the house?</QuestionText>
+		<QuestionNum>555</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Marge</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Actually, thanks to our creative bookkeeping and corporate loopholes, we only pay about $3 in taxes a year.</QuestionText>
+		<QuestionNum>556</QuestionNum>
+		<Answers>
+			<Answer>Smithers</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Kent Brockman</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Heard you were swearing. Mind if I join in? Crap, boobs, crap!</QuestionText>
+		<QuestionNum>557</QuestionNum>
+		<Answers>
+			<Answer>Bart</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Moe</Answer>
+			<Answer>Grampa</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>How can I prove that we're live? Penis.</QuestionText>
+		<QuestionNum>558</QuestionNum>
+		<Answers>
+			<Answer>Kent Brockman</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Arnie Pie</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>If you ask me, Muhammad Ali, in his prime, was much better than anti-lock brakes.</QuestionText>
+		<QuestionNum>559</QuestionNum>
+		<Answers>
+			<Answer>Lenny</Answer>
+			<Answer>Carl</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Homer</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>Don't you think you're overreacting, talking gumball machine? </QuestionText>
+		<QuestionNum>560</QuestionNum>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Barney</Answer>
+			<Answer>Krusty</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question>
+		<QuestionText>The faithful people at the Global Positioning System is all the companionship I need.</QuestionText>
+		<QuestionNum>561</QuestionNum>
+		<Answers>
+			<Answer>Krusty</Answer>
+			<Answer>Lisa</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Sea Captain</Answer>
+		</Answers>
+	</Question>
+</Questions>

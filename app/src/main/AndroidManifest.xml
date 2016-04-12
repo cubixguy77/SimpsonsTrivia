@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.triviabilities">
+	
+	<supports-screens
+        android:largeScreens  = "true"
+        android:smallScreens  = "true"
+        android:normalScreens = "true"
+        android:anyDensity    = "true"   />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/icon"
+        android:allowBackup="false"
+        android:label="@string/app.title"
+        android:name=".MyApplication"
+        android:theme="@style/MyMaterialTheme">
+       
+        <activity
+            android:name=".activities.MainMenuActivity"
+            android:theme="@style/MyMaterialTheme.BrandedLaunch"
+            android:label="@string/app.title"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.QuestionActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activities.HighScoreActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard" />
+        <activity android:name=".activities.ResultsActivity" android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f2160560f4ffbab52d7d24cfcfe22749f16a2b50" />
+    </application>
+</manifest>
