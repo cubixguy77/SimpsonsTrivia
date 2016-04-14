@@ -24,7 +24,6 @@
             android:id="@+id/TitleText"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:src="@drawable/text_triviabilities"
             android:layout_marginTop="@dimen/main.title_text.margin.margin_top"
             android:text="T  R  I  V  I  A  B  I  L  I  T  I  E  S"
             android:textColor="@color/white"
