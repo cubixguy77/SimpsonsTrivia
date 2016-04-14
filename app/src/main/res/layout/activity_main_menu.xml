@@ -20,16 +20,17 @@
         android:visibility="visible">
 
 
-        <ImageView
-            android:layout_height="wrap_content"
+        <TextView
             android:id="@+id/TitleText"
-            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:src="@drawable/text_triviabilities"
             android:layout_marginTop="@dimen/main.title_text.margin.margin_top"
-            android:layout_marginLeft="@dimen/main.title_text.margin.margin_left_right"
-            android:layout_marginRight="@dimen/main.title_text.margin.margin_left_right"
-            android:adjustViewBounds="true" />
+            android:text="T  R  I  V  I  A  B  I  L  I  T  I  E  S"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/main.title_text.font.size"
+            android:gravity="center_horizontal" />
 
         <io.codetail.widget.RevealFrameLayout
             android:layout_width="fill_parent"

@@ -10,7 +10,7 @@
 
     <!-- Main Menu -->
     <dimen name="main.title_text.margin.margin_top">256dp</dimen>
-    <dimen name="main.title_text.margin.margin_left_right">80dp</dimen>
+    <dimen name="main.title_text.font.size">50sp</dimen>
     <dimen name="main.title_sub_text.margin.margin_left_right">32dp</dimen>
     <dimen name="main.buttons.margin.left_right">32dp</dimen>
     <dimen name="main.buttons.margin.space_between_classic_speed">8dp</dimen>

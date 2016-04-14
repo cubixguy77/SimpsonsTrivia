@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.crashlytics.android.Crashlytics;
 import com.triviabilities.MyApplication;
@@ -37,7 +38,7 @@ import io.fabric.sdk.android.Fabric;
 /* Home Screen */
 public class MainMenuActivity extends AppCompatActivity implements View.OnTouchListener
 {
-	private ImageView titleText;
+	private TextView titleText;
 	private ImageView titleSubText;
 
 	Button ChallengeButton;
@@ -76,7 +77,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 		root = (FrameLayout) findViewById(R.id.randomasslayout);
 
-		titleText = (ImageView) findViewById(R.id.TitleText);
+		titleText = (TextView) findViewById(R.id.TitleText);
 		titleText.setVisibility(View.INVISIBLE);
 		titleSubText = (ImageView) findViewById(R.id.TitleSubText);
 		titleSubText.setVisibility(View.INVISIBLE);
