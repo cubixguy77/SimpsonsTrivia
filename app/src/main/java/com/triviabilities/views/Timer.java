@@ -25,7 +25,9 @@ public class Timer extends CountDownTimer implements AnswerResultListener
 
     public void removeListeners()
     {
+        cancelTimer();
         this.timerListener = null;
+        this.timerPresenter = null;
     }
 
     public void onRestartTimer()
