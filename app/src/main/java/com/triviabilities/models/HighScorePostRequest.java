@@ -1,5 +1,7 @@
 package com.triviabilities.models;
 
+import com.triviabilities.GameMode;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 

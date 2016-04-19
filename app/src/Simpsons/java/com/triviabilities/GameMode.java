@@ -1,4 +1,4 @@
-package com.triviabilities.models;
+package com.triviabilities;
 
 import com.triviabilities.enums.Difficulty;
 import com.triviabilities.enums.GamePlayType;
@@ -49,7 +49,7 @@ public class GameMode
         return gameMode;
     }
 
-
+    public static final boolean difficultyEnabled = true;
     private Difficulty difficulty;
     private GamePlayType gamePlayType;
     private boolean bonusRoundEnabled;

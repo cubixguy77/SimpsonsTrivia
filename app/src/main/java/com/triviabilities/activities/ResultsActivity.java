@@ -17,7 +17,7 @@ import android.widget.Button;
 import com.triviabilities.MyApplication;
 import com.triviabilities.R;
 import com.triviabilities.adapters.ResultsViewPagerAdapter;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.utils.IntentManager;
 import com.triviabilities.views.CircularTransition;
 import com.triviabilities.views.SingleTapGesture;

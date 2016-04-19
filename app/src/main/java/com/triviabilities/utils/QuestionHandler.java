@@ -9,7 +9,7 @@ import com.triviabilities.interfaces.AnswerResultListener;
 import com.triviabilities.interfaces.AnswerVisibilityChangeListener;
 import com.triviabilities.interfaces.QuestionFetcherListener;
 import com.triviabilities.interfaces.QuestionListener;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.Question;
 import com.triviabilities.models.QuestionHistory;
 import com.triviabilities.network.QuestionFetcher;

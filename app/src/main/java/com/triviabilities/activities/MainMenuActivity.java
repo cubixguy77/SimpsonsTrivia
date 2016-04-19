@@ -25,7 +25,7 @@ import com.triviabilities.MyApplication;
 import com.triviabilities.R;
 import com.triviabilities.enums.Difficulty;
 import com.triviabilities.enums.GamePlayType;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.utils.IntentManager;
 import com.triviabilities.utils.Measure;
 import com.triviabilities.views.CircularTransition;
@@ -101,13 +101,6 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		HardChallengeButton.setOnTouchListener(this); HardChallengeButton.setVisibility(View.INVISIBLE);
 		EasySpeedButton.setOnTouchListener(this);     EasySpeedButton.setVisibility(View.INVISIBLE);
 		HardSpeedButton.setOnTouchListener(this);     HardSpeedButton.setVisibility(View.INVISIBLE);
-
-		/*
-		if (User.getInstance().isRegisteredUser())
-			Toast.makeText(getApplicationContext(), "hello! " + User.getInstance().getUserName(), Toast.LENGTH_LONG).show();
-		else
-			Toast.makeText(getApplicationContext(), "please subscribe to our newsletter", Toast.LENGTH_LONG).show();
-			*/
     }
 
 
@@ -140,16 +133,40 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		HardSpeedButton.setVisibility(View.INVISIBLE);
 	}
 
+	private void launchOptionsScreen(GamePlayType gamePlayType) {
+		Intent i = IntentManager.getOptionsIntent(this);
+		Bundle bundle = new Bundle();
+		bundle.putSerializable("GamePlayType", gamePlayType);
+		i.putExtra("ScoreModelBundle", bundle);
+		startActivity(i);
+	}
+
 	@Override
 	public boolean onTouch(View v, MotionEvent motionEvent) {
 		if (gestureDetector.onTouchEvent(motionEvent)) {
 
+			int touchX = (int) motionEvent.getRawX();
+			int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
+
 			if (v == ChallengeButton) {
-				animateButtonCollapse(ChallengeButton, EasyChallengeButton, HardChallengeButton);
+				if (GameMode.difficultyEnabled) {
+					launchOptionsScreen(GamePlayType.CHALLENGE);
+				}
+				else {
+					LaunchQuestionMode(Difficulty.EASY, GamePlayType.CHALLENGE, touchX, touchY);
+				}
+
+				//animateButtonCollapse(ChallengeButton, EasyChallengeButton, HardChallengeButton);
 			}
 
 			else if (v == SpeedChallengeButton) {
-				animateButtonCollapse(SpeedChallengeButton, EasySpeedButton, HardSpeedButton);
+				if (GameMode.difficultyEnabled) {
+					launchOptionsScreen(GamePlayType.SPEED);
+				}
+				else {
+					LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
+				}
+				//animateButtonCollapse(SpeedChallengeButton, EasySpeedButton, HardSpeedButton);
 			}
 
 			else if (v == HelpButton) {
@@ -174,8 +191,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 			else
 			{
-				int touchX = (int) motionEvent.getRawX();
-				int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
+
 
 				if (v == EasyChallengeButton)
 				{

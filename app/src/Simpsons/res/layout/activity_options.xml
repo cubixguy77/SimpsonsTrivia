@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topRootFrame"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary">
+
+<RelativeLayout
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/options.title_text.margin.top"
+        android:id="@+id/modeTextContainer">
+
+        <TextView
+            android:id="@+id/TitleText"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="@string/options.title_text.classic"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/options.title_text.text_size"
+            android:gravity="center_horizontal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/options.sub_title_text.margin.top"
+        android:id="@+id/chooseDifficultyTextContainer"
+        android:layout_below="@+id/modeTextContainer">
+
+        <TextView
+            android:id="@+id/chooseDifficultyText"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="C H O O S E   Y O U R  D I F F I C U L T Y"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-LIGHT"
+            android:textSize="@dimen/options.sub_title_text.text_size"
+            android:gravity="center_horizontal" />
+    </FrameLayout>
+
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main.buttons.margin.space_between_classic_speed"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="@dimen/options.circle.size"
+        android:layout_height="@dimen/options.circle.size"
+        android:background="@drawable/circle_option"
+        android:layout_marginTop="@dimen/options.circle.margin.top"
+        android:layout_marginRight="@dimen/options.circle.margin.from_center"
+        android:layout_toLeftOf="@+id/strut"
+        android:elevation="10dp"
+        android:stateListAnimator="@anim/button_elevation"
+        android:id="@+id/easyLayout"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/easyImage"
+            android:src="@drawable/easy_ralph"
+            android:padding="@dimen/options.circle.image.padding"
+            android:adjustViewBounds="false"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </FrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="@dimen/options.difficulty_label.width"
+        android:layout_height="@dimen/options.difficulty_label.height"
+        android:layout_toLeftOf="@+id/strut"
+        android:layout_marginRight="@dimen/options.difficulty_label.margin.from_center"
+        android:layout_marginTop="@dimen/options.difficulty_label.margin.top"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/easyLayout"
+        android:elevation="20dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/difficulty_text_container"
+            android:id="@+id/easyTextContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="EASY"
+                android:id="@+id/easyText"
+                android:fontFamily="sans-serif-LIGHT"
+                android:textSize="@dimen/options.difficulty_label.text.size"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="@dimen/options.circle.size"
+        android:layout_height="@dimen/options.circle.size"
+        android:background="@drawable/circle_option"
+        android:layout_marginTop="@dimen/options.circle.margin.top"
+        android:layout_marginLeft="@dimen/options.circle.margin.from_center"
+        android:layout_toRightOf="@+id/strut"
+        android:elevation="10dp"
+        android:stateListAnimator="@anim/button_elevation"
+        android:id="@+id/hardLayout"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hardImage"
+            android:src="@drawable/hard_cbguy"
+            android:padding="@dimen/options.circle.image.padding"
+            android:adjustViewBounds="false"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </FrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="@dimen/options.difficulty_label.width"
+        android:layout_height="@dimen/options.difficulty_label.height"
+        android:layout_toRightOf="@+id/strut"
+        android:layout_marginLeft="@dimen/options.difficulty_label.margin.from_center"
+        android:layout_marginTop="@dimen/options.difficulty_label.margin.top"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/hardLayout"
+        android:elevation="20dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/difficulty_text_container"
+            android:id="@+id/hardTextContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="HARD"
+                android:id="@+id/hardText"
+                android:fontFamily="sans-serif-LIGHT"
+                android:textSize="@dimen/options.difficulty_label.text.size"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+
+</RelativeLayout>
+
+</FrameLayout>

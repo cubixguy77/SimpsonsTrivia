@@ -24,7 +24,7 @@ import com.triviabilities.interfaces.FiftyFiftyListener;
 import com.triviabilities.interfaces.GameStateListener;
 import com.triviabilities.interfaces.QuestionListener;
 import com.triviabilities.interfaces.TimerListener;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.Question;
 
 public class QuestionActivity extends Activity implements GameStateListener, QuestionListener, AnswerResultListener, TimerListener, FiftyFiftyListener

@@ -2,7 +2,7 @@ package com.triviabilities.network;
 
 import android.os.AsyncTask;
 
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.HighScorePostRequest;
 import com.triviabilities.interfaces.PostHighScoreDataListener;
 
