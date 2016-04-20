@@ -65,6 +65,8 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		titleSubText = (TextView) findViewById(R.id.chooseDifficultyText);
 		titleSubText.setVisibility(View.INVISIBLE);
 
+
+
 		easyLayout = (FrameLayout) findViewById(R.id.easyLayout);
 		easyImage = (ImageView) findViewById(R.id.easyImage);
 		easyTextContainer = (FrameLayout) findViewById(R.id.easyTextContainer);

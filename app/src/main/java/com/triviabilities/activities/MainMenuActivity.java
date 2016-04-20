@@ -114,6 +114,10 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		}
 
 		enableButtons(true);
+		titleText.setAlpha(1);
+		titleSubText.setAlpha(1.0f);
+		ChallengeButton.setAlpha(1);
+		SpeedChallengeButton.setAlpha(1);
 	}
 
 	@Override
@@ -133,6 +137,36 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		HardSpeedButton.setVisibility(View.INVISIBLE);
 	}
 
+	private void fadeOutViews(final GamePlayType gamePlayType) {
+		ObjectAnimator fadeTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeTitleText.setTarget(titleText);
+
+		ObjectAnimator fadeSubTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeSubTitleText.setTarget(titleSubText);
+
+		ObjectAnimator fadeFirstButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeFirstButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? SpeedChallengeButton : ChallengeButton);
+
+		final ObjectAnimator fadeSecondButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeSecondButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? ChallengeButton : SpeedChallengeButton);
+
+		AnimatorSet set = new AnimatorSet();
+		set.playTogether(fadeTitleText, fadeSubTitleText, fadeFirstButton);
+		set.playSequentially(fadeFirstButton, fadeSecondButton);
+		set.addListener(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator animation) {
+				onViewsHidden(gamePlayType);
+			}
+		});
+
+		set.start();
+	}
+
+	private void onViewsHidden(GamePlayType gamePlayType) {
+		launchOptionsScreen(gamePlayType);
+	}
+
 	private void launchOptionsScreen(GamePlayType gamePlayType) {
 		Intent i = IntentManager.getOptionsIntent(this);
 		Bundle bundle = new Bundle();
@@ -150,7 +184,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 			if (v == ChallengeButton) {
 				if (GameMode.difficultyEnabled) {
-					launchOptionsScreen(GamePlayType.CHALLENGE);
+					fadeOutViews(GamePlayType.CHALLENGE);
 				}
 				else {
 					LaunchQuestionMode(Difficulty.EASY, GamePlayType.CHALLENGE, touchX, touchY);
@@ -161,7 +195,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 			else if (v == SpeedChallengeButton) {
 				if (GameMode.difficultyEnabled) {
-					launchOptionsScreen(GamePlayType.SPEED);
+					fadeOutViews(GamePlayType.SPEED);
 				}
 				else {
 					LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
@@ -330,33 +364,5 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 			anim.start();
 			introAnimationsPlayed = true;
 		}
-	}
-
-	private void animateButtonCollapse(final Button mainButton, final Button easyButton, final Button hardButton)
-	{
-		ObjectAnimator collapse = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_button_collapse);
-		collapse.setTarget(mainButton);
-
-		ObjectAnimator expand = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_button_expand);
-		expand.setTarget(mainButton);
-
-		AnimatorSet collapseButton = new AnimatorSet();
-		collapseButton.playSequentially(collapse, expand);
-		collapseButton.addListener(new AnimatorListenerAdapter() {
-			@Override
-			public void onAnimationStart(Animator anion) {
-				mainButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, android.R.color.transparent));
-			}
-
-			@Override
-			public void onAnimationEnd(Animator animation) {
-				mainButton.setVisibility(View.INVISIBLE);
-				mainButton.setScaleX(1.0f);
-				easyButton.setVisibility(View.VISIBLE);
-				hardButton.setVisibility(View.VISIBLE);
-			}
-		});
-
-		collapseButton.start();
 	}
 }
