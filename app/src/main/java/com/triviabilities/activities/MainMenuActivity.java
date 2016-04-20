@@ -4,7 +4,9 @@ import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
+import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -59,6 +61,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	private boolean introAnimationsPlayed = false;
 
 	private GestureDetector gestureDetector;
+
+	private boolean challengeButtonClicked = false;
+	private boolean speedButtonClicked = false;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -145,10 +150,12 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		if (gestureDetector.onTouchEvent(motionEvent)) {
 
 			if (v == ChallengeButton) {
+				challengeButtonClicked = true;
 				animateButtonCollapse(ChallengeButton, EasyChallengeButton, HardChallengeButton);
 			}
 
 			else if (v == SpeedChallengeButton) {
+				speedButtonClicked = true;
 				animateButtonCollapse(SpeedChallengeButton, EasySpeedButton, HardSpeedButton);
 			}
 
@@ -211,6 +218,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	{
 		ChallengeButton.setEnabled(enabled);
 		SpeedChallengeButton.setEnabled(enabled);
+
+		challengeButtonClicked = false;
+		speedButtonClicked = false;
 
 		EasyChallengeButton.setEnabled(enabled);
 		HardChallengeButton.setEnabled(enabled);
@@ -316,6 +326,83 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		}
 	}
 
+	private ValueAnimator getTextFadeAnimator(boolean fadeIn, final Button button, int duration) {
+		Integer colorFrom = ContextCompat.getColor(MainMenuActivity.this, android.R.color.transparent);
+		Integer colorTo = ContextCompat.getColor(MainMenuActivity.this, R.color.main_buttons_text);
+		ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), fadeIn ? colorFrom : colorTo, fadeIn ? colorTo : colorFrom);
+		colorAnimation.setDuration(duration);
+		colorAnimation.setStartDelay(100);
+		colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+			@Override
+			public void onAnimationUpdate(ValueAnimator animator) {
+				button.setTextColor((Integer)animator.getAnimatedValue());
+			}
+		});
+		return colorAnimation;
+	}
+
+	private void restoreMainButton(final Button button)
+	{
+		Handler handler = new Handler();
+		handler.postDelayed(new Runnable() {
+			public void run() {
+				final Button leftButton;
+				final Button rightButton;
+
+				final boolean restoreSpeed = button == SpeedChallengeButton;
+
+				if (restoreSpeed) {
+					leftButton = EasySpeedButton;
+					rightButton = HardSpeedButton;
+				}
+				else {
+					leftButton = EasyChallengeButton;
+					rightButton = HardChallengeButton;
+				}
+
+				leftButton.setPivotX(0);
+				leftButton.setPivotY(0);
+				rightButton.setPivotX(rightButton.getWidth());
+				rightButton.setPivotY(rightButton.getHeight());
+
+				final ObjectAnimator expandEasy = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.difficulty_button_expand);
+				expandEasy.setTarget(leftButton);
+
+				final ObjectAnimator expandHard = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.difficulty_button_expand);
+				expandHard.setTarget(rightButton);
+
+				AnimatorSet expandButtons = new AnimatorSet();
+				expandButtons.playTogether(expandEasy, expandHard, getTextFadeAnimator(false, leftButton, 200), getTextFadeAnimator(false, rightButton, 200));
+
+				expandButtons.addListener(new AnimatorListenerAdapter() {
+					@Override
+					public void onAnimationEnd(Animator animation) {
+						leftButton.setVisibility(View.INVISIBLE);
+						rightButton.setVisibility(View.INVISIBLE);
+						button.setVisibility(View.VISIBLE);
+
+						ValueAnimator colorAnimation = getTextFadeAnimator(true, button, 500);
+						colorAnimation.start();
+
+						leftButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, R.color.main_buttons_text));
+						rightButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, R.color.main_buttons_text));
+
+						expandEasy.setDuration(1);
+						expandHard.setDuration(1);
+						expandEasy.reverse();
+						expandHard.reverse();
+
+						if (restoreSpeed)
+							speedButtonClicked = false;
+						else
+							challengeButtonClicked = false;
+					}
+				});
+				expandButtons.start();
+			}
+		}, 200);
+	}
+
 	private void animateButtonCollapse(final Button mainButton, final Button easyButton, final Button hardButton)
 	{
 		ObjectAnimator collapse = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_button_collapse);
@@ -338,6 +425,17 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 				mainButton.setScaleX(1.0f);
 				easyButton.setVisibility(View.VISIBLE);
 				hardButton.setVisibility(View.VISIBLE);
+
+				if (speedButtonClicked && mainButton == ChallengeButton)
+				{
+					restoreMainButton(SpeedChallengeButton);
+					mainButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, android.R.color.transparent));
+				}
+				else if (challengeButtonClicked && mainButton == SpeedChallengeButton)
+				{
+					restoreMainButton(ChallengeButton);
+					mainButton.setTextColor(ContextCompat.getColor(MainMenuActivity.this, android.R.color.transparent));
+				}
 			}
 		});
 
