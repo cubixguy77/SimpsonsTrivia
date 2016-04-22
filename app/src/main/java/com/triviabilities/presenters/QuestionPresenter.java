@@ -438,24 +438,19 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
     private float getTextSize(String text)
     {
-        System.out.println("Text length: " + text.length());
         if (text.length() < 100) {
-            System.out.println("Max size: " + mMaxTextSize);
             return mMaxTextSize;
         }
         else if (text.length() < 180) {
-            System.out.println("Mid size: " + mMidTextSize);
             return mMidTextSize;
         }
         else {
-            System.out.println("Min size: " + mMidTextSize);
             return mMinTextSize;
         }
     }
 
     public void revealAnswerButtons(SupportAnimator.SimpleAnimatorListener listener)
     {
-
         AnswerContainer.setVisibility(View.VISIBLE);
         int centerX = (int) AnswerContainer.getX() + AnswerContainer.getWidth() / 2;
         int Y = (int) AnswerContainer.getY();
