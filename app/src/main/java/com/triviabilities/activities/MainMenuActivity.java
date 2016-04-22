@@ -137,60 +137,30 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		HardSpeedButton.setVisibility(View.INVISIBLE);
 	}
 
-	private void fadeOutViews(final GamePlayType gamePlayType) {
-		ObjectAnimator fadeTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
-		fadeTitleText.setTarget(titleText);
-
-		ObjectAnimator fadeSubTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
-		fadeSubTitleText.setTarget(titleSubText);
-
-		ObjectAnimator fadeFirstButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
-		fadeFirstButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? SpeedChallengeButton : ChallengeButton);
-
-		final ObjectAnimator fadeSecondButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
-		fadeSecondButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? ChallengeButton : SpeedChallengeButton);
-
-		AnimatorSet set = new AnimatorSet();
-		set.playTogether(fadeTitleText, fadeSubTitleText, fadeFirstButton);
-		set.playSequentially(fadeFirstButton, fadeSecondButton);
-		set.addListener(new AnimatorListenerAdapter() {
-			@Override
-			public void onAnimationEnd(Animator animation) {
-				onViewsHidden(gamePlayType);
-			}
-		});
-
-		set.start();
+	@Override
+	public void onStop()
+	{
+		super.onStop();
 	}
 
-	private void onViewsHidden(GamePlayType gamePlayType) {
-		launchOptionsScreen(gamePlayType);
-	}
-
-	private void launchOptionsScreen(GamePlayType gamePlayType) {
-		Intent i = IntentManager.getOptionsIntent(this);
-		Bundle bundle = new Bundle();
-		bundle.putSerializable("GamePlayType", gamePlayType);
-		i.putExtra("ScoreModelBundle", bundle);
-		startActivity(i);
+	@Override
+	public void onDestroy()
+	{
+		super.onDestroy();
 	}
 
 	@Override
 	public boolean onTouch(View v, MotionEvent motionEvent) {
 		if (gestureDetector.onTouchEvent(motionEvent)) {
-
-			int touchX = (int) motionEvent.getRawX();
-			int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
-
 			if (v == ChallengeButton) {
 				if (GameMode.difficultyEnabled) {
 					fadeOutViews(GamePlayType.CHALLENGE);
 				}
 				else {
+					int touchX = (int) motionEvent.getRawX();
+					int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
 					LaunchQuestionMode(Difficulty.EASY, GamePlayType.CHALLENGE, touchX, touchY);
 				}
-
-				//animateButtonCollapse(ChallengeButton, EasyChallengeButton, HardChallengeButton);
 			}
 
 			else if (v == SpeedChallengeButton) {
@@ -198,50 +168,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 					fadeOutViews(GamePlayType.SPEED);
 				}
 				else {
+					int touchX = (int) motionEvent.getRawX();
+					int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
 					LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
-				}
-				//animateButtonCollapse(SpeedChallengeButton, EasySpeedButton, HardSpeedButton);
-			}
-
-			else if (v == HelpButton) {
-				Intent i = new Intent(MainMenuActivity.this, ResultsActivity.class);
-				GameMode.newInstance(Difficulty.HARD, GamePlayType.CHALLENGE);
-
-				Bundle bundle = new Bundle();
-				bundle.putInt("Score", 4400);
-				bundle.putInt("CorrectAnswers", 10);
-				bundle.putInt("TotalAnswers", 15);
-				bundle.putInt("BonusScore", 500);
-				bundle.putInt("CorrectBonusAnswers", 3);
-				bundle.putInt("TotalBonusAnswers", 4);
-				i.putExtra("ScoreModelBundle", bundle);
-
-				MainMenuActivity.this.startActivity(i);
-			}
-
-			else if (v == HighScoreButton) {
-				navigateToHighScore();
-			}
-
-			else
-			{
-
-
-				if (v == EasyChallengeButton)
-				{
-					LaunchQuestionMode(Difficulty.EASY, GamePlayType.CHALLENGE, touchX, touchY);
-				}
-				else if (v == HardChallengeButton)
-				{
-					LaunchQuestionMode(Difficulty.HARD, GamePlayType.CHALLENGE, touchX, touchY);
-				}
-				else if (v == EasySpeedButton)
-				{
-					LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
-				}
-				else if (v == HardSpeedButton)
-				{
-					LaunchQuestionMode(Difficulty.HARD, GamePlayType.SPEED, touchX, touchY);
 				}
 			}
 		}
@@ -261,37 +190,15 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	{
 		ChallengeButton.setEnabled(enabled);
 		SpeedChallengeButton.setEnabled(enabled);
-
-		EasyChallengeButton.setEnabled(enabled);
-		HardChallengeButton.setEnabled(enabled);
-		EasySpeedButton.setEnabled(enabled);
-		HardSpeedButton.setEnabled(enabled);
-	}
-
-	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
-	{
-		enableButtons(false);
-
-		GameMode.newInstance(difficulty, gamePlayType);
-
-		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
-		transition.start(new AnimatorListenerAdapter() {
-			@Override
-			public void onAnimationEnd(Animator animation) {
-				startActivity(IntentManager.getQuestionIntent(MainMenuActivity.this));
-			}
-		});
-	}
-
-	public void navigateToHighScore()
-	{
-		startActivity(IntentManager.getHighScoresIntent(this));
 	}
 
 
 
 
 
+
+
+	/********************* Intro Animations ****************************/
 
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
@@ -365,4 +272,66 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 			introAnimationsPlayed = true;
 		}
 	}
+
+	/************************* End Intro Animations ***************************/
+
+
+
+
+	/************************** Outro Animations ******************************/
+	private void fadeOutViews(final GamePlayType gamePlayType) {
+		ObjectAnimator fadeTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeTitleText.setTarget(titleText);
+
+		ObjectAnimator fadeSubTitleText = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeSubTitleText.setTarget(titleSubText);
+
+		ObjectAnimator fadeFirstButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeFirstButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? SpeedChallengeButton : ChallengeButton);
+
+		final ObjectAnimator fadeSecondButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
+		fadeSecondButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? ChallengeButton : SpeedChallengeButton);
+
+		AnimatorSet set = new AnimatorSet();
+		set.playTogether(fadeTitleText, fadeSubTitleText, fadeFirstButton);
+		set.playSequentially(fadeFirstButton, fadeSecondButton);
+		set.addListener(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator animation) {
+				onViewsHidden(gamePlayType);
+			}
+		});
+
+		set.start();
+	}
+
+	private void onViewsHidden(GamePlayType gamePlayType) {
+		launchOptionsScreen(gamePlayType);
+	}
+
+	/* For apps with no difficulty choices */
+	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
+	{
+		enableButtons(false);
+
+		GameMode.newInstance(difficulty, gamePlayType);
+
+		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
+		transition.start(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator animation) {
+				startActivity(IntentManager.getQuestionIntent(MainMenuActivity.this));
+			}
+		});
+	}
+
+	/* For apps with a difficulty choice options screen */
+	private void launchOptionsScreen(GamePlayType gamePlayType) {
+		Intent i = IntentManager.getOptionsIntent(this);
+		Bundle bundle = new Bundle();
+		bundle.putSerializable("GamePlayType", gamePlayType);
+		i.putExtra("OptionsScreenBundle", bundle);
+		startActivity(i);
+	}
+	/************************** End Outro Animations ******************************/
 }

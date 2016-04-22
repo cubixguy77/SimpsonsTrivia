@@ -43,12 +43,13 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 	private FrameLayout hardTextContainer;
 	private TextView hardText;
 
-
 	private FrameLayout root;
 
 	private boolean introAnimationsPlayed = false;
 
 	private GestureDetector gestureDetector;
+
+	private GamePlayType gamePlayType;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -66,6 +67,14 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		titleSubText.setVisibility(View.INVISIBLE);
 
 
+		GamePlayType gamePlayType = (GamePlayType) getIntent().getBundleExtra("OptionsScreenBundle").getSerializable("GamePlayType");
+		this.gamePlayType = gamePlayType;
+		if (gamePlayType == GamePlayType.CHALLENGE) {
+			titleText.setText(getResources().getString(R.string.options_title_text_classic));
+		}
+		else {
+			titleText.setText(getResources().getString(R.string.options_title_text_speed));
+		}
 
 		easyLayout = (FrameLayout) findViewById(R.id.easyLayout);
 		easyImage = (ImageView) findViewById(R.id.easyImage);
@@ -123,27 +132,46 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 			int touchX = (int) motionEvent.getRawX();
 			int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
 			if (v == easyLayout) {
-				LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
+				LaunchQuestionMode(Difficulty.EASY, gamePlayType, touchX, touchY);
 			}
 			else if (v == hardLayout) {
-				LaunchQuestionMode(Difficulty.HARD, GamePlayType.SPEED, touchX, touchY);
+				LaunchQuestionMode(Difficulty.HARD, gamePlayType, touchX, touchY);
 			}
 		}
 		return false;
 	}
 
-	public int getStatusBarHeight() {
-		int result = 0;
-		int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-		if (resourceId > 0) {
-			result = getResources().getDimensionPixelSize(resourceId);
-		}
-		return result;
-	}
-
 	private void enableButtons(boolean enabled)
 	{
 		easyLayout.setEnabled(enabled);
+		hardLayout.setEnabled(enabled);
+	}
+
+	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
+	{
+		enableButtons(false);
+
+		GameMode.newInstance(difficulty, gamePlayType);
+
+		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
+		transition.start(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator animation) {
+				startActivity(IntentManager.getQuestionIntent(OptionsActivity.this));
+			}
+		});
+	}
+
+
+
+	/***************** Play Intro Animations *********************/
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		if(hasFocus && !introAnimationsPlayed) {
+			Measure.loadScreenDimensions(this);
+			animateTitleTextReveal();
+			introAnimationsPlayed = true;
+		}
 	}
 
 	private ObjectAnimator getRevealTextAnimator(final View view, int duration, AnimatorListenerAdapter listener)
@@ -163,21 +191,6 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 			}
 		});
 		return anim;
-	}
-
-	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
-	{
-		enableButtons(false);
-
-		GameMode.newInstance(difficulty, gamePlayType);
-
-		CircularTransition transition = new CircularTransition(this, root, touchX, touchY);
-		transition.start(new AnimatorListenerAdapter() {
-			@Override
-			public void onAnimationEnd(Animator animation) {
-				startActivity(IntentManager.getQuestionIntent(OptionsActivity.this));
-			}
-		});
 	}
 
 	private void animateTitleTextReveal() {
@@ -280,13 +293,12 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		layout.startAnimation(fabReveal);
 	}
 
-	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		if(hasFocus && !introAnimationsPlayed) {
-			Measure.loadScreenDimensions(this);
-
-			animateTitleTextReveal();
-			introAnimationsPlayed = true;
+	public int getStatusBarHeight() {
+		int result = 0;
+		int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+		if (resourceId > 0) {
+			result = getResources().getDimensionPixelSize(resourceId);
 		}
+		return result;
 	}
 }
