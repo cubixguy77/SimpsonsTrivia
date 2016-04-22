@@ -185,6 +185,7 @@
 
                 <Button android:id="@+id/AnswerD"
                     tools:text="Grampa Simpson"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="fill_parent"
                     android:gravity="center_vertical|center_horizontal"
                     android:height="@dimen/question.answer_button.height"
