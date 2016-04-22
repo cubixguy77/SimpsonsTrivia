@@ -3,7 +3,7 @@ package com.triviabilities.network;
 import android.os.AsyncTask;
 
 import com.triviabilities.interfaces.HighScoreRequestListener;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.HighScoreItem;
 import com.triviabilities.models.HighScoreList;
 import com.triviabilities.models.HighScoreListRequest;

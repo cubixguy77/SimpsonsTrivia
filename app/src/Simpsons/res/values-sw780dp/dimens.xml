@@ -1,0 +1,19 @@
+<resources>
+    <!-- Difficulty Options Screen -->
+    <dimen name="options.title_text.margin.top">320dp</dimen>
+    <dimen name="options.title_text.text_size">55sp</dimen>
+
+    <dimen name="options.sub_title_text.margin.top">20dp</dimen>
+    <dimen name="options.sub_title_text.text_size">30sp</dimen>
+
+    <dimen name="options.circle.size">220dp</dimen>
+    <dimen name="options.circle.margin.top">530dp</dimen>
+    <dimen name="options.circle.margin.from_center">48dp</dimen>
+    <dimen name="options.circle.image.padding">28dp</dimen>
+
+    <dimen name="options.difficulty_label.width">120dp</dimen>
+    <dimen name="options.difficulty_label.height">40dp</dimen>
+    <dimen name="options.difficulty_label.margin.from_center">50dp</dimen>
+    <dimen name="options.difficulty_label.margin.top">-20dp</dimen>
+    <dimen name="options.difficulty_label.text.size">26sp</dimen>
+</resources>

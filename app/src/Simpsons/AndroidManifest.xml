@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"      package="com.triviabilities">
+    <application
+        android:icon="@mipmap/icon"
+        android:allowBackup="false"
+        android:label="@string/app.title"
+        android:name=".MyApplication"
+        android:theme="@style/MyMaterialTheme">
+
+        <activity android:name="OptionsActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard" />
+    </application>
+</manifest>

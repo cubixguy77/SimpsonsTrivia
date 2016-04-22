@@ -3,11 +3,12 @@ package com.triviabilities.utils;
 import android.content.Context;
 import android.content.Intent;
 
+import com.triviabilities.OptionsActivity;
 import com.triviabilities.activities.HighScoreActivity;
 import com.triviabilities.activities.MainMenuActivity;
 import com.triviabilities.activities.QuestionActivity;
 import com.triviabilities.activities.ResultsActivity;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.ScoreDataModel;
 
 
@@ -24,6 +25,13 @@ public class IntentManager {
     public static Intent getQuestionIntent(Context context)
     {
         Intent questionIntent = new Intent(context, QuestionActivity.class);
+        questionIntent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        return questionIntent;
+    }
+
+    public static Intent getOptionsIntent(Context context)
+    {
+        Intent questionIntent = new Intent(context, OptionsActivity.class);
         questionIntent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         return questionIntent;
     }

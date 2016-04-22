@@ -9,7 +9,7 @@ import com.triviabilities.enums.HighScoreSubmitResult;
 import com.triviabilities.interfaces.HighScoreRequestListener;
 import com.triviabilities.interfaces.HighScoreSubmitListener;
 import com.triviabilities.interfaces.PostHighScoreDataListener;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.HighScoreItem;
 import com.triviabilities.models.HighScoreList;
 import com.triviabilities.network.HighScoreDataFetcher;
@@ -68,9 +68,9 @@ public class HighScoreUtils {
                 {
                     refreshCache(listener);
                     /*
-                    HighScoreList list = cachedList.get(GameMode.getGameMode().getId());
+                    HighScoreList list = cachedList.get(com.triviabilities.GameMode.getGameMode().getId());
                     list.insertScore(score);
-                    cachedList.put(GameMode.getGameMode().getId(), list);
+                    cachedList.put(com.triviabilities.GameMode.getGameMode().getId(), list);
                     */
                 }
             }

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app.title">Simpsons Trivia</string>
+
+    <string name="options.title_text.speed">"S P E E D   M O D E"</string>
+    <string name="options.title_text.classic">"C L A S S I C   M O D E"</string>
 </resources>

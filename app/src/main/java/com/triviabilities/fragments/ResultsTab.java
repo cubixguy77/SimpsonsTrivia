@@ -38,7 +38,7 @@ import com.triviabilities.enums.GamePlayType;
 import com.triviabilities.enums.HighScoreSubmitResult;
 import com.triviabilities.interfaces.HighScoreSubmitListener;
 import com.triviabilities.models.DataResult;
-import com.triviabilities.models.GameMode;
+import com.triviabilities.GameMode;
 import com.triviabilities.models.ScoreDataModel;
 import com.triviabilities.models.User;
 import com.triviabilities.utils.HighScoreUtils;
