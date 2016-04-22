@@ -3,5 +3,5 @@
         android:propertyName="y"
         android:valueType="floatType"
         android:duration="400"
-        android:delay="1900"
+        android:delay="1400"
         android:interpolator="@android:anim/overshoot_interpolator"/>

@@ -8,9 +8,9 @@
     <dimen name="main.title_text.margin.margin_top">128dp</dimen>
     <dimen name="main.title_text.font.size">24sp</dimen>
     <dimen name="main.title_sub_text.margin.margin_left_right">16dp</dimen>
+    <dimen name="main.buttons.margin.top">64dp</dimen>
     <dimen name="main.buttons.margin.left_right">16dp</dimen>
-    <dimen name="main.buttons.margin.space_between_classic_speed">4dp</dimen>
-    <dimen name="main.buttons.margin.space_between_easy_hard">8dp</dimen>
+    <dimen name="main.buttons.margin.space_between_classic_speed">12dp</dimen>
     <dimen name="main.buttons.height">80dp</dimen>
     <dimen name="main.buttons.text_size">25sp</dimen>
     <dimen name="main.buttons.corner_radius">10dp</dimen>

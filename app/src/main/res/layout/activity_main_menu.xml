@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <FrameLayout
-    android:id="@+id/randomasslayout"
+    android:id="@+id/RootFrameLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -12,13 +12,11 @@
     <LinearLayout
         android:id="@+id/CircularRevealTarget"
         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:layout_height="fill_parent"
         android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:visibility="visible">
-
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/TitleText"
@@ -32,196 +30,51 @@
             android:gravity="center_horizontal" />
 
         <io.codetail.widget.RevealFrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/QuestionContainerContainer"
-            android:visibility="visible"
-            android:paddingLeft="@dimen/main.title_sub_text.margin.margin_left_right"
-            android:paddingRight="@dimen/main.title_sub_text.margin.margin_left_right">
-
-        <ImageView
-            android:layout_height="wrap_content"
-            android:id="@+id/TitleSubText"
-            android:scaleType="fitStart"
             android:layout_width="fill_parent"
-            android:src="@drawable/title_graphic"
-            android:adjustViewBounds="true"
-            android:minHeight="200dp" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/main.title_sub_text.margin.margin_left_right"
+            android:paddingRight="@dimen/main.title_sub_text.margin.margin_left_right"
+            android:visibility="visible">
 
+            <ImageView
+                android:id="@+id/TitleSubText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/title_graphic"
+                android:adjustViewBounds="true"
+                android:minHeight="200dp" />
         </io.codetail.widget.RevealFrameLayout>
 
-
-
-        <RelativeLayout
-            android:layout_height="fill_parent"
+        <Button
+            android:id="@+id/ChallengeButton"
             android:layout_width="fill_parent"
-            android:id="@+id/LinearLayout1"
-            android:orientation="vertical">
+            android:layout_height="@dimen/main.buttons.height"
+            android:layout_marginLeft="@dimen/main.buttons.margin.left_right"
+            android:layout_marginRight="@dimen/main.buttons.margin.left_right"
+            android:layout_marginTop="@dimen/main.buttons.margin.top"
+            android:background="@drawable/rounded_corners_button"
+            android:textColor="@color/main.buttons.text"
+            android:textSize="@dimen/main.buttons.text_size"
+            android:text="@string/main.button.classic"
+            android:gravity="center"
+            android:typeface="sans"
+            android:stateListAnimator="@anim/button_elevation" />
 
-            <View android:id="@+id/strut"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/main.buttons.margin.space_between_classic_speed"
-                android:visibility="invisible"
-                android:layout_centerVertical="true" />
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/main.buttons.height"
-                android:clipChildren="false"
-                android:clipToPadding="false"
-                android:paddingBottom="8dp"
-                android:id="@+id/ClassicLayout"
-                android:layout_marginLeft="@dimen/main.buttons.margin.left_right"
-                android:layout_marginRight="@dimen/main.buttons.margin.left_right"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentStart="false"
-                android:layout_above="@+id/strut">
-
-                <View android:id="@+id/strut2"
-                    android:layout_width="@dimen/main.buttons.margin.space_between_easy_hard"
-                    android:layout_height="wrap_content"
-                    android:visibility="invisible"
-                    android:layout_centerHorizontal="true" />
-
-                <Button
-                    android:textSize="@dimen/main.buttons.text_size"
-                    android:id="@+id/EasyChallengeButton"
-                    android:text="@string/main.button.easy"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_gravity="left"
-                    android:visibility="invisible"
-                    android:typeface="sans"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="false"
-                    android:layout_toLeftOf="@+id/strut2"
-                    android:textColor="@color/main.buttons.text"
-                    android:stateListAnimator="@anim/button_elevation" />
-
-                <Button
-                    android:textSize="@dimen/main.buttons.text_size"
-                    android:id="@+id/HardChallengeButton"
-                    android:text="@string/main.button.hard"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|right"
-                    android:visibility="invisible"
-                    android:typeface="sans"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/strut2"
-                    android:layout_alignParentRight="true"
-                    android:textColor="@color/main.buttons.text"
-                    android:stateListAnimator="@anim/button_elevation" />
-
-                <Button android:text="@string/main.button.classic"
-                    android:gravity="center"
-                    android:clickable="true"
-                    android:id="@+id/ChallengeButton"
-                    android:textSize="@dimen/main.buttons.text_size"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_gravity="center_horizontal"
-                    android:typeface="sans"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="0dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="0dp"
-                    android:textColor="@color/main.buttons.text"
-                    android:visibility="visible"
-                    android:stateListAnimator="@anim/button_elevation"
-                     />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/main.buttons.height"
-                android:clipChildren="false"
-                android:id="@+id/SpeedLayout"
-                android:clipToPadding="false"
-                android:paddingBottom="8dp"
-                android:layout_marginLeft="@dimen/main.buttons.margin.left_right"
-                android:layout_marginRight="@dimen/main.buttons.margin.left_right"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentTop="false"
-                android:layout_below="@+id/strut">
-
-                <View android:id="@+id/strut_speed"
-                    android:layout_width="@dimen/main.buttons.margin.space_between_easy_hard"
-                    android:layout_height="0dp"
-                    android:visibility="invisible"
-                    android:layout_centerHorizontal="true" />
-
-                <Button
-                    android:textSize="@dimen/main.buttons.text_size"
-                    android:id="@+id/EasySpeedButton"
-                    android:text="@string/main.button.easy"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_gravity="center_horizontal|left"
-                    android:typeface="sans"
-                    android:layout_marginBottom="3dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_toLeftOf="@+id/strut_speed"
-                    android:textColor="@color/main.buttons.text"
-                    android:stateListAnimator="@anim/button_elevation"
-                    android:visibility="invisible" />
-
-                <Button
-                    android:textSize="@dimen/main.buttons.text_size"
-                    android:id="@+id/HardSpeedButton"
-                    android:text="@string/main.button.hard"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_gravity="right"
-                    android:typeface="sans"
-                    android:layout_marginBottom="3dp"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_toRightOf="@+id/strut_speed"
-                    android:textColor="@color/main.buttons.text"
-                    android:stateListAnimator="@anim/button_elevation"
-                    android:visibility="invisible" />
-
-                <Button android:layout_width="fill_parent" android:textSize="@dimen/main.buttons.text_size" android:id="@+id/SpeedChallengeButton"
-                    android:text="@string/main.button.speed"
-                    android:clickable="true"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rounded_corners_button"
-                    android:layout_gravity="center_horizontal"
-                    android:visibility="visible"
-                    android:typeface="sans"
-                    android:layout_marginBottom="3dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="0dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="0dp"
-                    android:textColor="@color/main.buttons.text"
-                    android:stateListAnimator="@anim/button_elevation" />
-            </RelativeLayout>
-
-        </RelativeLayout>
-
+        <Button
+            android:id="@+id/SpeedChallengeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main.buttons.height"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/main.buttons.margin.left_right"
+            android:layout_marginRight="@dimen/main.buttons.margin.left_right"
+            android:layout_marginTop="@dimen/main.buttons.margin.space_between_classic_speed"
+            android:background="@drawable/rounded_corners_button"
+            android:textColor="@color/main.buttons.text"
+            android:textSize="@dimen/main.buttons.text_size"
+            android:text="@string/main.button.speed"
+            android:typeface="sans"
+            android:stateListAnimator="@anim/button_elevation" />
     </LinearLayout>
-
-    <Button android:textSize="20sp" android:id="@+id/HighScoreButton" android:text="Test Results"
-        android:layout_width="61dp" android:layout_height="36dp" android:background="@drawable/rounded_corners_button"
-        android:layout_gravity="bottom|right"
-        android:visibility="invisible" />
-
-    <Button android:textSize="20sp" android:id="@+id/HelpButton" android:text="High Scores"
-        android:layout_width="53dp" android:layout_height="32dp" android:background="@drawable/rounded_corners_button"
-        android:layout_gravity="bottom|left"
-        android:visibility="invisible" />
-
-
 </FrameLayout>

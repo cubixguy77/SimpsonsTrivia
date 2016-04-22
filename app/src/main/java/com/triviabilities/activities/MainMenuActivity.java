@@ -17,7 +17,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.crashlytics.android.Crashlytics;
@@ -43,16 +42,6 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 	Button ChallengeButton;
 	Button SpeedChallengeButton;
-	Button HelpButton;
-	Button HighScoreButton;
-
-	Button EasyChallengeButton;
-	Button HardChallengeButton;
-	Button EasySpeedButton;
-	Button HardSpeedButton;
-
-	RelativeLayout ClassicLayout;
-	RelativeLayout SpeedLayout;
 
 	private FrameLayout root;
 
@@ -70,39 +59,24 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 		gestureDetector = new GestureDetector(this, new SingleTapGesture());
 
-		ClassicLayout = (RelativeLayout) findViewById(R.id.ClassicLayout);
-		ClassicLayout.setVisibility(View.INVISIBLE);
-		SpeedLayout = (RelativeLayout) findViewById(R.id.SpeedLayout);
-		SpeedLayout.setVisibility(View.INVISIBLE);
-
-		root = (FrameLayout) findViewById(R.id.randomasslayout);
+		root = (FrameLayout) findViewById(R.id.RootFrameLayout);
 
 		titleText = (TextView) findViewById(R.id.TitleText);
+		assert titleText != null;
 		titleText.setVisibility(View.INVISIBLE);
 		titleSubText = (ImageView) findViewById(R.id.TitleSubText);
+		assert titleSubText != null;
 		titleSubText.setVisibility(View.INVISIBLE);
 
         ChallengeButton      = (Button) findViewById(R.id.ChallengeButton);
         SpeedChallengeButton = (Button) findViewById(R.id.SpeedChallengeButton);
-        HelpButton           = (Button) findViewById(R.id.HelpButton);
-        HighScoreButton      = (Button) findViewById(R.id.HighScoreButton);
 
-		EasyChallengeButton = (Button) findViewById(R.id.EasyChallengeButton);
-		HardChallengeButton = (Button) findViewById(R.id.HardChallengeButton);
-		EasySpeedButton     = (Button) findViewById(R.id.EasySpeedButton);
-		HardSpeedButton     = (Button) findViewById(R.id.HardSpeedButton);
+		ChallengeButton.setVisibility(View.INVISIBLE);
+		SpeedChallengeButton.setVisibility(View.INVISIBLE);
 
 		ChallengeButton.setOnTouchListener(this);
 		SpeedChallengeButton.setOnTouchListener(this);
-		HelpButton.setOnTouchListener(this);
-		HighScoreButton.setOnTouchListener(this);
-
-		EasyChallengeButton.setOnTouchListener(this); EasyChallengeButton.setVisibility(View.INVISIBLE);
-		HardChallengeButton.setOnTouchListener(this); HardChallengeButton.setVisibility(View.INVISIBLE);
-		EasySpeedButton.setOnTouchListener(this);     EasySpeedButton.setVisibility(View.INVISIBLE);
-		HardSpeedButton.setOnTouchListener(this);     HardSpeedButton.setVisibility(View.INVISIBLE);
     }
-
 
 	@Override
 	public void onResume()
@@ -124,30 +98,22 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 	public void onPause()
 	{
 		super.onPause();
-
 		ChallengeButton.setVisibility(View.VISIBLE);
 		ChallengeButton.setTextColor(ContextCompat.getColor(this, R.color.main_buttons_text));
-
-		EasyChallengeButton.setVisibility(View.INVISIBLE);
-		HardChallengeButton.setVisibility(View.INVISIBLE);
-
 		SpeedChallengeButton.setVisibility(View.VISIBLE);
 		SpeedChallengeButton.setTextColor(ContextCompat.getColor(this, R.color.main_buttons_text));
-		EasySpeedButton.setVisibility(View.INVISIBLE);
-		HardSpeedButton.setVisibility(View.INVISIBLE);
 	}
-
 	@Override
 	public void onStop()
 	{
 		super.onStop();
 	}
-
 	@Override
 	public void onDestroy()
 	{
 		super.onDestroy();
 	}
+
 
 	@Override
 	public boolean onTouch(View v, MotionEvent motionEvent) {
@@ -232,22 +198,22 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 									int screenHeight = MyApplication.screenHeight;
 
 									ObjectAnimator classic = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_classic_button_enter);
-									classic.setTarget(ClassicLayout);
-									classic.setFloatValues(screenHeight - ClassicLayout.getY(), ClassicLayout.getY());
+									classic.setTarget(ChallengeButton);
+									classic.setFloatValues(screenHeight + ChallengeButton.getHeight(), ChallengeButton.getY());
 									classic.addListener(new AnimatorListenerAdapter() {
 										@Override
 										public void onAnimationStart(Animator animation) {
-											ClassicLayout.setVisibility(View.VISIBLE);
+											ChallengeButton.setVisibility(View.VISIBLE);
 										}
 									});
 
 									ObjectAnimator speed = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_speed_button_enter);
-									speed.setTarget(SpeedLayout);
-									speed.setFloatValues(screenHeight - SpeedLayout.getY(), SpeedLayout.getY());
+									speed.setTarget(SpeedChallengeButton);
+									speed.setFloatValues(screenHeight + SpeedChallengeButton.getHeight(), SpeedChallengeButton.getY());
 									speed.addListener(new AnimatorListenerAdapter() {
 										@Override
 										public void onAnimationStart(Animator animation) {
-											SpeedLayout.setVisibility(View.VISIBLE);
+											SpeedChallengeButton.setVisibility(View.VISIBLE);
 										}
 									});
 
