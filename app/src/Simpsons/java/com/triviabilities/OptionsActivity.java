@@ -3,6 +3,7 @@ package com.triviabilities;
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.os.Handler;
@@ -51,25 +52,27 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 
 	private GamePlayType gamePlayType;
 
-	private final int titleTextRevealDelay = 400;
-	private int titleTextRevealDuration = 300;
+	private final int titleTextRevealDelay = 0;
+	private int titleTextRevealDuration = 250;
 
-	private int subTitleTextRevealDelay = 25;
-	private int subTitleTextRevealDuration = 300;
+	private int subTitleTextRevealDelay = 50;
+	private int subTitleTextRevealDuration = titleTextRevealDuration;
 
-	private int easyButtonRevealDelay = 300;
+	private int easyButtonRevealDelay = titleTextRevealDuration + subTitleTextRevealDelay + subTitleTextRevealDuration + 0;
 
 	private int buttonRevealBeatTime = 100;
 	private int hardButtonRevealDelay = easyButtonRevealDelay + buttonRevealBeatTime;
 
-	private int buttonCircleRevealDuration = 500;
+	private int buttonCircleRevealDuration = 400;
 
-	private int imageFadeInDuration = 100;
+	private int imageFadeInDuration = 700;
 
 	private int textContainerRevealDuration = 200;
 	private int textContainerRevealDelay = 100;
 
-	private int difficultyTextRevealDuration = 300;
+	private int imageFadeInDelay = textContainerRevealDuration + textContainerRevealDelay;
+
+	private int difficultyTextRevealDuration = imageFadeInDuration;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -83,11 +86,11 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 
 		titleText = (TextView) findViewById(R.id.TitleText);
 		assert titleText != null;
-		titleText.setVisibility(View.INVISIBLE);
+		titleText.setAlpha(0f);
+
 		titleSubText = (TextView) findViewById(R.id.chooseDifficultyText);
 		assert titleSubText != null;
-		titleSubText.setVisibility(View.INVISIBLE);
-
+		titleSubText.setAlpha(0f);
 
 		GamePlayType gamePlayType = (GamePlayType) getIntent().getBundleExtra("OptionsScreenBundle").getSerializable("GamePlayType");
 		this.gamePlayType = gamePlayType;
@@ -106,7 +109,8 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		easyLayout.setVisibility(View.INVISIBLE);
 		easyImage.setVisibility(View.INVISIBLE);
 		easyTextContainer.setVisibility(View.INVISIBLE);
-		easyText.setVisibility(View.INVISIBLE);
+		//easyText.setVisibility(View.INVISIBLE);
+		easyText.setAlpha(0f);
 		easyLayout.setOnTouchListener(this);
 
 
@@ -118,7 +122,8 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		hardLayout.setVisibility(View.INVISIBLE);
 		hardImage.setVisibility(View.INVISIBLE);
 		hardTextContainer.setVisibility(View.INVISIBLE);
-		hardText.setVisibility(View.INVISIBLE);
+		//hardText.setVisibility(View.INVISIBLE);
+		hardText.setAlpha(0f);
 		hardLayout.setOnTouchListener(this);
     }
 
@@ -187,7 +192,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 	public void onWindowFocusChanged(boolean hasFocus) {
 		if(hasFocus && !introAnimationsPlayed) {
 			Measure.loadScreenDimensions(this);
-			animateTitleTextReveal();
+			animateTitleTextReveal2();
 			introAnimationsPlayed = true;
 		}
 	}
@@ -229,6 +234,28 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		titleTextAnim.start();
 	}
 
+	private void animateTitleTextReveal2() {
+		final ObjectAnimator titleFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
+		titleFadeIn.setStartDelay(titleTextRevealDelay);
+		titleFadeIn.setDuration(titleTextRevealDuration);
+		titleFadeIn.setTarget(titleText);
+
+		final ObjectAnimator subtitleFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
+		subtitleFadeIn.setStartDelay(subTitleTextRevealDelay);
+		subtitleFadeIn.setDuration(subTitleTextRevealDuration);
+		subtitleFadeIn.setTarget(titleSubText);
+
+		AnimatorSet set = new AnimatorSet();
+		set.playSequentially(titleFadeIn, subtitleFadeIn);
+		set.addListener(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator animation) {
+				onTitleTextRevealed();
+			}
+		});
+		set.start();
+	}
+
 	private void onTitleTextRevealed() {
 		Handler handlerEasy = new Handler();
 		handlerEasy.postDelayed(new Runnable() {
@@ -264,9 +291,10 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 
 			@Override
 			public void onAnimationEnd(Animation animation) {
-				final ObjectAnimator imageFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_multiplier_text_fade_in);
+				final ObjectAnimator imageFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
 				imageFadeIn.setTarget(image);
 				imageFadeIn.setDuration(imageFadeInDuration);
+				imageFadeIn.setStartDelay(imageFadeInDelay);
 				image.setAlpha(0.0f);
 				image.setVisibility(View.VISIBLE);
 				imageFadeIn.start();
@@ -285,6 +313,19 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 							public void onAnimationStart() {}
 							@Override
 							public void onAnimationEnd() {
+								final ObjectAnimator diffTextFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
+								diffTextFadeIn.setStartDelay(0);
+								diffTextFadeIn.setDuration(difficultyTextRevealDuration);
+								diffTextFadeIn.setTarget(text);
+								diffTextFadeIn.addListener(new AnimatorListenerAdapter() {
+									@Override
+									public void onAnimationEnd(Animator animation) {
+										enableButtons(true);
+									}
+								});
+								diffTextFadeIn.start();
+
+								/*
 								final ObjectAnimator subTextAnim = getRevealTextAnimator(text, difficultyTextRevealDuration, new AnimatorListenerAdapter() {
 									@Override
 									public void onAnimationEnd(Animator animation) {
@@ -292,6 +333,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 									}
 								});
 								subTextAnim.start();
+								*/
 							}
 							@Override
 							public void onAnimationCancel() {}

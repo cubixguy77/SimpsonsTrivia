@@ -68,7 +68,7 @@ public class ScorePresenter implements ScoreModelListener {
 
         Resources res = mainActivity.getResources();
 
-        final ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_multiplier_text_fade_in);
+        final ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
         fadeInMultText.setTarget(multiplierText);
 
         multGlowing = new CustomAnimationDrawable((AnimationDrawable) ContextCompat.getDrawable(mainActivity, R.drawable.animation_mult_glowing), false)
@@ -157,7 +157,7 @@ public class ScorePresenter implements ScoreModelListener {
             public void onAnimationFinish() {
                 multiplierText.setText("5x");
 
-                ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_multiplier_text_fade_in);
+                ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
                 fadeInMultText.setTarget(multiplierText);
                 fadeInMultText.addListener(new AnimatorListenerAdapter() {
                     @Override

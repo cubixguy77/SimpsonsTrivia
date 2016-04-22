@@ -15,5 +15,5 @@
     <dimen name="options.difficulty_label.height">20dp</dimen>
     <dimen name="options.difficulty_label.margin.from_center">30dp</dimen>
     <dimen name="options.difficulty_label.margin.top">-10dp</dimen>
-    <dimen name="options.difficulty_label.text.size">10sp</dimen>
+    <dimen name="options.difficulty_label.text.size">12sp</dimen>
 </resources>
