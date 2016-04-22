@@ -53,12 +53,12 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 	private GamePlayType gamePlayType;
 
 	private final int titleTextRevealDelay = 0;
-	private int titleTextRevealDuration = 250;
+	private int titleTextRevealDuration = 200;
 
 	private int subTitleTextRevealDelay = 50;
 	private int subTitleTextRevealDuration = titleTextRevealDuration;
 
-	private int easyButtonRevealDelay = titleTextRevealDuration + subTitleTextRevealDelay + subTitleTextRevealDuration + 0;
+	private int easyButtonRevealDelay = 0;//titleTextRevealDuration + subTitleTextRevealDelay + subTitleTextRevealDuration - 1900;
 
 	private int buttonRevealBeatTime = 100;
 	private int hardButtonRevealDelay = easyButtonRevealDelay + buttonRevealBeatTime;
