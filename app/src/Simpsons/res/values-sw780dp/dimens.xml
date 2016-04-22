@@ -1,103 +1,19 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="nav_drawer_width">260dp</dimen>
-    <dimen name="nav_drawer_header_height">100dp</dimen>
-    <dimen name="button_elevation">2dp</dimen>
-    <dimen name="button_press_elevation">6dp</dimen>
-    <dimen name="minTextSize">26dp</dimen>
+    <!-- Difficulty Options Screen -->
+    <dimen name="options.title_text.margin.top">320dp</dimen>
+    <dimen name="options.title_text.text_size">55sp</dimen>
 
-    <!-- Main Menu -->
-    <dimen name="main.title_text.margin.margin_top">256dp</dimen>
-    <dimen name="main.title_text.font.size">50sp</dimen>
-    <dimen name="main.title_sub_text.margin.margin_left_right">32dp</dimen>
-    <dimen name="main.buttons.margin.left_right">32dp</dimen>
-    <dimen name="main.buttons.margin.space_between_classic_speed">8dp</dimen>
-    <dimen name="main.buttons.margin.space_between_easy_hard">12dp</dimen>
-    <dimen name="main.buttons.height">120dp</dimen>
-    <dimen name="main.buttons.text_size">45sp</dimen>
-    <dimen name="main.buttons.corner_radius">20dp</dimen>
+    <dimen name="options.sub_title_text.margin.top">20dp</dimen>
+    <dimen name="options.sub_title_text.text_size">30sp</dimen>
 
-    <!-- Question -->
-    <dimen name="question.toolbar.text_size">28sp</dimen>
-    <dimen name="question.toolbar.timer_text_size">40sp</dimen>
-    <dimen name="question.toolbar.multiplier_text_size">22sp</dimen>
+    <dimen name="options.circle.size">220dp</dimen>
+    <dimen name="options.circle.margin.top">530dp</dimen>
+    <dimen name="options.circle.margin.from_center">48dp</dimen>
+    <dimen name="options.circle.image.padding">28dp</dimen>
 
-    <dimen name="question.question_card.elevation">4dp</dimen>
-    <dimen name="question.question_card.radius">25dp</dimen>
-    <dimen name="question.question_card.margin">96dp</dimen>
-
-    <dimen name="question.question_text.font_size.minimum">30sp</dimen>
-    <dimen name="question.question_text.font_size.medium">35sp</dimen>
-    <dimen name="question.question_text.font_size.max">40sp</dimen>
-    <dimen name="question.question_text.padding">16dp</dimen>
-    <dimen name="question.question_text.height">300dp</dimen>
-
-    <dimen name="question.woohoo_text.margin">60dp</dimen>
-    <dimen name="question.doh_text.margin">60dp</dimen>
-
-    <dimen name="question.answer_button.margin">8dp</dimen>
-    <dimen name="question.answer_button.text_size">26sp</dimen>
-    <dimen name="question.answer_button.text.padding">8dp</dimen>
-    <dimen name="question.answer_button.height">60dp</dimen>
-    <dimen name="question.answer_button.radius">20dp</dimen>
-
-    <dimen name="question.bonus_card.radius">25dp</dimen>
-
-    <dimen name="question.bonus_round_text.text_size">70sp</dimen>
-    <dimen name="question.bonus_round_text.margin.top">90dp</dimen>
-    <dimen name="question.bonus_round_text.margin.bottom">80dp</dimen>
-
-    <dimen name="question.bonus_round_instruction_text.margin.left">65dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.margin.right">35dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.text_size">45sp</dimen>
-    <dimen name="question.bonus_round_instruction_text.height">240dp</dimen>
-
-    <dimen name="question.bonus_round.button.size">128dp</dimen>
-    <dimen name="question.bonus_round.button.margin.top">90dp</dimen>
-    <dimen name="question.bonus_round.button.elevation">6dp</dimen>
-
-    <dimen name="question.bonus_round.go_text.text_size">54sp</dimen>
-    <dimen name="question.bonus_round.go_text.margin.top">30dp</dimen>
-
-
-
-    <!-- Results -->
-    <dimen name="results.main.margin.top">40dp</dimen>
-    <dimen name="results.main.circle.size">424dp</dimen>
-    <dimen name="results.main.chart.size">440dp</dimen>
-    <dimen name="results.main.score.size">60sp</dimen>
-    <dimen name="results.main.final_score_text.size">32sp</dimen>
-
-    <dimen name="results.raw.circle.size">160dp</dimen>
-    <dimen name="results.raw.chart.size">168dp</dimen>
-    <dimen name="results.raw.score.size">52sp</dimen>
-    <dimen name="results.raw.final_score_text.size">28sp</dimen>
-    <dimen name="results.raw.margin">86dp</dimen>
-
-    <dimen name="results.bonus.circle.size">@dimen/results.raw.circle.size</dimen>
-    <dimen name="results.bonus.chart.size">@dimen/results.raw.chart.size</dimen>
-    <dimen name="results.bonus.score.size">@dimen/results.raw.score.size</dimen>
-    <dimen name="results.bonus.final_score_text.size">@dimen/results.raw.final_score_text.size</dimen>
-
-    <dimen name="results.bottom.height">100dp</dimen>
-    <dimen name="results.bottom.text">26sp</dimen>
-
-    <!-- Leaderboard -->
-    <dimen name="leaderboard.no_wifi.image.width">175dp</dimen>
-    <dimen name="leaderboard.no_wifi.image.height">130dp</dimen>
-
-    <dimen name="leaderboard.list.row.height">138dp</dimen>
-    <dimen name="leaderboard.list.row.height.large">156dp</dimen>
-    <dimen name="leaderboard.list.row.text.size">40sp</dimen>
-
-    <dimen name="leaderboard.list.rank.margin.left">48dp</dimen>
-    <dimen name="leaderboard.list.rank.width">136dp</dimen>
-
-    <dimen name="leaderboard.list.name.width">344dp</dimen>
-
-    <dimen name="leaderboard.list.score.margin.left">72dp</dimen>
-
-
+    <dimen name="options.difficulty_label.width">120dp</dimen>
+    <dimen name="options.difficulty_label.height">40dp</dimen>
+    <dimen name="options.difficulty_label.margin.from_center">50dp</dimen>
+    <dimen name="options.difficulty_label.margin.top">-20dp</dimen>
+    <dimen name="options.difficulty_label.text.size">26sp</dimen>
 </resources>
