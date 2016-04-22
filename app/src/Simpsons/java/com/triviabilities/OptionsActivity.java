@@ -50,6 +50,26 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 	private GestureDetector gestureDetector;
 
 	private GamePlayType gamePlayType;
+
+	private final int titleTextRevealDelay = 400;
+	private int titleTextRevealDuration = 300;
+
+	private int subTitleTextRevealDelay = 25;
+	private int subTitleTextRevealDuration = 300;
+
+	private int easyButtonRevealDelay = 300;
+
+	private int buttonRevealBeatTime = 100;
+	private int hardButtonRevealDelay = easyButtonRevealDelay + buttonRevealBeatTime;
+
+	private int buttonCircleRevealDuration = 500;
+
+	private int imageFadeInDuration = 100;
+
+	private int textContainerRevealDuration = 200;
+	private int textContainerRevealDelay = 100;
+
+	private int difficultyTextRevealDuration = 300;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -62,8 +82,10 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		root = (FrameLayout) findViewById(R.id.topRootFrame);
 
 		titleText = (TextView) findViewById(R.id.TitleText);
+		assert titleText != null;
 		titleText.setVisibility(View.INVISIBLE);
 		titleSubText = (TextView) findViewById(R.id.chooseDifficultyText);
+		assert titleSubText != null;
 		titleSubText.setVisibility(View.INVISIBLE);
 
 
@@ -141,11 +163,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		return false;
 	}
 
-	private void enableButtons(boolean enabled)
-	{
-		easyLayout.setEnabled(enabled);
-		hardLayout.setEnabled(enabled);
-	}
+
 
 	public void LaunchQuestionMode(final Difficulty difficulty, final GamePlayType gamePlayType, int touchX, int touchY)
 	{
@@ -194,20 +212,20 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 	}
 
 	private void animateTitleTextReveal() {
-		ObjectAnimator titleTextAnim = getRevealTextAnimator(titleText, 100, new AnimatorListenerAdapter() {
+		ObjectAnimator titleTextAnim = getRevealTextAnimator(titleText, titleTextRevealDuration, new AnimatorListenerAdapter() {
 			@Override
 			public void onAnimationEnd(Animator animation) {
-				final ObjectAnimator subTextAnim = getRevealTextAnimator(titleSubText, 100, new AnimatorListenerAdapter() {
+				final ObjectAnimator subTextAnim = getRevealTextAnimator(titleSubText, subTitleTextRevealDuration, new AnimatorListenerAdapter() {
 					@Override
 					public void onAnimationEnd(Animator animation) {
 						onTitleTextRevealed();
 					}
 				});
-				subTextAnim.setStartDelay(25);
+				subTextAnim.setStartDelay(subTitleTextRevealDelay);
 				subTextAnim.start();
 			}});
 
-		titleTextAnim.setStartDelay(400);
+		titleTextAnim.setStartDelay(titleTextRevealDelay);
 		titleTextAnim.start();
 	}
 
@@ -217,14 +235,14 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 			public void run() {
 				animateButtonReveal(true);
 			}
-		}, 300);
+		}, easyButtonRevealDelay);
 
 		Handler handlerHard = new Handler();
 		handlerHard.postDelayed(new Runnable() {
 			public void run() {
 				animateButtonReveal(false);
 			}
-		}, 400);
+		}, hardButtonRevealDelay);
 	}
 
 	private void animateButtonReveal(final boolean easy) {
@@ -237,7 +255,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 		enableButtons(false);
 
 		final Animation fabReveal = AnimationUtils.loadAnimation(MyApplication.getAppContext(), R.anim.fab_show);
-		fabReveal.setDuration(500);
+		fabReveal.setDuration(buttonCircleRevealDuration);
 		fabReveal.setAnimationListener(new Animation.AnimationListener() {
 			@Override
 			public void onAnimationStart(Animation animation) {
@@ -248,7 +266,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 			public void onAnimationEnd(Animation animation) {
 				final ObjectAnimator imageFadeIn = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.trivia_multiplier_text_fade_in);
 				imageFadeIn.setTarget(image);
-				imageFadeIn.setDuration(100);
+				imageFadeIn.setDuration(imageFadeInDuration);
 				image.setAlpha(0.0f);
 				image.setVisibility(View.VISIBLE);
 				imageFadeIn.start();
@@ -261,13 +279,13 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 					public void run() {
 						SupportAnimator revealSubText = ViewAnimationUtils.createCircularReveal(textContainer, centerX, centerY, 0, textContainer.getWidth());
 						revealSubText.setInterpolator(new AccelerateDecelerateInterpolator());
-						revealSubText.setDuration(200);
+						revealSubText.setDuration(textContainerRevealDuration);
 						revealSubText.addListener(new SupportAnimator.AnimatorListener() {
 							@Override
 							public void onAnimationStart() {}
 							@Override
 							public void onAnimationEnd() {
-								final ObjectAnimator subTextAnim = getRevealTextAnimator(text, 300, new AnimatorListenerAdapter() {
+								final ObjectAnimator subTextAnim = getRevealTextAnimator(text, difficultyTextRevealDuration, new AnimatorListenerAdapter() {
 									@Override
 									public void onAnimationEnd(Animator animation) {
 										enableButtons(true);
@@ -283,7 +301,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 
 						textContainer.setVisibility(View.VISIBLE);
 						revealSubText.start();
-					}}, 100);
+					}}, textContainerRevealDelay);
 
 			}
 			@Override
@@ -300,5 +318,11 @@ public class OptionsActivity extends AppCompatActivity implements View.OnTouchLi
 			result = getResources().getDimensionPixelSize(resourceId);
 		}
 		return result;
+	}
+
+	private void enableButtons(boolean enabled)
+	{
+		easyLayout.setEnabled(enabled);
+		hardLayout.setEnabled(enabled);
 	}
 }

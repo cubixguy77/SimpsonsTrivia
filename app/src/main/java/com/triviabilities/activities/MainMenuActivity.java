@@ -291,6 +291,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 		final ObjectAnimator fadeSecondButton = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.main_fade_out);
 		fadeSecondButton.setTarget(gamePlayType == GamePlayType.CHALLENGE ? ChallengeButton : SpeedChallengeButton);
+		fadeSecondButton.setStartDelay(100);
 
 		AnimatorSet set = new AnimatorSet();
 		set.playTogether(fadeTitleText, fadeSubTitleText, fadeFirstButton);
