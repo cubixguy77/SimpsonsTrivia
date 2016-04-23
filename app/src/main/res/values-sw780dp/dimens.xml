@@ -66,6 +66,8 @@
     <dimen name="results.main.score.size">60sp</dimen>
     <dimen name="results.main.final_score_text.size">32sp</dimen>
 
+    <dimen name="results.small_charts.margin.top">10dp</dimen>
+
     <dimen name="results.raw.circle.size">160dp</dimen>
     <dimen name="results.raw.chart.size">168dp</dimen>
     <dimen name="results.raw.score.size">52sp</dimen>

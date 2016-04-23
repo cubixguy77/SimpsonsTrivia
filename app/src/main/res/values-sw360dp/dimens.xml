@@ -61,14 +61,16 @@
 
 
     <!-- Results -->
-    <dimen name="results.main.margin.top">10dp</dimen>
+    <dimen name="results.main.margin.top">8dp</dimen>
     <dimen name="results.main.circle.size">224dp</dimen>
     <dimen name="results.main.chart.size">240dp</dimen>
     <dimen name="results.main.score.size">32sp</dimen>
     <dimen name="results.main.final_score_text.size">18sp</dimen>
 
-    <dimen name="results.raw.circle.size">80dp</dimen>
-    <dimen name="results.raw.chart.size">88dp</dimen>
+    <dimen name="results.small_charts.margin.top">5dp</dimen>
+
+    <dimen name="results.raw.circle.size">76dp</dimen>
+    <dimen name="results.raw.chart.size">84dp</dimen>
     <dimen name="results.raw.score.size">28sp</dimen>
     <dimen name="results.raw.final_score_text.size">16sp</dimen>
     <dimen name="results.raw.margin">44dp</dimen>
@@ -78,8 +80,8 @@
     <dimen name="results.bonus.score.size">@dimen/results.raw.score.size</dimen>
     <dimen name="results.bonus.final_score_text.size">@dimen/results.raw.final_score_text.size</dimen>
 
-    <dimen name="results.bottom.height">48dp</dimen>
-    <dimen name="results.bottom.text">14sp</dimen>
+    <dimen name="results.bottom.height">52dp</dimen>
+    <dimen name="results.bottom.text">16sp</dimen>
 
     <!-- Leaderboard -->
     <dimen name="leaderboard.no_wifi.image.width">81dp</dimen>

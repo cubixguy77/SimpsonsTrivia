@@ -72,7 +72,6 @@
             android:id="@+id/easyImage"
             android:src="@drawable/easy_ralph"
             android:padding="@dimen/options.circle.image.padding"
-            android:adjustViewBounds="false"
             android:clickable="false"
             android:focusable="false" />
 

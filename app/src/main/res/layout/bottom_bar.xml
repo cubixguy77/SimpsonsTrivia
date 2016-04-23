@@ -15,6 +15,7 @@
         android:textAllCaps="true"
         android:id="@+id/homeButton"
         android:layout_weight=".25"
+        android:fontFamily="sans-serif-medium"
         android:background="@drawable/rounded_corners_button_transparent"
         android:textSize="@dimen/results.bottom.text" />
 
@@ -25,6 +26,7 @@
         android:textAllCaps="true"
         android:id="@+id/playAgainButton"
         android:layout_weight=".75"
+        android:fontFamily="sans-serif-medium"
         android:layout_marginLeft="10dp"
         android:background="@drawable/rounded_corners_button"
         android:layout_marginRight="5dp"
