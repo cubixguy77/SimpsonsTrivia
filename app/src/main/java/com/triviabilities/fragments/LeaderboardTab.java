@@ -199,7 +199,7 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
                 refreshList();
         }
         else {
-            Toast.makeText(getActivity(), "Still no connection", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Still no connection.", Toast.LENGTH_LONG).show();
         }
     }
 

@@ -293,7 +293,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
     private void onShowNoWifi()
     {
-        Toast.makeText(MyApplication.getAppContext(), "No wifi!", Toast.LENGTH_LONG).show();
+        Toast.makeText(MyApplication.getAppContext(), "Can't submit score, no internet connection!", Toast.LENGTH_SHORT).show();
     }
 
     private void onShowHighScore()
