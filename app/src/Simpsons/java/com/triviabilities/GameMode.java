@@ -80,7 +80,7 @@ public class GameMode
             this.timerEnabled = false;
             this.bonusRoundEnabled = true;
             this.numQuestionsAvailable = 1251;
-            this.numQuotesAvailable = 699;
+            this.numQuotesAvailable = 703;
             this.questionXmlFileName = "Easy.xml";
             this.quoteXmlFileName = "QuotesEasy.xml";
             this.gameModeTitle = "Challenge - Easy";
@@ -95,7 +95,7 @@ public class GameMode
             this.timerEnabled = true;
             this.bonusRoundEnabled = false;
             this.numQuestionsAvailable = 1251;
-            this.numQuotesAvailable = 699;
+            this.numQuotesAvailable = 703;
             this.questionXmlFileName = "Easy.xml";
             this.quoteXmlFileName = "QuotesEasy.xml";
             this.gameModeTitle = "Speed - Easy";
@@ -108,9 +108,9 @@ public class GameMode
             this.timerEnabled = false;
             this.bonusRoundEnabled = true;
             this.numQuestionsAvailable = 1419;
-            this.numQuotesAvailable = 562;
+            this.numQuotesAvailable = 566;
             this.questionXmlFileName = "Hard.xml";
-            this.quoteXmlFileName = "QuotesEasy.xml";
+            this.quoteXmlFileName = "QuotesHard.xml";
             this.gameModeTitle = "Challenge - Hard";
             this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongChallenge.php" : "http://triviabilities.com/Simpsons/HardShortGame.php";
             this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardShortGame&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
@@ -121,7 +121,7 @@ public class GameMode
             this.timerEnabled = true;
             this.bonusRoundEnabled = false;
             this.numQuestionsAvailable = 1419;
-            this.numQuotesAvailable = 562;
+            this.numQuotesAvailable = 566;
             this.questionXmlFileName = "Hard.xml";
             this.quoteXmlFileName = "QuotesHard.xml";
             this.gameModeTitle = "Speed - Hard";

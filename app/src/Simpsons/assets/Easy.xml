@@ -248,7 +248,7 @@
 			<Answer>Mr. Burns</Answer>
 			<Answer>Moe</Answer>
 			<Answer>Krusty</Answer>
-			<Answer>Aurther Fortune</Answer>
+			<Answer>Arther Fortune</Answer>
 		</Answers>
 	</Question>
 	<Question QuestionNumber="28">
@@ -1791,7 +1791,7 @@
 		</Answers>
 	</Question>
 	<Question QuestionNumber="199">
-		<QuestionText>What is the brand of cigarretes in the Simpsons?</QuestionText>
+		<QuestionText>What is the brand of cigarettes in the Simpsons?</QuestionText>
 		<Answers>
 			<Answer>Laramie</Answer>
 			<Answer>Red Apple</Answer>

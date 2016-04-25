@@ -6290,4 +6290,40 @@
 			<Answer>Rainier Wolfcastle</Answer>
 		</Answers>
 	</Question>
+	<Question QuestionNumber="699">
+		<QuestionText>My eyes. The goggles do nothing!</QuestionText>
+		<Answers>
+			<Answer>Radioactive Man</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Principal Skinner</Answer>
+			<Answer>Professor Frink</Answer>
+		</Answers>
+	</Question>
+	<Question QuestionNumber="700">
+		<QuestionText>I don't wanna look like a weirdo. I'll just go with a muumuu.</QuestionText>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Bart</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Marge</Answer>
+		</Answers>
+	</Question>
+	<Question QuestionNumber="701">
+		<QuestionText>Y'ello? You'll have to speak up. I'm wearing a towel.</QuestionText>
+		<Answers>
+			<Answer>Homer</Answer>
+			<Answer>Troy McClure</Answer>
+			<Answer>Comic Book Guy</Answer>
+			<Answer>Mr. Burns</Answer>
+		</Answers>
+	</Question>
+	<Question QuestionNumber="702">
+		<QuestionText>Can't we have one meeting that doesn't end with us digging up a corpse?</QuestionText>
+		<Answers>
+			<Answer>Mayor Quimby</Answer>
+			<Answer>Homer</Answer>
+			<Answer>Mr. Burns</Answer>
+			<Answer>Moe</Answer>
+		</Answers>
+	</Question>
 </Questions>
