@@ -43,19 +43,16 @@
 
     <dimen name="question.bonus_round_text.text_size">30sp</dimen>
     <dimen name="question.bonus_round_text.margin.top">40dp</dimen>
-    <dimen name="question.bonus_round_text.margin.bottom">40dp</dimen>
+    <dimen name="question.bonus_round_text.margin.bottom">20dp</dimen>
 
-    <dimen name="question.bonus_round_instruction_text.margin.left">35dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.margin.right">25dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.margin.left">50dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.margin.right">50dp</dimen>
     <dimen name="question.bonus_round_instruction_text.text_size">22sp</dimen>
     <dimen name="question.bonus_round_instruction_text.height">120dp</dimen>
 
-    <dimen name="question.bonus_round.button.size">72dp</dimen>
-    <dimen name="question.bonus_round.button.margin.top">25dp</dimen>
+    <dimen name="question.bonus_round.button.size">80dp</dimen>
+    <dimen name="question.bonus_round.button.margin.top">65dp</dimen>
     <dimen name="question.bonus_round.button.elevation">6dp</dimen>
-
-    <dimen name="question.bonus_round.go_text.text_size">24sp</dimen>
-    <dimen name="question.bonus_round.go_text.margin.top">10dp</dimen>
 
 
 

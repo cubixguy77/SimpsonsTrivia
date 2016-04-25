@@ -47,6 +47,11 @@ public class CircularTransition extends ImageView {
             set.addListener(listener);
 
         this.setVisibility(View.VISIBLE);
+        if (android.os.Build.VERSION.SDK_INT >= 21)
+        {
+            this.setElevation(50f);
+        }
+
         set.start();
     }
 }

@@ -20,16 +20,17 @@
         android:textSize="@dimen/results.bottom.text" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:text="@string/results.bottom_bar_buttons.play_again"
-        android:textAllCaps="true"
         android:id="@+id/playAgainButton"
-        android:layout_weight=".75"
-        android:fontFamily="sans-serif-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/results.bottom.height"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/rounded_corners_button"
         android:layout_marginRight="5dp"
-        android:textSize="@dimen/results.bottom.text" />
+        android:layout_weight=".75"
+        android:text="@string/results.bottom_bar_buttons.play_again"
+        android:textSize="@dimen/results.bottom.text"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/rounded_corners_button"
+        style="?android:attr/borderlessButtonStyle" />
 
 </LinearLayout>

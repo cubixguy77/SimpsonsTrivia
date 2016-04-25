@@ -41,21 +41,18 @@
 
     <dimen name="question.bonus_card.radius">25dp</dimen>
 
-    <dimen name="question.bonus_round_text.text_size">38sp</dimen>
-    <dimen name="question.bonus_round_text.margin.top">40dp</dimen>
-    <dimen name="question.bonus_round_text.margin.bottom">40dp</dimen>
+    <dimen name="question.bonus_round_text.text_size">34sp</dimen>
+    <dimen name="question.bonus_round_text.margin.top">70dp</dimen>
+    <dimen name="question.bonus_round_text.margin.bottom">20dp</dimen>
 
-    <dimen name="question.bonus_round_instruction_text.margin.left">55dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.margin.right">40dp</dimen>
-    <dimen name="question.bonus_round_instruction_text.text_size">22sp</dimen>
-    <dimen name="question.bonus_round_instruction_text.height">120dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.margin.left">50dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.margin.right">50dp</dimen>
+    <dimen name="question.bonus_round_instruction_text.text_size">26sp</dimen>
+    <dimen name="question.bonus_round_instruction_text.height">140dp</dimen>
 
     <dimen name="question.bonus_round.button.size">88dp</dimen>
-    <dimen name="question.bonus_round.button.margin.top">50dp</dimen>
+    <dimen name="question.bonus_round.button.margin.top">70dp</dimen>
     <dimen name="question.bonus_round.button.elevation">6dp</dimen>
-
-    <dimen name="question.bonus_round.go_text.text_size">24sp</dimen>
-    <dimen name="question.bonus_round.go_text.margin.top">10dp</dimen>
 
 
 

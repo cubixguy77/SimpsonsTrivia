@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main.button.classic">Classic</string>
+    <string name="main.button.classic">Challenge</string>
     <string name="main.button.speed">Speed</string>
     <string name="main.button.easy">Easy</string>
     <string name="main.button.hard">Hard</string>
@@ -13,7 +13,7 @@
     <string name="trivia.bonus.result">You got {NUM_CORRECT} correct!</string>
 
     <string name="results.tab.results">Results</string>
-    <string name="results.tab.leaderboard">Leaderboard</string>
+    <string name="results.tab.leaderboard">High Scores</string>
     <string name="results.chart.raw">Raw Score</string>
     <string name="results.chart.bonus">Bonus Score</string>
     <string name="results.bottom_bar_buttons.home">Home</string>
