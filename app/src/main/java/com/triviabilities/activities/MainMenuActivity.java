@@ -14,6 +14,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -120,6 +121,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 		if (gestureDetector.onTouchEvent(motionEvent)) {
 			if (v == ChallengeButton) {
 				if (GameMode.difficultyEnabled) {
+					enableButtons(false);
 					fadeOutViews(GamePlayType.CHALLENGE);
 				}
 				else {
@@ -131,6 +133,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 			else if (v == SpeedChallengeButton) {
 				if (GameMode.difficultyEnabled) {
+					enableButtons(false);
 					fadeOutViews(GamePlayType.SPEED);
 				}
 				else {
@@ -188,47 +191,39 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 							int centerY = (int) titleSubText.getY() + titleSubText.getHeight() / 2;
 							SupportAnimator revealSubText = ViewAnimationUtils.createCircularReveal(titleSubText, centerX, centerY, 0, titleSubText.getWidth());
 							revealSubText.setInterpolator(new AccelerateDecelerateInterpolator());
-							revealSubText.setDuration(1100);
-							revealSubText.addListener(new SupportAnimator.AnimatorListener() {
-								@Override
-								public void onAnimationStart() {}
-								@Override
-								public void onAnimationEnd() {
-
-									int screenHeight = MyApplication.screenHeight;
-
-									ObjectAnimator classic = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_classic_button_enter);
-									classic.setTarget(ChallengeButton);
-									classic.setFloatValues(screenHeight + ChallengeButton.getHeight(), ChallengeButton.getY());
-									classic.addListener(new AnimatorListenerAdapter() {
-										@Override
-										public void onAnimationStart(Animator animation) {
-											ChallengeButton.setVisibility(View.VISIBLE);
-										}
-									});
-
-									ObjectAnimator speed = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_speed_button_enter);
-									speed.setTarget(SpeedChallengeButton);
-									speed.setFloatValues(screenHeight + SpeedChallengeButton.getHeight(), SpeedChallengeButton.getY());
-									speed.addListener(new AnimatorListenerAdapter() {
-										@Override
-										public void onAnimationStart(Animator animation) {
-											SpeedChallengeButton.setVisibility(View.VISIBLE);
-										}
-									});
-
-									AnimatorSet set = new AnimatorSet();
-									set.playTogether(classic, speed);
-									set.start();
-								}
-								@Override
-								public void onAnimationCancel() {}
-								@Override
-								public void onAnimationRepeat() {}
-							});
+							revealSubText.setDuration(700);
 							revealSubText.start();
+
+							int screenHeight = MyApplication.screenHeight;
+
+							ObjectAnimator classic = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_classic_button_enter);
+							classic.setTarget(ChallengeButton);
+							classic.setFloatValues(screenHeight + ChallengeButton.getHeight(), ChallengeButton.getY());
+							classic.setInterpolator(new OvershootInterpolator(2.0f));
+							classic.addListener(new AnimatorListenerAdapter() {
+								@Override
+								public void onAnimationStart(Animator animation) {
+									ChallengeButton.setVisibility(View.VISIBLE);
+								}
+							});
+
+							ObjectAnimator speed = (ObjectAnimator) AnimatorInflater.loadAnimator(MainMenuActivity.this, R.animator.main_speed_button_enter);
+							speed.setTarget(SpeedChallengeButton);
+							speed.setFloatValues(screenHeight + SpeedChallengeButton.getHeight(), SpeedChallengeButton.getY());
+							speed.setInterpolator(new OvershootInterpolator(0.2f));
+							speed.addListener(new AnimatorListenerAdapter() {
+								@Override
+								public void onAnimationStart(Animator animation) {
+									SpeedChallengeButton.setVisibility(View.VISIBLE);
+								}
+							});
+
+							AnimatorSet set = new AnimatorSet();
+							set.setStartDelay(750);
+							set.playTogether(classic, speed);
+							set.start();
 						}
-					}, 200);
+					}, 150);
 				}
 
 				@Override
