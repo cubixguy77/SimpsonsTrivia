@@ -25,7 +25,7 @@
     <color name="trivia.toolbar.text.standard">@color/grey_secondary</color>
     <color name="trivia.toolbar.text.accent">@color/yellow_primary</color>
     <color name="trivia.bonus_instructions.text">@color/white</color>
-    <color name="trivia.bonus_instructions.go">@color/blue_secondary</color>
+    <color name="trivia.bonus_instructions.go">@color/blue_primary</color>
     <color name="trivia.bonus_instructions.go_arrow">@color/yellow_primary</color>
     <color name="trivia.bonus_results.text">@color/white</color>
 

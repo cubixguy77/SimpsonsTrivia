@@ -94,7 +94,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private TextView bonusRoundTitleText;
     private TextView instructionText;
     private FloatingActionButton goButton;
-    private TextView goText;
 
     /* Animation timing values */
     private final int answerResponseDisplayDuration = 1500;
@@ -182,7 +181,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         /* Bonus Round Instructions */
         bonusRoundTitleText = (TextView) mainActivity.findViewById(R.id.BonusRoundTitleText);
         instructionText = (TextView) mainActivity.findViewById(R.id.bonus_round_instructions);
-        goText = (TextView) mainActivity.findViewById(R.id.Go_Text);
         goButton = (FloatingActionButton) mainActivity.findViewById(R.id.go);
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -742,7 +740,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
                 timerText.setVisibility(View.INVISIBLE);
                 timerText.setY(timerText.getY() + 200);
                 goButton.setVisibility(View.INVISIBLE);
-                goText.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -768,8 +765,6 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
                             @Override
                             public void onAnimationEnd(Animation animation) {
-                                ObjectAnimator revealGoText = getRevealAnimator(goText, 300, false, null);
-                                revealGoText.start();
                             }
 
                             @Override
