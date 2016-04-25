@@ -2,7 +2,6 @@ package com.triviabilities.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.triviabilities.enums.AnswerResult;
 import com.triviabilities.interfaces.AnswerResultListener;
@@ -155,7 +154,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
     @Override
     public void onQuestionReturned(Question nextQuestion)
     {
-        Log.d("question returned", "from question handler");
         questionHistory.add(new QuestionHistory(nextQuestion, AnswerResult.UNKNOWN));
         numSurplusQuestions++;
         if (immediateQuestionRequested)
@@ -242,8 +240,6 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
 
     public void GetNextQuestion()
     {
-        Log.d("getting question", "from question handler");
-
         if (isGameOver())
         {
             questionListener.onGameOver();
@@ -254,12 +250,10 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
         Question nextQuestion = GetCurrentQuestion();
         if (nextQuestion == null)
         {
-            Log.d("next question null", "from question handler");
             immediateQuestionRequested = true;
         }
         else
         {
-            Log.d("returning what we have", "from question handler");
             returnQuestionToClient(nextQuestion);
         }
     }
