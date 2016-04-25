@@ -60,7 +60,7 @@
             android:text="@string/main.button.classic"
             android:gravity="center"
             android:typeface="sans"
-            android:stateListAnimator="@anim/button_elevation" />
+            android:stateListAnimator="@animator/button_elevation" />
 
         <Button
             android:id="@+id/SpeedChallengeButton"
@@ -75,6 +75,6 @@
             android:textSize="@dimen/main.buttons.text_size"
             android:text="@string/main.button.speed"
             android:typeface="sans"
-            android:stateListAnimator="@anim/button_elevation" />
+            android:stateListAnimator="@animator/button_elevation" />
     </LinearLayout>
 </FrameLayout>

@@ -255,9 +255,9 @@
                 android:id="@+id/bonus_round_instructions"
                 android:textColor="@color/trivia.bonus_instructions.text"
                 android:textSize="@dimen/question.bonus_round_instruction_text.text_size"
-                android:gravity="left"
                 android:layout_marginLeft="@dimen/question.bonus_round_instruction_text.margin.left"
-                android:layout_marginRight="@dimen/question.bonus_round_instruction_text.margin.right" />
+                android:layout_marginRight="@dimen/question.bonus_round_instruction_text.margin.right"
+                android:gravity="center_horizontal" />
         </FrameLayout>
 
         <android.support.design.widget.FloatingActionButton
@@ -270,23 +270,7 @@
             android:layout_marginTop="@dimen/question.bonus_round.button.margin.top"
             app:borderWidth="0dp"
             app:elevation="6dp"
-            android:stateListAnimator="@anim/button_elevation"/>
-
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/question.bonus_round.go_text.margin.top">
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/trivia.bonus.go"
-                android:id="@+id/Go_Text"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textColor="@color/trivia.bonus_instructions.text"
-                android:textSize="@dimen/question.bonus_round.go_text.text_size" />
-        </FrameLayout>
+            android:stateListAnimator="@animator/button_elevation"/>
 
     </LinearLayout>
 
