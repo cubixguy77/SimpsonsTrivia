@@ -60,7 +60,7 @@ public class GameMode
     private String questionXmlFileName;
     private String quoteXmlFileName;
     private boolean fiftyFiftyEnabled;
-    private boolean debugMode = false;
+    private boolean debugMode = BuildConfig.DEBUG;
     private String getHighScoreURL;
     private String putHighScoreURL;
     private String gameModeTitle;
@@ -71,7 +71,7 @@ public class GameMode
         this.difficulty = difficulty;
         this.gamePlayType = gamePlayType;
 
-        this.quizLength = 10;
+        this.quizLength = debugMode? 2 : 10;
         this.fiftyFiftyEnabled = false;
 
         if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.CHALLENGE)
