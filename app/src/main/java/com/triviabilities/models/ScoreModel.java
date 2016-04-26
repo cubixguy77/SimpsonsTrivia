@@ -1,12 +1,13 @@
 package com.triviabilities.models;
 
+import com.triviabilities.BuildConfig;
 import com.triviabilities.interfaces.ScoreModelListener;
 
 public class ScoreModel
 {
     private ScoreDataModel scoreDataModel;
 
-    private static final int maxMultiplier = 5;
+    private int maxMultiplier = 5;
 
     private int multiplier;
     private int speedBonus;
@@ -17,8 +18,6 @@ public class ScoreModel
     private boolean speedBonusEnabled;
     private boolean bonusRoundEnabled;
 
-
-
     public ScoreModel(ScoreModelListener scoreModelListener, boolean speedBonusEnabled, boolean bonusRoundEnabled)
     {
         this.scoreModelListener = scoreModelListener;
@@ -27,6 +26,7 @@ public class ScoreModel
         this.multiplier = 1;
         this.speedBonus = 0;
         this.scoreDataModel = new ScoreDataModel();
+        this.maxMultiplier = BuildConfig.DEBUG ? 2 : 5;
     }
 
     public ScoreDataModel getScoreDataModel()
@@ -91,7 +91,7 @@ public class ScoreModel
         if (bonusRoundEnabled == false)
             return;
 
-        if (multiplier < ScoreModel.maxMultiplier)
+        if (multiplier < maxMultiplier)
         {
             if (!speedBonusEnabled)
                 this.setMultiplier(multiplier+1);
@@ -100,7 +100,7 @@ public class ScoreModel
 
     public boolean isBonusRoundTriggered()
     {
-        return multiplier >= ScoreModel.maxMultiplier && bonusRoundEnabled;
+        return multiplier >= maxMultiplier && bonusRoundEnabled;
     }
 
     public void onWrongAnswer()

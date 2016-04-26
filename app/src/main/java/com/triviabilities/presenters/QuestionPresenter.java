@@ -28,6 +28,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.triviabilities.GameMode;
 import com.triviabilities.MyApplication;
 import com.triviabilities.R;
 import com.triviabilities.interfaces.AnswerResultListener;
@@ -204,7 +205,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         ExtendedToolbarReveal.setScaleType(ImageView.ScaleType.FIT_XY);
     }
 
-    public void presentIntroTransition()
+    public void presentIntroTransition(final GameMode gameMode)
     {
         Animation anim = new ScaleAnimation(
                 1f, 1f, // Start and end values for the X axis scaling
@@ -218,6 +219,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
+                questionNumberText.setText("1/" + Integer.toString(gameMode.getQuizLength()));
             }
 
             @Override
@@ -426,6 +428,9 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
 
         int centerX = (int) questionText.getX() + questionText.getWidth() / 2;
         int centerY = (int) questionText.getY() + questionText.getHeight()  / 2;
+
+        if (questionText == null || !isViewAttached(questionText))
+            return;
 
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(questionText, centerX, centerY, 10, questionText.getWidth());
         animator.setInterpolator(new AccelerateDecelerateInterpolator());

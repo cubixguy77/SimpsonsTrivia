@@ -167,7 +167,7 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
     /* GameStateListener */
     public void onGameStart()
     {
-        questionPresenter.presentIntroTransition();
+        questionPresenter.presentIntroTransition(gameMode);
     }
 
     /* Question presenter lets us know when intro animations are done */
