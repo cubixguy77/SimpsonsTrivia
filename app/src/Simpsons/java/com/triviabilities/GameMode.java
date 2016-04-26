@@ -70,13 +70,12 @@ public class GameMode
     {
         this.difficulty = difficulty;
         this.gamePlayType = gamePlayType;
-
-        this.quizLength = debugMode? 2 : 10;
         this.fiftyFiftyEnabled = false;
 
         if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.CHALLENGE)
         {
             this.id = 0;
+            this.quizLength = debugMode? 2 : 15;
             this.timerEnabled = false;
             this.bonusRoundEnabled = true;
             this.numQuestionsAvailable = 1251;
@@ -92,6 +91,7 @@ public class GameMode
         else if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.SPEED)
         {
             this.id = 2;
+            this.quizLength = debugMode? 2 : 10;
             this.timerEnabled = true;
             this.bonusRoundEnabled = false;
             this.numQuestionsAvailable = 1251;
@@ -99,12 +99,13 @@ public class GameMode
             this.questionXmlFileName = "Easy.xml";
             this.quoteXmlFileName = "QuotesEasy.xml";
             this.gameModeTitle = "Speed - Easy";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Simpsons/EasyShortSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasyShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Simpsons/EasyLongSpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasyLongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
         else if (difficulty == Difficulty.HARD && gamePlayType == GamePlayType.CHALLENGE)
         {
             this.id = 1;
+            this.quizLength = debugMode? 2 : 15;
             this.timerEnabled = false;
             this.bonusRoundEnabled = true;
             this.numQuestionsAvailable = 1419;
@@ -118,6 +119,7 @@ public class GameMode
         else if (difficulty == Difficulty.HARD && gamePlayType == GamePlayType.SPEED)
         {
             this.id = 3;
+            this.quizLength = debugMode? 2 : 10;
             this.timerEnabled = true;
             this.bonusRoundEnabled = false;
             this.numQuestionsAvailable = 1419;
@@ -125,8 +127,8 @@ public class GameMode
             this.questionXmlFileName = "Hard.xml";
             this.quoteXmlFileName = "QuotesHard.xml";
             this.gameModeTitle = "Speed - Hard";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongSpeed.php" : "http://triviabilities.com/Simpsons/HardShortSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongSpeed.php" : "http://triviabilities.com/Simpsons/HardLongSpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardLongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
     }
 
@@ -186,7 +188,7 @@ public class GameMode
 
     public boolean getFiftyFiftyEnabled() { return this.fiftyFiftyEnabled; }
 
-    public boolean getDebugMode() { return this.debugMode; }
+    public boolean isDebugMode() { return this.debugMode; }
 
     public String getGameModeTitle()
     {
