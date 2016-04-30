@@ -99,8 +99,8 @@ public class GameMode
             this.questionXmlFileName = "Easy.xml";
             this.quoteXmlFileName = "QuotesEasy.xml";
             this.gameModeTitle = "Speed - Easy";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Simpsons/EasyLongSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasyLongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Simpsons/EasySpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasySpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
         else if (difficulty == Difficulty.HARD && gamePlayType == GamePlayType.CHALLENGE)
         {
@@ -127,8 +127,8 @@ public class GameMode
             this.questionXmlFileName = "Hard.xml";
             this.quoteXmlFileName = "QuotesHard.xml";
             this.gameModeTitle = "Speed - Hard";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongSpeed.php" : "http://triviabilities.com/Simpsons/HardLongSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardLongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongSpeed.php" : "http://triviabilities.com/Simpsons/HardSpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
     }
 
