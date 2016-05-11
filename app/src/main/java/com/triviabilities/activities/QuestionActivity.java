@@ -68,6 +68,11 @@ public class QuestionActivity extends Activity implements GameStateListener, Que
         {
             questionPresenter.stopAnimations();
         }
+
+        if (gameStarted) {
+            scorePresenter.showMultiplier();
+        }
+
     }
 
     @Override

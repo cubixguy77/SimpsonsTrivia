@@ -5,9 +5,9 @@ import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
@@ -65,8 +65,6 @@ public class ScorePresenter implements ScoreModelListener {
 
         if (speedBonusEnabled)
             return;
-
-        Resources res = mainActivity.getResources();
 
         final ObjectAnimator fadeInMultText = (ObjectAnimator) AnimatorInflater.loadAnimator(MyApplication.getAppContext(), R.animator.fade_in);
         fadeInMultText.setTarget(multiplierText);
@@ -388,7 +386,6 @@ public class ScorePresenter implements ScoreModelListener {
         scoreText.setTextColor(MyApplication.getAppContext().getResources().getColor(R.color.trivia_toolbar_text_standard));
     }
 
-
     public void presentCurrentMultiplier() {
         if (!speedBonusEnabled)
             presentMultiplierTransition(0);
@@ -424,21 +421,48 @@ public class ScorePresenter implements ScoreModelListener {
         multiplier.setVisibility(View.GONE);
     }
 
+    public void showMultiplier() {
+        if (!(multiplier.getBackground() instanceof AnimationDrawable))
+            return;
+
+        if (multiplier.getVisibility() != View.VISIBLE)
+            return;
+
+        AnimationDrawable animationDrawable = (AnimationDrawable) multiplier.getBackground();
+        Drawable frame = animationDrawable.getCurrent();
+        if (newMultiplier == 5) {
+            animationDrawable.setVisible(true, false);
+        }
+        else {
+            multiplier.setBackgroundDrawable(frame);
+            multiplier.invalidate();
+            multiplier.postInvalidate();
+            animationDrawable.selectDrawable(0);
+        }
+    }
+
     private boolean isMultAnimInProgress() {
-        return getMultAnim().isRunning();
+        return getMultAnim() != null && getMultAnim().isRunning();
     }
+
     private AnimationDrawable getMultAnim() {
-        return (AnimationDrawable) multiplier.getBackground();
+        if (multiplier.getBackground() instanceof AnimationDrawable)
+            return (AnimationDrawable) multiplier.getBackground();
+        return null;
     }
+
     private boolean isMultiplierGlowing()
     {
-        return getMultAnim() != null && getMultAnim() == multGlowing && isMultAnimInProgress();
+        Drawable anim = getMultAnim();
+        return anim != null && anim instanceof AnimationDrawable && anim == multGlowing && isMultAnimInProgress();
     }
+
     private void setMultiplierBackground(CustomAnimationDrawable anim)
     {
         resetMultiplierAnimation();
         multiplier.setBackgroundDrawable(anim);
     }
+
     private void resetMultiplierAnimation()
     {
         AnimationDrawable currentAnim = getMultAnim();
@@ -449,6 +473,7 @@ public class ScorePresenter implements ScoreModelListener {
             multiplier.setBackgroundDrawable(null);
         }
     }
+
     private void startMultiplierAnimation(CustomAnimationDrawable anim)
     {
         if(isMultAnimInProgress())
