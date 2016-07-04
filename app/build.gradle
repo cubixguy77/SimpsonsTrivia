@@ -35,7 +35,7 @@ android {
     }
     productFlavors {
         Simpsons {
-            applicationId "com.simpsonstrial2"
+            applicationId "com.triviabilities.simpsonstrivia"
             versionCode 10
             versionName "1.0"
         }
