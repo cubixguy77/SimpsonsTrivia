@@ -1,4 +1,9 @@
 ★★★ Best. App. Ever! ★★★
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://play.google.com/apps/testing/com.triviabilities.simpsonstrivia">Get it on Google Play!</a>
+
+<img src="https://cloud.githubusercontent.com/assets/12387097/17349321/aea9f022-58ea-11e6-9db2-6003b834c2f7.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/12387097/17349326/b8b4f9ea-58ea-11e6-9b85-63584cc078a3.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/12387097/17349333/c5c6d22a-58ea-11e6-9b9a-c89d7106ed58.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/12387097/17349334/ccf11c68-58ea-11e6-8068-71cbbfeab54f.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/12387097/17349335/d0ad4a70-58ea-11e6-8955-0046f57682d3.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/12387097/17349339/dd003224-58ea-11e6-8699-9c6f5c9b0542.png" width="30%"></img> 
+
 Do you feel that embiggen is a perfectly cromulent word? Do you remember Troy McClure from such self-help tapes as “Smoke Yourself Thin” and “Get Some Confidence, Stupid!”? 
 
 THEN YOU MIGHT BE ONE OF US.
