@@ -44,3 +44,4 @@ captures/
 keystore.jks
 release.properties
 simpsonsTrivia/fabric.properties
+keystore
