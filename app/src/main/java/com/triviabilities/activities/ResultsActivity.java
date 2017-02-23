@@ -57,7 +57,9 @@ public class ResultsActivity extends AppCompatActivity
                 goHome();
             }
         });
-        getSupportActionBar().setTitle(GameMode.getGameMode().getGameModeTitle());
+
+        if (GameMode.getGameMode() != null)
+            getSupportActionBar().setTitle(GameMode.getGameMode().getGameModeTitle());
     }
 
     public void setupTabs() {

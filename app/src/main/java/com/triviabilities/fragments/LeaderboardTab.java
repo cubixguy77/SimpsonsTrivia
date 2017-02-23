@@ -177,6 +177,9 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
     private void refreshAdapterData(HighScoreList highScoreList)
     {
+        if (highScoreListAdapter == null)
+            return;
+
         highScoreListAdapter.setNotifyOnChange(false);
         highScoreListAdapter.clear();
         highScoreListAdapter.addAll(highScoreList.getHighScoreList());

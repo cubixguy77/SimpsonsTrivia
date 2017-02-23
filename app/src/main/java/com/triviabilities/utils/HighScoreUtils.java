@@ -39,6 +39,9 @@ public class HighScoreUtils {
 
             @Override
             public void onScoresReturned(HighScoreList list) {
+                if (list == null)
+                    return;
+
                 putCache(list);
 
                 HighScoreItem userPreviousHighScore = list.getUserHighScore();

@@ -161,7 +161,7 @@ public class QuestionHandler implements AnswerResultListener, QuestionFetcherLis
             returnQuestionToClient(nextQuestion);
         }
 
-        if (numSurplusQuestions > 1 && questionFetcher.isPaused() == false)
+        if (numSurplusQuestions > 1 && questionFetcher != null && questionFetcher.isPaused() == false)
             questionFetcher.pause();
     }
 

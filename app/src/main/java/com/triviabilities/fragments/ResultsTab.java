@@ -310,6 +310,9 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
 
     private void showUserNameDialog()
     {
+        if (getActivity() == null)
+            return;
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Enter name");
         final EditText input = new EditText(getActivity());
@@ -324,12 +327,10 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
                 if (!userNameValidation.result) {
                     Toast.makeText(MyApplication.getAppContext(), userNameValidation.message, Toast.LENGTH_LONG).show();
                     showUserNameDialog();
-                    return;
                 } else {
                     User.getInstance().setUserName(newUserName);
                     postHighScore();
                 }
-
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
