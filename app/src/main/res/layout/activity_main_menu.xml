@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
-    android:id="@+id/RootFrameLayout"
+<FrameLayout android:id="@+id/RootFrameLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimary"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
 
     <LinearLayout
@@ -77,4 +77,18 @@
             android:typeface="sans"
             android:stateListAnimator="@animator/button_elevation" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/PrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="Privacy Policy"
+        android:textColor="@color/yellow_primary"
+        android:textSize="10sp"
+        android:alpha="0"
+        tools:alpha="100"
+        style="?android:attr/borderlessButtonStyle"
+        />
 </FrameLayout>

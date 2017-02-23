@@ -6,6 +6,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
@@ -43,6 +44,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
 	Button ChallengeButton;
 	Button SpeedChallengeButton;
+	Button PrivacyPolicyButton;
 
 	private FrameLayout root;
 
@@ -71,12 +73,14 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 
         ChallengeButton      = (Button) findViewById(R.id.ChallengeButton);
         SpeedChallengeButton = (Button) findViewById(R.id.SpeedChallengeButton);
+		PrivacyPolicyButton  = (Button) findViewById(R.id.PrivacyPolicy);
 
 		ChallengeButton.setVisibility(View.INVISIBLE);
 		SpeedChallengeButton.setVisibility(View.INVISIBLE);
 
 		ChallengeButton.setOnTouchListener(this);
 		SpeedChallengeButton.setOnTouchListener(this);
+		PrivacyPolicyButton.setOnTouchListener(this);
     }
 
 	@Override
@@ -141,6 +145,11 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 					int touchY = (int) motionEvent.getRawY() - getStatusBarHeight();
 					LaunchQuestionMode(Difficulty.EASY, GamePlayType.SPEED, touchX, touchY);
 				}
+			}
+
+			else if (v == PrivacyPolicyButton) {
+				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.rawgit.com/cubixguy77/SimpsonsTrivia/bcc40b1b/privacy_policy.html"));
+				startActivity(browserIntent);
 			}
 		}
 		return false;
@@ -215,6 +224,14 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 								@Override
 								public void onAnimationStart(Animator animation) {
 									SpeedChallengeButton.setVisibility(View.VISIBLE);
+								}
+
+								@Override
+								public void onAnimationEnd(Animator animation) {
+									PrivacyPolicyButton.animate()
+											.alpha(100f)
+											.setDuration(6000)
+											.start();
 								}
 							});
 
