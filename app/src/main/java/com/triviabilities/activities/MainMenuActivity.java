@@ -148,7 +148,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 			}
 
 			else if (v == PrivacyPolicyButton) {
-				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.rawgit.com/cubixguy77/SimpsonsTrivia/bcc40b1b/privacy_policy.html"));
+				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.triviabilities.com/PrivacyPolicy.html"));
 				startActivity(browserIntent);
 			}
 		}
