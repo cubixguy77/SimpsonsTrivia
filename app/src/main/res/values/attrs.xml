@@ -1,2 +1,7 @@
 <resources>
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_background_color" format="color"/>
+        <attr name="donut_finished_stroke_width" format="dimension"/>
+        <attr name="donut_text_color" format="color"/>
+    </declare-styleable>
 </resources>

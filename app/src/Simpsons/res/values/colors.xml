@@ -13,6 +13,7 @@
     <color name="trivia.question_card.bonus.background">@color/blue_primary</color>
     <color name="trivia.question_card.results.background">@color/blue_primary</color>
     <color name="trivia.question_text">@color/white</color>
+    <color name="trivia.multiplier.text">@color/yellow_primary</color>
 
     <color name="trivia.answer_button.text.standard">@color/black</color>
     <color name="trivia.answer_button.text.faded">@color/grey</color>
