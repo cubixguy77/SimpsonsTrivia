@@ -20,7 +20,6 @@ import android.widget.TextView;
 
 import com.triviabilities.enums.Difficulty;
 import com.triviabilities.enums.GamePlayType;
-import com.triviabilities.utils.IntentManager;
 import com.triviabilities.utils.Measure;
 import com.triviabilities.views.CircularTransition;
 import com.triviabilities.views.SingleTapGesture;

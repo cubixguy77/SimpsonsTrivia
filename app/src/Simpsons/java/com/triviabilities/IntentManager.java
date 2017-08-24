@@ -1,14 +1,12 @@
-package com.triviabilities.utils;
+package com.triviabilities;
 
 import android.content.Context;
 import android.content.Intent;
 
-import com.triviabilities.OptionsActivity;
 import com.triviabilities.activities.HighScoreActivity;
 import com.triviabilities.activities.MainMenuActivity;
 import com.triviabilities.activities.QuestionActivity;
 import com.triviabilities.activities.ResultsActivity;
-import com.triviabilities.GameMode;
 import com.triviabilities.models.ScoreDataModel;
 
 

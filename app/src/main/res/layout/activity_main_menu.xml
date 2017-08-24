@@ -41,10 +41,11 @@
                 android:id="@+id/TitleSubText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitStart"
-                android:src="@drawable/title_graphic"
                 android:adjustViewBounds="true"
-                android:minHeight="200dp" />
+                android:minHeight="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/title_graphic" />
+
         </io.codetail.widget.RevealFrameLayout>
 
         <Button
@@ -80,15 +81,13 @@
 
     <Button
         android:id="@+id/PrivacyPolicy"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:background="@color/colorPrimary"
-        android:text="Privacy Policy"
-        android:textColor="@color/yellow_primary"
-        android:textSize="10sp"
         android:alpha="0"
-        tools:alpha="100"
-        style="?android:attr/borderlessButtonStyle"
-        />
+        android:text="Privacy Policy"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        tools:alpha="100" />
 </FrameLayout>

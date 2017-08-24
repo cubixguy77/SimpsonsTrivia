@@ -5,14 +5,15 @@
     <color name="colorAccent">#f50057</color>
 
     <color name="main.buttons.text">@color/black</color>
-    <color name="main.buttons.background">@color/yellow_primary</color>
+    <color name="main.buttons.background">@color/red</color>
 
     <color name="trivia.background.standard">@color/blue_tertiary</color>
-    <color name="trivia.background.bonus">@color/yellow_primary</color>
+    <color name="trivia.background.bonus">@color/red</color>
     <color name="trivia.question_card.standard.background">@color/blue_primary</color>
     <color name="trivia.question_card.bonus.background">@color/blue_primary</color>
     <color name="trivia.question_card.results.background">@color/blue_primary</color>
     <color name="trivia.question_text">@color/white</color>
+    <color name="trivia.multiplier.text">@color/yellow_primary</color>
 
     <color name="trivia.answer_button.text.standard">@color/black</color>
     <color name="trivia.answer_button.text.faded">@color/grey</color>
@@ -43,7 +44,7 @@
     <color name="leaderboard.row.background.standard">@color/blue_tertiary</color>
     <color name="leaderboard.row.background.selected">@color/blue_quaternary</color>
 
-    <color name="blue_primary">#f39121</color>
+    <color name="blue_primary">#000000</color>
     <color name="blue_secondary">#4FC3F7</color>
     <color name="blue_tertiary">#E3F2FD</color>
     <color name="blue_quaternary">#BBDEFB</color>
@@ -59,5 +60,6 @@
     <color name="green">#81C784</color>
     <color name="green_secondary">#a5d6a7</color>
     <color name="black">#424242</color>
+    <color name="red">#ff0000</color>
 
     </resources>

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 
 import com.triviabilities.MyApplication;
+import com.triviabilities.R;
 
 public class User {
     private static User user = null;
@@ -13,12 +14,12 @@ public class User {
     /* User Properties */
     private String userName;
     public String getUserName() { return this.userName; }
-    public String getUserNameURI() { return Uri.encode(this.userName, "utf-8"); }
+    String getUserNameURI() { return Uri.encode(this.userName, "utf-8"); }
     public void setUserName(String userName) {
         this.userName = userName;
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putString("UserName", userName);
-        editor.commit();
+        editor.apply();
     }
     public Boolean isRegisteredUser()
     {
@@ -50,7 +51,7 @@ public class User {
     public static User getInstance() {
         if (sharedPrefs == null)
         {
-            sharedPrefs = MyApplication.getAppContext().getSharedPreferences("com.triviaholics.simpsonstrivia.User_Preferences", Context.MODE_PRIVATE);
+            sharedPrefs = MyApplication.getAppContext().getSharedPreferences(MyApplication.getAppContext().getResources().getString(R.string.shared_prefs_user), Context.MODE_PRIVATE);
         }
 
         if (user == null)

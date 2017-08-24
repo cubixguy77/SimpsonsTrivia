@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
-import com.triviabilities.utils.IntentManager;
+import com.triviabilities.IntentManager;
 import com.triviabilities.utils.QuestionHandler;
 import com.triviabilities.presenters.QuestionPresenter;
 import com.triviabilities.R;

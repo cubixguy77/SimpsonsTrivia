@@ -1,0 +1,1244 @@
+<Questions>
+<Question QuestionNumber="0">
+<QuestionText>You don't like flying do you?</QuestionText>
+<Answers>
+<Answer>Airline passenger</Answer>
+<Answer>Stewardess</Answer>
+<Answer>Holly</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="1">
+<QuestionText>Trust me I've been doing it for nine years</QuestionText>
+<Answers>
+<Answer>Airline passenger</Answer>
+<Answer>John</Answer>
+<Answer>Stewardess</Answer>
+<Answer>Pilot</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="2">
+<QuestionText>Trust me I've been doing it for eleven years</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Airline passenger</Answer>
+<Answer>Stewardess</Answer>
+<Answer>Pilot</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="3">
+<QuestionText>I'm still here, unless you wanna open the front door for me</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="4">
+<QuestionText>Was always kind of partial to Roy Rogers actually</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="5">
+<QuestionText>Hey Holly, what about dinner tonight?</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>John</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="6">
+<QuestionText>Family, Stockings, Chestnuts, Rudolph and Frosty.  Any of these things ring a bell?</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>Ginny</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="7">
+<QuestionText>I was thinking more of mulled wine, a nice aged brie, and a roaring fireplace</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>John</Answer>
+<Answer>Holly</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="8">
+<QuestionText>Do you think maybe the baby can handle a little sip?</QuestionText>
+<Answers>
+<Answer>Ginny</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="9">
+<QuestionText>That baby's ready to tend bar</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Ginny</Answer>
+<Answer>Harry</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="10">
+<QuestionText>You're making me feel like Ebeneezer Scrooge</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Mr. Ozu</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="11">
+<QuestionText>I want to congratulate each and every one of you for making this one of the greatest days in the history of the Nakatomi corporation</QuestionText>
+<Answers>
+<Answer>Mr. Takagi</Answer>
+<Answer>Mr. Ozu</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="12">
+<QuestionText>Is daddy coming home with you?</QuestionText>
+<Answers>
+<Answer>Lucy McClane</Answer>
+<Answer>Jack McClane</Answer>
+<Answer>Bruce McClane</Answer>
+<Answer>Ginny McClane</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="13">
+<QuestionText>What would I do without you Paulina?</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Ginny</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="14">
+<QuestionText>Look at this CD, CB, TV, Telephone, full bar, VHS</QuestionText>
+<Answers>
+<Answer>Arglye</Answer>
+<Answer>John</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Karl</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="15">
+<QuestionText>Sorry man, I used to drive a cab and people would expect a little chit chat</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Al Powell</Answer>
+<Answer>John</Answer>
+<Answer>Ginny</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="16">
+<QuestionText>She had a good job, it turned into a great career</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Argyle</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="17">
+<QuestionText>You thought she wasn't gonna make it out here and she'd come crawling on back to you</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="18">
+<QuestionText>This is Christmas music</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="19">
+<QuestionText>Fucking California</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="20">
+<QuestionText>Pearl Harbor didn't work out so we got you with tape decks</QuestionText>
+<Answers>
+<Answer>Mr. Takagi</Answer>
+<Answer>Mr. Ozu</Answer>
+<Answer>Harry</Answer>
+<Answer>Mr. Nakamura</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="21">
+<QuestionText>The kids would love to have you at the house</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Ginny</Answer>
+<Answer>Argyle</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="22">
+<QuestionText>I guess you didn't miss my name though</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="23">
+<QuestionText>He wants you to say something to the troops</QuestionText>
+<Answers>
+<Answer>Ginny</Answer>
+<Answer>John</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="24">
+<QuestionText>So Kareem rebounds, right?  Feeds Worthy on the break</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="25">
+<QuestionText>Over to A.C., to Magic, then back to Worthy, right?</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="26">
+<QuestionText>Boom, two points</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Fritz</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="27">
+<QuestionText>They're about to be taught a lesson in the real use of power</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="28">
+<QuestionText>And when Alexander saw the breadth of his domain, he wept for there were no more worlds to conquer</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Mr. Ozu</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="29">
+<QuestionText>What kind of terrorists are you?</QuestionText>
+<Answers>
+<Answer>Mr. Takagi</Answer>
+<Answer>John</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="30">
+<QuestionText>Who said we were terrorists?</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Fritz</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="31">
+<QuestionText>You didn't bring me along for my charming personality</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Hans</Answer>
+<Answer>Argyle</Answer>
+<Answer>Karl</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="32">
+<QuestionText>My boss? He thinks I'm on my way to Vegas</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Harry</Answer>
+<Answer>Ginny</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="33">
+<QuestionText>You do understand the circuits cannot be cut locally</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="34">
+<QuestionText>There are rules for policemen</QuestionText>
+<Answers>
+<Answer>Tony</Answer>
+<Answer>Karl</Answer>
+<Answer>Uli</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="35">
+<QuestionText>That's what my captain keeps telling me</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="36">
+<QuestionText>I wanted this to be professional, efficient, adult, cooperative</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="37">
+<QuestionText>So he won't be joining us for the rest of his life</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Dwayne Robinson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="38">
+<QuestionText>But have no illusions, we are in charge</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="39">
+<QuestionText>We have left nothing to chance</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="40">
+<QuestionText>And if he alters it?</QuestionText>
+<Answers>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Eddie</Answer>
+<Answer>Tony</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="41">
+<QuestionText>His job's 3,000 miles away</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="42">
+<QuestionText>Without him we still have a chance, we might be able to get outta here</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="43">
+<QuestionText>Tell that to Takagi</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>John</Answer>
+<Answer>Ginny</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="44">
+<QuestionText>Do I sound like I'm ordering a pizza?</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Argyle</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="45">
+<QuestionText>No one kills him but me</QuestionText>
+<Answers>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="46">
+<QuestionText>Come the fuck down here and arrest me</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="47">
+<QuestionText>Now I know what a TV dinner feels like</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="48">
+<QuestionText>I had a feelin' you'd be calling</QuestionText>
+<Answers>
+<Answer>Eddie</Answer>
+<Answer>John</Answer>
+<Answer>Paulina</Answer>
+<Answer>Argyle</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="49">
+<QuestionText>Aw shit, I got fifty bucks bet on them assholes</QuestionText>
+<Answers>
+<Answer>Eddie</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Marco</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="50">
+<QuestionText>There's something wrong, they're coming back down</QuestionText>
+<Answers>
+<Answer>Eddie</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Marco</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="51">
+<QuestionText>Evening, officer.  What can I do for you?</QuestionText>
+<Answers>
+<Answer>Eddie</Answer>
+<Answer>Theo</Answer>
+<Answer>Heinrich</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="52">
+<QuestionText>Ask me, that god damn computer sent you out on another wild goose chase</QuestionText>
+<Answers>
+<Answer>Eddie</Answer>
+<Answer>Theo</Answer>
+<Answer>911 Dispatcher</Answer>
+<Answer>Argyle</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="53">
+<QuestionText>Next time you have the chance to kill someone, don't hesitate</QuestionText>
+<Answers>
+<Answer>Marco</Answer>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="54">
+<QuestionText>Welcome to the party, pal</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Karl</Answer>
+<Answer>Ginny</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="55">
+<QuestionText>This is a matter of inconvenient timing, that's all</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="56">
+<QuestionText>Police action was inevitable</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="57">
+<QuestionText>I never thought I'd love to hear that sound</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="58">
+<QuestionText>This is simply the beginning</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+<Answer>John</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="59">
+<QuestionText>You are most troublesome for a security guard</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>John</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="60">
+<QuestionText>Would you like to go for double Jeopordy, where the scores can really change?</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="61">
+<QuestionText>I'm still here, unless you wanna open the front door for me</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Argyle</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="62">
+<QuestionText>Do you really think you have a chance against us cowboy?</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="63">
+<QuestionText>I was always kind of partial to Roy Rogers actually</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Holly</Answer>
+<Answer>Argyle</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="64">
+<QuestionText>Yippee-ki-yea, motherfucker</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Karl</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Argyle</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="65">
+<QuestionText>You don't wanna give me a truck, I'll go out and I'll steal a truck</QuestionText>
+<Answers>
+<Answer>Richard Thornburg</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="66">
+<QuestionText>Eat it, Harvey</QuestionText>
+<Answers>
+<Answer>Richard Thornburg</Answer>
+<Answer>Harry</Answer>
+<Answer>Gail Wallens</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="67">
+<QuestionText>If the person who radioed for help on this channel can hear me, acknowledge this transmission</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="68">
+<QuestionText>I've seen enough phony I.D.'s in my time to recognize that the ones they got must've cost a fortune</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="69">
+<QuestionText>Add all that up and I don't know what the fuck it means but you got some bad ass perpetrators and they're here to stay</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="70">
+<QuestionText>What do these pricks want?</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="71">
+<QuestionText>We haven't heard a peep from them</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="72">
+<QuestionText>He's killed one terrorist for sure, and he claims he's capped off two others</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="73">
+<QuestionText>Has it occurred to you he could be one of the terrorists pulling your chain?</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="74">
+<QuestionText>Maybe not L.A.P.D., but he's definitely a badge</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="75">
+<QuestionText>He could be a fucking bartender for all we know</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Hans</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="76">
+<QuestionText>What idiot put you in charge?</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="77">
+<QuestionText>Personally, I'd pass on the job.  I don't enjoy being this close to you.</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="78">
+<QuestionText>Mr. Takagi chose his people well</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+<Answer>Ginny</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="79">
+<QuestionText>If there's terrorists up there, where's there list of demands</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="80">
+<QuestionText>It was probably some stockbroker who got depressed</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="81">
+<QuestionText>If you are what I think you are, then you'll know when to listen, when to shut up, and when to pray</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="82">
+<QuestionText>Just wound them</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="83">
+<QuestionText>The quarterback is toast</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Argyle</Answer>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="84">
+<QuestionText>You made your point, let 'em pull back</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="85">
+<QuestionText>Thank you Mr. Cowboy, I'll take it under advisement</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Marco</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="86">
+<QuestionText>Hit it again</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+<Answer>Marco</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="87">
+<QuestionText>You idiot, it's not the police. It's him</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Franco</Answer>
+<Answer>Marco</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="88">
+<QuestionText>They're using artillery on us</QuestionText>
+<Answers>
+<Answer>Franco</Answer>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="89">
+<QuestionText>Let's see you take this under advisement, jerk-weed</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Richard Thornburg</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="90">
+<QuestionText>Tell me you got that</QuestionText>
+<Answers>
+<Answer>Richard Thornburg</Answer>
+<Answer>Hans</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="91">
+<QuestionText>Eat your heart out, Channel Five</QuestionText>
+<Answers>
+<Answer>Richard Thornburg</Answer>
+<Answer>Hans</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="92">
+<QuestionText>I've got 100 people down here, and they're covered with glass</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="93">
+<QuestionText>From up here it doesn't look like you're in charge of jack shit</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+<Answer>Karl</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="94">
+<QuestionText>If you're not part of the solution you're part of the problem</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="95">
+<QuestionText>I negotiate million dollar deals for breakfast.  I think I can handle this Eurotrash.</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Ginny</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="96">
+<QuestionText>I don't want neutral.  I want dead.</QuestionText>
+<Answers>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Marco</Answer>
+<Answer>Uli</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="97">
+<QuestionText>It's not what I want, it's what I can give you.</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Hans</Answer>
+<Answer>Holly</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="98">
+<QuestionText>It's obvious you're not some dumb schmuck up here to snatch a few purses.  Am I right?</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Theo</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="99">
+<QuestionText>These guys, are professional, they're motivated, i.e. they want something</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Richard Thornburg</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="100">
+<QuestionText>Hey, business is business.  You use a gun, I use a fountain pen.  What's the difference?</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Holly</Answer>
+<Answer>Ginny</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="101">
+<QuestionText>Hans, bubbe, I'm your white knight</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Theo</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="102">
+<QuestionText>I must have missed 60 Minutes.  What are you saying?</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Harry</Answer>
+<Answer>Richard Thornburg</Answer>
+<Answer>Agent Johnson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="103">
+<QuestionText>They want the detonators or they're gonna kill me</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Johns</Answer>
+<Answer>Holly</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="104">
+<QuestionText>How can you say that after all these years?</QuestionText>
+<Answers>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="105">
+<QuestionText>Can't you see what's happening?  Can't you read between the lines?</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harry</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="106">
+<QuestionText>He did everything he could to save him</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>John</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="107">
+<QuestionText>If he gave himself up they'd both be dead right now</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="108">
+<QuestionText>Now you gonna stand there and tell me he that he's gonna give a damn about what you'll do to him if he makes it out of here alive?</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="109">
+<QuestionText>Why don't you wake up and smell what you're shoveling?</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="110">
+<QuestionText>Any time you wanna go home, you consider yourself dismissed</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="111">
+<QuestionText>You couldn't drag me away</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="112">
+<QuestionText>It's the time of miracles</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="113">
+<QuestionText>Please God, no.  You're one of them, aren't you?</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="114">
+<QuestionText>You wanna stay alive you stay with me</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Karl</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="115">
+<QuestionText>He's the reason we have the information we have up until now, he's also the reason why you're facing 7 terrorists instead of 12.</QuestionText>
+<Answers>
+<Answer>Al Powel</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburg</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="116">
+<QuestionText>Shoot the glass</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Theo</Answer>
+<Answer>Karl</Answer>
+<Answer>Marco</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="117">
+<QuestionText>God, that man looks really pissed</QuestionText>
+<Answers>
+<Answer>Ginny</Answer>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>Mr. Takagi</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="118">
+<QuestionText>But all things being equal, I'd rather be in Philadelphia</QuestionText>
+<Answers>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+<Answer>Holly</Answer>
+<Answer>Theo</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="119">
+<QuestionText>You don't think jockeying papers acoss a desk is a noble effort for a cop?</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="120">
+<QuestionText>They got the universal terrorist playbook and they're running it step by step</QuestionText>
+<Answers>
+<Answer>Al Powell</Answer>
+<Answer>John</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="121">
+<QuestionText>By the time he figures out what him him, he'll be in a body bag</QuestionText>
+<Answers>
+<Answer>Agent Johnson</Answer>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="122">
+<QuestionText>Look, you let me in right now, or I call the I.N.S.</QuestionText>
+<Answers>
+<Answer>Richard Thornburn</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="123">
+<QuestionText>This is the last time these kids are gonna have to speak to their parents</QuestionText>
+<Answers>
+<Answer>Richard Thornburn</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="124">
+<QuestionText>We are both professionals, this is personal</QuestionText>
+<Answers>
+<Answer>Karl</Answer>
+<Answer>Hans</Answer>
+<Answer>Uli</Answer>
+<Answer>John</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="125">
+<QuestionText>They're expecting transports, not gunships</QuestionText>
+<Answers>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Richard Thornburn</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="126">
+<QuestionText>I'm an exceptional thief, and since I'm moving up to kidnapping you should be more polite</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Eddie</Answer>
+<Answer>Uli</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="127">
+<QuestionText>Just like fuckin' Saigon, eh, slick?</QuestionText>
+<Answers>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Richard Thornburn</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="128">
+<QuestionText>I was in junior high, dickhead</QuestionText>
+<Answers>
+<Answer>Agent Johnson</Answer>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Al Powell</Answer>
+<Answer>Richard Thornburn</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="129">
+<QuestionText>He's still alive, only John could drive somebody that crazy</QuestionText>
+<Answers>
+<Answer>Holly</Answer>
+<Answer>Harry</Answer>
+<Answer>Mr. Takagi</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="130">
+<QuestionText>You bet your ass I wish to proceed</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>John</Answer>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="131">
+<QuestionText>Not a creature was stirring except the four assholes, coming in the rear in standard two by two cover formation</QuestionText>
+<Answers>
+<Answer>Theo</Answer>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Eddie</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="132">
+<QuestionText>What the fuck is going on?</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Theo</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Hans</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="133">
+<QuestionText>Well this time John Wayne does not walk off into the sunset with Grace Kelly</QuestionText>
+<Answers>
+<Answer>Hans</Answer>
+<Answer>Karl</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Richard Thornburn</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="134">
+<QuestionText>I hope that's not a hostage</QuestionText>
+<Answers>
+<Answer>Dwayne Robinson</Answer>
+<Answer>Richard Thornburn</Answer>
+<Answer>Agent Johnson</Answer>
+<Answer>Al Powell</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="135">
+<QuestionText>Now that it's all over after this incredible ordeal what are your feelings?</QuestionText>
+<Answers>
+<Answer>Richard Thornburn</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+<Answer>Dwayne Robinson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="136">
+<QuestionText>Did you get that?</QuestionText>
+<Answers>
+<Answer>Richard Thornburn</Answer>
+<Answer>Harvey Johnson</Answer>
+<Answer>Gail Wallens</Answer>
+<Answer>Dwayne Robinson</Answer>
+</Answers>
+</Question>
+<Question QuestionNumber="137">
+<QuestionText>If this is their idea of Christmas I gotta be here for New Year's</QuestionText>
+<Answers>
+<Answer>Argyle</Answer>
+<Answer>Hans</Answer>
+<Answer>John</Answer>
+<Answer>Harry</Answer>
+</Answers>
+</Question>
+</Questions>

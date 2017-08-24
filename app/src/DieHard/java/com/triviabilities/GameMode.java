@@ -14,7 +14,7 @@ public class GameMode
         return gameMode;
     }
 
-    public static void destroyInstance()
+    static void destroyInstance()
     {
         gameMode = null;
     }
@@ -33,13 +33,7 @@ public class GameMode
                 gameMode = new GameMode(Difficulty.EASY, GamePlayType.CHALLENGE);
                 break;
             case 1:
-                gameMode = new GameMode(Difficulty.HARD, GamePlayType.CHALLENGE);
-                break;
-            case 2:
                 gameMode = new GameMode(Difficulty.EASY, GamePlayType.SPEED);
-                break;
-            case 3:
-                gameMode = new GameMode(Difficulty.HARD, GamePlayType.SPEED);
                 break;
             default:
                 gameMode = new GameMode(Difficulty.EASY, GamePlayType.CHALLENGE);
@@ -59,7 +53,6 @@ public class GameMode
     private int numQuotesAvailable;
     private String questionXmlFileName;
     private String quoteXmlFileName;
-    private boolean fiftyFiftyEnabled;
     private boolean debugMode = false;
     private String getHighScoreURL;
     private String putHighScoreURL;
@@ -71,68 +64,34 @@ public class GameMode
         this.difficulty = difficulty;
         this.gamePlayType = gamePlayType;
 
-        this.quizLength = 10;
-        this.fiftyFiftyEnabled = false;
-
         if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.CHALLENGE)
         {
             this.id = 0;
+            this.quizLength = 10;
             this.timerEnabled = false;
             this.bonusRoundEnabled = true;
-            this.numQuestionsAvailable = 1251;
-            this.numQuotesAvailable = 699;
-            this.questionXmlFileName = "Easy.xml";
-            this.quoteXmlFileName = "QuotesEasy.xml";
-            this.gameModeTitle = "Challenge - Easy";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortChallenge.php" : "http://triviabilities.com/Simpsons/EasyShortGame.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasyShortGame&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
-
-
+            this.numQuestionsAvailable = 171;
+            this.numQuotesAvailable = 138;
+            this.questionXmlFileName = "Questions-Android-DieHard.xml";
+            this.quoteXmlFileName = "Quotes-Android-DieHard.xml";
+            this.gameModeTitle = "Challenge";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortChallenge.php" : "http://triviabilities.com/DieHard/ShortChallenge.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/DieHard/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
         else if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.SPEED)
         {
-            this.id = 2;
-            this.timerEnabled = true;
-            this.bonusRoundEnabled = false;
-            this.numQuestionsAvailable = 1251;
-            this.numQuotesAvailable = 699;
-            this.questionXmlFileName = "Easy.xml";
-            this.quoteXmlFileName = "QuotesEasy.xml";
-            this.gameModeTitle = "Speed - Easy";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Simpsons/EasyShortSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=EasyShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
-        }
-        else if (difficulty == Difficulty.HARD && gamePlayType == GamePlayType.CHALLENGE)
-        {
             this.id = 1;
-            this.timerEnabled = false;
-            this.bonusRoundEnabled = true;
-            this.numQuestionsAvailable = 1419;
-            this.numQuotesAvailable = 562;
-            this.questionXmlFileName = "Hard.xml";
-            this.quoteXmlFileName = "QuotesEasy.xml";
-            this.gameModeTitle = "Challenge - Hard";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongChallenge.php" : "http://triviabilities.com/Simpsons/HardShortGame.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardShortGame&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
-        }
-        else if (difficulty == Difficulty.HARD && gamePlayType == GamePlayType.SPEED)
-        {
-            this.id = 3;
+            this.quizLength = 10;
             this.timerEnabled = true;
             this.bonusRoundEnabled = false;
-            this.numQuestionsAvailable = 1419;
-            this.numQuotesAvailable = 562;
-            this.questionXmlFileName = "Hard.xml";
-            this.quoteXmlFileName = "QuotesHard.xml";
-            this.gameModeTitle = "Speed - Hard";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/LongSpeed.php" : "http://triviabilities.com/Simpsons/HardShortSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=LongSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Simpsons/put_score.php?table=HardShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.numQuestionsAvailable = 171;
+            this.numQuotesAvailable = 0;
+            this.questionXmlFileName = "Questions-Android-DieHard.xml";
+            this.quoteXmlFileName = "Quotes-Android-DieHard.xml";
+            this.gameModeTitle = "Speed";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/DieHard/ShortSpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/DieHard/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
-    }
-
-    public Difficulty getDifficulty()
-    {
-        return this.difficulty;
     }
 
     public int getId()
@@ -184,8 +143,6 @@ public class GameMode
 
     public String putHighScoreURL() { return this.putHighScoreURL; }
 
-    public boolean getFiftyFiftyEnabled() { return this.fiftyFiftyEnabled; }
-
     public boolean getDebugMode() { return this.debugMode; }
 
     public String getGameModeTitle()
@@ -197,9 +154,7 @@ public class GameMode
     {
         ArrayList<String> list = new ArrayList<>(4);
         list.add("Easy - Challenge");
-        list.add("Hard - Challenge");
         list.add("Easy - Speed");
-        list.add("Hard - Speed");
         return list;
     }
 }
