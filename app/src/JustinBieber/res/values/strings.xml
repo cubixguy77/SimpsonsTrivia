@@ -2,4 +2,5 @@
 <resources>
     <string name="app.title">Justin Bieber Trivia</string>
     <string name="shared_prefs.user">com.triviaholics.justinbiebertrivia.User_Preferences</string>
+    <string name="trivia.bonus.instructions">You will have 30 seconds to name the song these lyrics come from.</string>
 </resources>
