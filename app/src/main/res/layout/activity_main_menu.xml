@@ -24,7 +24,7 @@
             android:layout_width="fill_parent"
             android:layout_marginTop="@dimen/main.title_text.margin.margin_top"
             android:text="T  R  I  V  I  A  B  I  L  I  T  I  E  S"
-            android:textColor="@color/white"
+            android:textColor="@color/main.text.triviabilities"
             android:fontFamily="sans-serif-light"
             android:textSize="@dimen/main.title_text.font.size"
             android:gravity="center_horizontal" />
@@ -87,7 +87,7 @@
         android:layout_gravity="bottom|center_horizontal"
         android:alpha="0"
         android:text="Privacy Policy"
-        android:textColor="@color/white"
+        android:textColor="@color/main.text.privacy_policy"
         android:textSize="10sp"
         tools:alpha="100" />
 </FrameLayout>

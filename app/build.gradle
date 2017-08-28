@@ -51,6 +51,27 @@ android {
             dimension "default"
             targetSdkVersion 26
         }
+        KillBill {
+            applicationId "com.triviabilities.killbilltrivia"
+            versionCode 1
+            versionName "1.0"
+            dimension "default"
+            targetSdkVersion 26
+        }
+        Twilight {
+            applicationId "com.triviabilities.twilighttrivia"
+            versionCode 1
+            versionName "1.0"
+            dimension "default"
+            targetSdkVersion 26
+        }
+        JustinBieber {
+            applicationId "com.triviabilities.justinbiebertrivia"
+            versionCode 1
+            versionName "1.0"
+            dimension "default"
+            targetSdkVersion 26
+        }
     }
 }
 

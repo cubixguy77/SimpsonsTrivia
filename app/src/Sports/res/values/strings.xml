@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app.title">Die Hard Trivia</string>
+    <string name="shared_prefs.user">com.triviaholics.diehardtrivia.User_Preferences</string>
+</resources>

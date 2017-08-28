@@ -38,7 +38,9 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
         {
             this.inputStream = assetManager.open(xmlFileName);
         }
-        catch(Exception e) {}
+        catch(Exception e) {
+
+        }
     }
 
     public void pause()
@@ -116,7 +118,9 @@ public class QuestionFetcher extends AsyncTask<Integer, Question, Boolean>
                 publishProgress(new Question(questionText, answerA, answerB, answerC, answerD, "A"));
             }
         }
-        catch (Exception p){}
+        catch (Exception p){
+            p.printStackTrace();
+        }
 
         return true;
     }

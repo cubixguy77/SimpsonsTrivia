@@ -31,7 +31,6 @@
         </activity>
 
         <activity android:name=".activities.QuestionActivity" android:screenOrientation="portrait" />
-        <activity android:name=".activities.HighScoreActivity" android:screenOrientation="portrait" android:label="@string/results.tab.leaderboard" />
         <activity android:name=".activities.ResultsActivity" android:screenOrientation="portrait" />
 
         <meta-data

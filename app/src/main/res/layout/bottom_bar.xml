@@ -9,12 +9,13 @@
     tools:showIn="@layout/activity_results">
 
     <Button
+        android:id="@+id/homeButton"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/results.bottom.height"
+        android:layout_weight=".25"
         android:text="@string/results.bottom_bar_buttons.home"
         android:textAllCaps="true"
-        android:id="@+id/homeButton"
-        android:layout_weight=".25"
+        android:textColor="@color/black"
         android:fontFamily="sans-serif-medium"
         android:background="@drawable/rounded_corners_button_transparent"
         android:textSize="@dimen/results.bottom.text" />
@@ -29,6 +30,7 @@
         android:text="@string/results.bottom_bar_buttons.play_again"
         android:textSize="@dimen/results.bottom.text"
         android:textAllCaps="true"
+        android:textColor="@color/results.bottom.button.text"
         android:fontFamily="sans-serif-medium"
         android:background="@drawable/rounded_corners_button"
         style="?android:attr/borderlessButtonStyle" />
