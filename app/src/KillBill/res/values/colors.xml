@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">@color/yellow_primary</color>
-    <color name="colorPrimaryDark">#0C83EF</color>
+    <color name="colorPrimaryDark">@color/black</color>
     <color name="colorAccent">#f50057</color>
 
     <color name="main.buttons.text">@color/yellow_primary</color>

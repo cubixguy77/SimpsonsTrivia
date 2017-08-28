@@ -75,8 +75,8 @@ public class GameMode
             this.questionXmlFileName = "Questions-Android-Twilight.xml";
             this.quoteXmlFileName = "Quotes-Android-Twilight.xml";
             this.gameModeTitle = "Challenge";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortChallenge.php" : "http://triviabilities.com/DieHard/ShortChallenge.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/DieHard/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortChallenge.php" : "http://triviabilities.com/Twilight/ShortChallenge.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Twilight/put_score.php?table=ShortChallenge&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
         else if (difficulty == Difficulty.EASY && gamePlayType == GamePlayType.SPEED)
         {
@@ -89,8 +89,8 @@ public class GameMode
             this.questionXmlFileName = "Questions-Android-Twilight.xml";
             this.quoteXmlFileName = "Quotes-Android-Twilight.xml";
             this.gameModeTitle = "Speed";
-            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/DieHard/ShortSpeed.php";
-            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/DieHard/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
+            this.getHighScoreURL = debugMode ? "http://triviabilities.com/Test/ShortSpeed.php" : "http://triviabilities.com/Twilight/ShortSpeed.php";
+            this.putHighScoreURL = debugMode ? "http://triviabilities.com/Test/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}" : "http://triviabilities.com/Twilight/put_score.php?table=ShortSpeed&secret=dbsecret&name={{NAME}}&score={{SCORE}}";
         }
     }
 

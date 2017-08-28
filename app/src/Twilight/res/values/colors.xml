@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">@color/blue_primary</color>
-    <color name="colorPrimaryDark">#0C83EF</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#f50057</color>
 
     <color name="main.buttons.text">@color/black</color>
-    <color name="main.buttons.background">@color/red</color>
+    <color name="main.buttons.background">@color/yellow_primary</color>
 
     <color name="trivia.background.standard">@color/blue_tertiary</color>
     <color name="trivia.background.bonus">@color/red</color>

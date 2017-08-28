@@ -83,9 +83,9 @@
                 android:paddingRight="@dimen/question.question_text.padding" />
 
             <ImageView
+                android:id="@+id/woohoo"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/woohoo"
                 android:layout_gravity="center"
                 android:visibility="invisible"
                 android:src="@drawable/graphic_correct"
@@ -94,11 +94,11 @@
                 android:padding="@dimen/question.woohoo_text.margin" />
 
             <ImageView
+                android:id="@+id/doh"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="DOH!"
-                android:id="@+id/doh"
                 android:layout_gravity="center"
                 android:visibility="invisible"
                 android:src="@drawable/graphic_wrong"
