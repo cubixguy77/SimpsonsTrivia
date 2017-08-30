@@ -59,7 +59,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#81C784</color>
     <color name="green_secondary">#a5d6a7</color>
-    <color name="black">#424242</color>
+    <color name="black">#000000</color>
     <color name="red">#ff0000</color>
 
     </resources>
