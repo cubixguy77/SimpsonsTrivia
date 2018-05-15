@@ -9047,8 +9047,8 @@
 	<Question QuestionNumber="1005">
 		<QuestionText>After being bitten by an infected mosquito, who must live in a plastic bubble?</QuestionText>
 		<Answers>
-			<Answer>Lisa</Answer>
 			<Answer>Bart</Answer>
+			<Answer>Lisa</Answer>
 			<Answer>Homer</Answer>
 			<Answer>Marge</Answer>
 		</Answers>
