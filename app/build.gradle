@@ -39,7 +39,7 @@ android {
     productFlavors {
         Simpsons {
             applicationId "com.triviabilities.simpsonstrivia"
-            versionCode 11
+            versionCode 12
             versionName "1.0"
             dimension "default"
             targetSdkVersion 27
