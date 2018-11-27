@@ -96,14 +96,14 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
         if (showSpinner)
             setSpinnerContent();
 
-        if (HighScoreUtils.isNetworkAvailable())
-        {
-            setupHighScoreList();
-        }
-        else
-        {
+        //if (HighScoreUtils.isNetworkAvailable())
+        //{
+        //    setupHighScoreList();
+        //}
+        //else
+        //{
             showNoWiFi();
-        }
+        //}
 
         return root;
     }
@@ -153,14 +153,14 @@ public class LeaderboardTab extends ListFragment implements AdapterView.OnItemSe
 
     private void refreshList()
     {
-        if (HighScoreUtils.isNetworkAvailable())
-        {
-            HighScoreUtils.requestScores(GameMode.getGameMode(), this);
-        }
-        else
-        {
+        //if (HighScoreUtils.isNetworkAvailable())
+        //{
+        //    HighScoreUtils.requestScores(GameMode.getGameMode(), this);
+        //}
+        //else
+        //{
             showNoWiFi();
-        }
+        //}
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id)
