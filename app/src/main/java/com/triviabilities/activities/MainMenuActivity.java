@@ -9,8 +9,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,7 +21,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.crashlytics.android.Crashlytics;
 import com.triviabilities.MyApplication;
 import com.triviabilities.R;
 import com.triviabilities.enums.Difficulty;
@@ -34,7 +33,6 @@ import com.triviabilities.views.SingleTapGesture;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
-import io.fabric.sdk.android.Fabric;
 
 /* Home Screen */
 public class MainMenuActivity extends AppCompatActivity implements View.OnTouchListener
@@ -57,7 +55,6 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
     public void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.MyMaterialTheme);
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main_menu);
 
 		gestureDetector = new GestureDetector(this, new SingleTapGesture());
@@ -148,7 +145,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnTouchL
 			}
 
 			else if (v == PrivacyPolicyButton) {
-				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.triviabilities.com/PrivacyPolicy.html"));
+				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.freeprivacypolicy.com/live/a1a0b765-2796-430d-9266-394d03951bd7"));
 				startActivity(browserIntent);
 			}
 		}

@@ -7,11 +7,11 @@ import android.animation.ObjectAnimator;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -105,7 +105,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         GameMode gameMode = GameMode.getGameMode();
         this.finalScoreValue = scoreModel.getFinalScore();
 
-        submitScore();
+        //submitScore();
 
         setData(finalChart, scoreModel.getStandardScore(), scoreModel.getBonusScore());
         setData(rawChart, scoreModel.getNumStandardCorrect(), scoreModel.getNumStandardIncorrect());
@@ -301,7 +301,7 @@ public class ResultsTab extends Fragment implements HighScoreSubmitListener
         Snackbar snackbar = Snackbar.make(rootLayout, "NEW HIGH SCORE!", Snackbar.LENGTH_LONG);
 
         View sbView = snackbar.getView();
-        TextView text = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        TextView text = (TextView) sbView.findViewById(R.id.snackbar_text);
         text.setTextColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_text));
         text.setGravity(Gravity.CENTER_HORIZONTAL);
         sbView.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.results_tab_snack_background));

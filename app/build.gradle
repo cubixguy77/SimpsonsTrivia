@@ -4,21 +4,21 @@ buildscript {
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
     }
 }
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     signingConfigs {
         release
     }
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 16
+        targetSdkVersion 29
     }
     buildTypes {
         debug {
@@ -39,7 +39,7 @@ android {
     productFlavors {
         Simpsons {
             applicationId "com.triviabilities.simpsonstrivia"
-            versionCode 13
+            versionCode 15
             versionName "1.0"
             dimension "default"
             targetSdkVersion 28
@@ -81,16 +81,17 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v2.1.3'
     implementation('com.github.ozodrukh:CircularReveal:1.3.1@aar') {
         transitive = true
     }
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
-    implementation('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
-        transitive = true
-    }
+
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
 }
 
 

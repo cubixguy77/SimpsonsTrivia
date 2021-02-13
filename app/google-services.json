@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "756768024349",
+    "project_id": "triviabilities-simpsons",
+    "storage_bucket": "triviabilities-simpsons.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756768024349:android:e1c921b8e4969bfe95e3f4",
+        "android_client_info": {
+          "package_name": "com.triviabilities.simpsonstrivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756768024349-mdl22u5ieoqnu3pld2brsodhr8cala3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Q4p56-D_zHnNddO9Y4Pq5Y3vjYP7HYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756768024349-mdl22u5ieoqnu3pld2brsodhr8cala3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

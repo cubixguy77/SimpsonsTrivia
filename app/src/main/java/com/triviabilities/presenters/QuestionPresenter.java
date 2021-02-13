@@ -11,8 +11,10 @@ import android.app.Activity;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -52,7 +54,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
     private LinearLayout QuestionCard;
     private LinearLayout AnswerContainer;
     private RevealFrameLayout QuestionContainer;
-    private android.support.design.widget.AppBarLayout ToolbarContainer;
+    private AppBarLayout ToolbarContainer;
 
     private ImageView ExtendedToolbarReveal;
 
@@ -156,7 +158,7 @@ public class QuestionPresenter implements AnswerVisibilityChangeListener {
         QuestionContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.QuestionContainer);
         InstructionsContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.InstructionsContainer);
         QuestionContainerContainer = (RevealFrameLayout) mainActivity.findViewById(R.id.QuestionContainerContainer);
-        ToolbarContainer = (android.support.design.widget.AppBarLayout) mainActivity.findViewById(R.id.ToolbarFrame);
+        ToolbarContainer = (AppBarLayout) mainActivity.findViewById(R.id.ToolbarFrame);
 
         ExtendedToolbarReveal = (ImageView) mainActivity.findViewById(R.id.ExtendedToolbarReveal);
 

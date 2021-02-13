@@ -1,9 +1,9 @@
 package com.triviabilities.adapters;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.triviabilities.fragments.LeaderboardTab;
 import com.triviabilities.fragments.ResultsTab;
