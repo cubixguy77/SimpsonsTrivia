@@ -42,7 +42,7 @@ android {
             versionCode 15
             versionName "1.0"
             dimension "default"
-            targetSdkVersion 28
+            targetSdkVersion 29
         }
         DieHard {
             applicationId "com.triviabilities.diehardtrivia"
